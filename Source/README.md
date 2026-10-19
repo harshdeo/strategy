@@ -1,0 +1,9 @@
+# Material sources and evidence
+
+The PPTX masters remain in `../Investor_Materials`. `update_decks.py` prepares focused text edits, keeps the original screenshot bytes, fixes package metadata and writes candidates in `.tmp/investor-materials-20261020`. `update_decks.mjs` imports, edits and validates them with the bundled Artifact Tool before installing the masters. It preserves the original OOXML charts and media to avoid round-trip layout loss. The four flow screenshots and original TCS screenshot remain unchanged.
+
+`render_documents.py` fills the one-pager from the operating model and renders both document PDFs from their HTML sources. `export_deck_pdf.mjs` renders final decks at 2.5× resolution and `assemble_pdf.py` supplies a searchable layer from the same PPTX text. This avoids the current macOS Keynote permission block. The visible pages are the real slide render, with no screenshot fabrication. `export_pdf.applescript` is also available when macOS permits Keynote automation. The original deck source was temporary; current masters plus these focused patch scripts are the maintained source. The workbook refresh runs via `../Financial_Models/operating_model.py --xlsx` and `update_workbook.mjs`.
+
+`audit_metrics.py` reads only production aggregate counts and public filing line items. `evidence_snapshot.json` freezes its 20 October results. `filing_selection.json` freezes the deterministic 50-company sample; `check_filings.py` downloads the cited source files and verifies revenue/PAT, quarter, currency and consolidated basis. `filing_check.json` records results and source hashes. Re-run with `--input filing_selection.json --output PATH`; do not silently replace a cited historical result with a new run. This is an extraction audit, not an AI answer benchmark or a release gate.
+
+All source edits and evidence stay within the workspace. Nothing here authorizes publication, model calls, warehouse writes or a production deploy.

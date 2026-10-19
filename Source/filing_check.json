@@ -1,0 +1,1159 @@
+{
+  "as_of": "2026-10-19T18:48:59.847361+00:00",
+  "scope": "50 recent consolidated Q2 FY27 NSE XBRL filings, revenue and PAT only; not a live-answer benchmark",
+  "sample_rule": "latest filing_date descending, symbol ascending; 50 distinct companies with both line items and XBRL link",
+  "passed": 50,
+  "total": 50,
+  "results": [
+    {
+      "symbol": "BEPL",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-19",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741791_19102026055040_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "3b5c4f18ec5a7d5d50d380ef22dcb7420fcde6069924bd6f86ada482456d9a4e",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "4033695000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "624617000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "HFCL",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-19",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741880_19102026062543_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "53dc35f506d08eb5c4b286db546268d8986a663ac8661653068ce6f54cfa4c70",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "25417900000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "3942200000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "LTTS",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-19",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741576_19102026043350_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "f6810cfd7a30663384fdd3e129b2340cba63fe6febc3d4bc3ee0af61c235a7a8",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "30404000000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "5487000000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "MGEL",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-19",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741904_19102026063739_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "880bd78ea965444037e9d3c598401dd28fa7fe53889923b27ee96f7673d3074f",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "9825641000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "92524000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "PIRAMALFIN",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-19",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1741893_19102026063303_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "56f8808751852ec3e8a3e026d83901bb9d7f1b08d3a4aa08f334aaaa5e4d0ffc",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "36591900000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "5454200000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "TATVA",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-19",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741850_19102026061228_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "e1522d09505d65d28f975e104da67b397052f7a1068c638817917715d866c144",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "2173200000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "214510000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-19",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741832_19102026060745_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "e4219f1946e4098061d0da7f43ef524c4c99778a1d7bec2419823008df49a690",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "232950700000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "15013800000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "AXISBANK",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-17",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740813_17102026042004_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "c51cc0300f5c0a7f9a01f0302609716e5079ad997afc2d208bc06e55c5a3ff4e",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "380874800000",
+          "concept": "InterestEarned",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "76496900000",
+          "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "CENTRALBK",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-17",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740871_17102026050522_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "541cc841c1635d5ef2256c0145b152b8098f2050745db065d677ccd077596476",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "103939000000",
+          "concept": "InterestEarned",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "14751700000",
+          "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "HDFCBANK",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-17",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740913_17102026054812_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "41840bebf50eacb915fe9ddd2d7cd2bace3d6fffdaa0898a482bd56ddd94aa3b",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "951316300000",
+          "concept": "InterestEarned",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "207000300000",
+          "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "ICICIBANK",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-17",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740887_17102026052842_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "615348fca1872145ef64f390d725bc196359c61dec88ddf49f8ab8deb920dc5d",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "559919100000",
+          "concept": "InterestEarned",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "173118700000",
+          "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "IDBI",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-17",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740930_17102026060314_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "d08a5e9b80025e60f65b62350a44f0cf6a52d9bafd817fe8fbc11cd2d45b835a",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "85193300000",
+          "concept": "InterestEarned",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "22262400000",
+          "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "INDIACEM",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-17",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740981_17102026071130_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "2c505e6d709ae1ea6211d9a901a309193b5e924e702fb056fc16ed7daac6c049",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "11420300000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "388200000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "IXIGO",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-17",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740717_17102026024434_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "d7a3185b48d1cc5d6a0e3dad647eeb946b37320660380e092c4079d7de408f30",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "3209600000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "634200000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "PARIN",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-17",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740889_17102026052950_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "348c8d99a01c83a4c5efb17e7d3f904e3f0b0212a624e275f6a4bcd22f3e3c8d",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "854327000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "82308000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "ROSSARI",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-17",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741008_17102026083934_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "55c07439ff4b7dea36b14050a286183542473470bbe4f649886a1ca22668b232",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "6975600000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "389070000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "YESBANK",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-17",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1741019_17102026091927_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "ff15c94971c4d27565f43ca947d5e6d9827b29608cc48330c395c1dfef4d65e8",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "86495400000",
+          "concept": "InterestEarned",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "10841200000",
+          "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "AURUM",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740412_16102026072655_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "b5cabf6ba6864ded3814e7d0bf289422e113443c59b5c8364a79360f052bed79",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "1301900000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "42900000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "DLF",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740287_16102026062004_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "00b09ee0253167cfa110f85ef2095c5517562788ed1e3d40a4510e1adcb2d162",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "12605800000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "13013500000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "E2E",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740303_16102026062429_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "2ceeb7764c3f5704d92394cf47006a2e7226daaad825591bf60a2e9af312bdca",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "2237643000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "727047000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740407_16102026072427_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "490a322146d88c5315d9bbdb5abaecb5b52403a1da87a5b1e1ec731fe044e1c7",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "83828400000",
+          "concept": "InterestEarned",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "15640600000",
+          "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "HSCL",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740410_16102026072536_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "7b7dec7c68704ccb56287d09fd38e5fff7b49e0c0520cce6c86ca2257c62d2a3",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "16914300000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "2313200000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "INDORAMA",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740501_16102026094935_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "089cee26bb78a3a8be7b879dec7c2fbeef824ced1875f72c7309bbdf3bcc9aa6",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "13406400000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "740800000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "JINDALSAW",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740123_16102026050701_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "469ee03df9296b2a7fcfe4e8adfe828ca3b1da0fac0f1fa22812d892467d853c",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "44717900000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "352800000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "KABRAEXTRU",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740332_16102026063834_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "534bd44501ca9547ead494d4e8ca392cbd75b022dd651e39d7728ff6734f3dc2",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "2209619000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "39693000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "LTM",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740209_16102026054752_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "90f0c6c9e2137c1eeac0f8151a3b4a44272549289e2abc07810c360d685cad52",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "118076000000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "13799000000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "MODISONLTD",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740325_16102026063539_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "062aa234075f34d0eb1cefffba263dfcd05d929967caf76f588fc0ee9df65fa0",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "2790259000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "232889000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "OBEROIRLTY",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740468_16102026083253_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "d290ad346775d99fd1e38032d7b14040af256f91517c8b4bfe4dd363fed2701c",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "16709500000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "7616500000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "ONWARDTEC",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739695_16102026014945_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "d216aef4126afcbc8253e631b8084f2948cc186bbbc7ff113c441807b014f13f",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "1701771000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "167741000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "PNB",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740466_16102026082756_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "70f3870720a0ccc6740ad1bdf31db02018a0f5b2df9d9524c00dabc9a69f4bd9",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "352672400000",
+          "concept": "InterestEarned",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "55611400000",
+          "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "RPEL",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740221_16102026055034_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "1a029100ae1792f8ac12126a70b85fbbf248a55584715f52827cdd03d7cd8789",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "928139000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "216344000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "SGFIN",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1740354_16102026065036_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "b46da8b5ea07091b157baad36d9beca76bc03c7c895735c1a17051d77509d144",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "1609381000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "585307000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "SHOPERSTOP",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739758_16102026023928_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "dbe6e469165f4ae6464e9f842eb89a55e3f5c842d205055205eb869c92820555",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "13662700000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "31100000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "SOLARA",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740238_16102026055814_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "c6a52bfecbe4183ca6ff1f8fd1423b3822101f4999cf85588e6a2db13dce4479",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "4173400000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "284600000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "TEJASNET",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740477_16102026085326_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "d30e93aa30145f150656e33af875647b33beadb010dd8e8d4a7f32614c0d6a72",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "4056800000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "-2069400000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "URBANCO",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-16",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740195_16102026054128_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "0714c68923491ff0ae80503c08bcd36c4716f143d1e58d02462a72404c20115e",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "5372900000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "-1824800000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "360ONE",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739315_15102026070525_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "732d42249f4ba0b4dff0e1b3c30c70f6bcce0f64af170e874a67b8a5c8a89472",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "11438300000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "3001100000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "5PAISA",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739363_15102026073252_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "ba5f8da733cbb30665104cd711fef9efb74bc11b77139bf9aef90d32edd20c58",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "864171000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "70595000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "ALOKINDS",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739398_15102026075927_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "3a38daea27eb5b12bd1767204a4de4d839a589f4f31b41467aa850b2b25a38e4",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "10777600000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "-2084200000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "ANGELONE",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739190_15102026055725_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "1625327743d5cbe18e0adfe77c1652f6cbc4192b98dacab37df09855631e67b2",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "14269890000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "3349720000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "CCL",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739452_15102026102237_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "cd36ce3b7423e62212782662462e23d3028e30e2390cb5078543727f87098bad",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "12107624000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "1301097000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "CYIENTDLM",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739448_15102026100936_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "f8ccbce77d547d169cb81ac457a6cb8fef485134ac84465dc350de47c0ef7761",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "3930900000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "340140000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "DBCORP",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739324_15102026070840_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "4b3ce8a6ce5b804917d9c477c192dd2985eb09150ba41973df2da3e8d216110e",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "5808100000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "686200000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "HDFCAMC",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739204_15102026060332_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "b6aa0826b601987fac27d3b2b7c5d59fde745c32552a2315cdf3d1d97230106c",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "11702200000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "7487300000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "HERITGFOOD",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1738839_15102026033626_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "58b3e4e488b2ab43f9f45554806a3812a00bf01075e7d045b96cf98b887903ee",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "13195800000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "308570000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "IIFL",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739417_15102026083729_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "d4a648f26b442b03f95b18cede410d7b14bb62f0c525e61c65ab177e4feb3859",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "42464500000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "8050100000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "INDIANB",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1739303_15102026065914_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "89a0a28c69efda21f381e46828021719457ba1656a6b1dfa2fc14f8e8c940cf5",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "191489900000",
+          "concept": "InterestEarned",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "34468600000",
+          "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "JIOFIN",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739400_15102026080724_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "09f4e6ae8aebc834beee7d04c450c2c8b2eb4341e8e73d0a555853e8771adb43",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "16992800000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "3404400000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "LOTUSDEV",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739461_15102026105545_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "282d67b071291af2c29aaf9a2d082811b0326562ee98f00e2b42c70f7c556da5",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "2685830000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "885250000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "symbol": "LTF",
+      "period_end_date": "2026-09-30",
+      "filing_date": "2026-10-15",
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739369_15102026074056_WEB.xml",
+      "is_consolidated": true,
+      "source_sha256": "836251c376520fca34e17f12bc82c9cf5db1cd80ca32d5aef01a71c2dffa04fd",
+      "checks": {
+        "revenue_operations": {
+          "value_inr": "54842300000",
+          "concept": "RevenueFromOperations",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        },
+        "pat": {
+          "value_inr": "9727600000",
+          "concept": "ProfitLossForPeriod",
+          "context": "OneD",
+          "unit": "iso4217:INR"
+        }
+      },
+      "status": "pass"
+    }
+  ]
+}

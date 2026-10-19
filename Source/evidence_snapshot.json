@@ -1,0 +1,75 @@
+{
+  "as_of": "2026-10-19T18:46:39.482427+00:00",
+  "announcement_months": [
+    {
+      "month_key": "2026-07",
+      "n": 45997
+    },
+    {
+      "month_key": "2026-08",
+      "n": 61875
+    },
+    {
+      "month_key": "2026-09",
+      "n": 38558
+    }
+  ],
+  "announcements": 2937136,
+  "dashboard_symbols": 6086,
+  "profiles": 6119,
+  "users": 31,
+  "queries": 418,
+  "query_accounts": 16,
+  "saved_screens": 2,
+  "saved_backtests": 238,
+  "financials": [
+    {
+      "symbol": "TCS",
+      "period_end_date": "2026-09-30",
+      "is_consolidated": true,
+      "filing_date": "2026-10-08",
+      "source": "NSE_XBRL",
+      "revenue_operations": 731880000000,
+      "total_revenue": 745250000000,
+      "operating_profit": 186380000000,
+      "pat": 139340000000,
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1734607_08102026100810_WEB.xml"
+    },
+    {
+      "symbol": "TCS",
+      "period_end_date": "2026-09-30",
+      "is_consolidated": false,
+      "filing_date": "2026-10-08",
+      "source": "NSE_XBRL",
+      "revenue_operations": 604410000000,
+      "total_revenue": 634900000000,
+      "operating_profit": 182760000000,
+      "pat": 141040000000,
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1734606_08102026100748_WEB.xml"
+    },
+    {
+      "symbol": "TCS",
+      "period_end_date": "2025-09-30",
+      "is_consolidated": true,
+      "filing_date": "2025-10-09",
+      "source": "NSE_XBRL",
+      "revenue_operations": 657990000000,
+      "total_revenue": 666660000000,
+      "operating_profit": 172030000000,
+      "pat": 121310000000,
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1543879_09102025115624_WEB.xml"
+    },
+    {
+      "symbol": "TCS",
+      "period_end_date": "2025-09-30",
+      "is_consolidated": false,
+      "filing_date": "2025-10-09",
+      "source": "NSE_XBRL",
+      "revenue_operations": 545310000000,
+      "total_revenue": 562990000000,
+      "operating_profit": 160940000000,
+      "pat": 118280000000,
+      "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1543878_09102025115254_WEB.xml"
+    }
+  ]
+}

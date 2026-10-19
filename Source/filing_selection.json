@@ -1,0 +1,1952 @@
+[
+  {
+    "symbol": "BEPL",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-19",
+    "revenue_operations": 4033695000,
+    "total_revenue": 4130790000,
+    "operating_profit": 865269000,
+    "pat": 624617000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741791_19102026055040_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "HFCL",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-19",
+    "revenue_operations": 25417900000,
+    "total_revenue": 25692500000,
+    "operating_profit": 5389400000,
+    "pat": 3942200000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741880_19102026062543_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "LTTS",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-19",
+    "revenue_operations": 30404000000,
+    "total_revenue": 30713000000,
+    "operating_profit": 5135000000,
+    "pat": 5487000000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741576_19102026043350_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-6",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-6",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "MGEL",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-19",
+    "revenue_operations": 9825641000,
+    "total_revenue": 9831303000,
+    "operating_profit": 122727000,
+    "pat": 92524000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741904_19102026063739_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "PIRAMALFIN",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-19",
+    "revenue_operations": 36591900000,
+    "total_revenue": 37171600000,
+    "operating_profit": 5431400000,
+    "pat": 5454200000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1741893_19102026063303_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "TATVA",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-19",
+    "revenue_operations": 2173200000,
+    "total_revenue": 2190740000,
+    "operating_profit": 289400000,
+    "pat": 214510000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741850_19102026061228_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-4",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "ULTRACEMCO",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-19",
+    "revenue_operations": 232950700000,
+    "total_revenue": 234059600000,
+    "operating_profit": 20670800000,
+    "pat": 15013800000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741832_19102026060745_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "AXISBANK",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-17",
+    "revenue_operations": 380874800000,
+    "total_revenue": 456743700000,
+    "operating_profit": 121091100000,
+    "pat": 76496900000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740813_17102026042004_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "InterestEarned",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "CENTRALBK",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-17",
+    "revenue_operations": 103939000000,
+    "total_revenue": 117743800000,
+    "operating_profit": 22793200000,
+    "pat": 14751700000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740871_17102026050522_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "InterestEarned",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "HDFCBANK",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-17",
+    "revenue_operations": 951316300000,
+    "total_revenue": 1293586900000,
+    "operating_profit": 328715400000,
+    "pat": 207000300000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740913_17102026054812_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "InterestEarned",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "ICICIBANK",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-17",
+    "revenue_operations": 559919100000,
+    "total_revenue": 881611800000,
+    "operating_profit": 240099700000,
+    "pat": 173118700000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740887_17102026052842_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "InterestEarned",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "IDBI",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-17",
+    "revenue_operations": 85193300000,
+    "total_revenue": 99363800000,
+    "operating_profit": 29246300000,
+    "pat": 22262400000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740930_17102026060314_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "InterestEarned",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "INDIACEM",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-17",
+    "revenue_operations": 11420300000,
+    "total_revenue": 11457000000,
+    "operating_profit": 522800000,
+    "pat": 388200000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740981_17102026071130_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "IXIGO",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-17",
+    "revenue_operations": 3209600000,
+    "total_revenue": 3430400000,
+    "operating_profit": 335300000,
+    "pat": 634200000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740717_17102026024434_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "PARIN",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-17",
+    "revenue_operations": 854327000,
+    "total_revenue": 855107000,
+    "operating_profit": 91025000,
+    "pat": 82308000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740889_17102026052950_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "ROSSARI",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-17",
+    "revenue_operations": 6975600000,
+    "total_revenue": 6981590000,
+    "operating_profit": 488000000,
+    "pat": 389070000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1741008_17102026083934_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-4",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "YESBANK",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-17",
+    "revenue_operations": 86495400000,
+    "total_revenue": 106019900000,
+    "operating_profit": 16833900000,
+    "pat": 10841200000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1741019_17102026091927_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "InterestEarned",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "AURUM",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 1301900000,
+    "total_revenue": 1373100000,
+    "operating_profit": 66000000,
+    "pat": 42900000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740412_16102026072655_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "DLF",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 12605800000,
+    "total_revenue": 22973000000,
+    "operating_profit": 10033200000,
+    "pat": 13013500000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740287_16102026062004_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "E2E",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 2237643000,
+    "total_revenue": 2336930000,
+    "operating_profit": 971261000,
+    "pat": 727047000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740303_16102026062429_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "FEDERALBNK",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 83828400000,
+    "total_revenue": 99034100000,
+    "operating_profit": 24750000000,
+    "pat": 15640600000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740407_16102026072427_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "InterestEarned",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "HSCL",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 16914300000,
+    "total_revenue": 17332200000,
+    "operating_profit": 3073400000,
+    "pat": 2313200000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740410_16102026072536_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "INDORAMA",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 13406400000,
+    "total_revenue": 13440400000,
+    "operating_profit": 738600000,
+    "pat": 740800000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740501_16102026094935_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "JINDALSAW",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 44717900000,
+    "total_revenue": 45230600000,
+    "operating_profit": 178400000,
+    "pat": 352800000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740123_16102026050701_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "KABRAEXTRU",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 2209619000,
+    "total_revenue": 2246080000,
+    "operating_profit": 73433000,
+    "pat": 39693000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740332_16102026063834_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "LTM",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 118076000000,
+    "total_revenue": 118991000000,
+    "operating_profit": 18597000000,
+    "pat": 13799000000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740209_16102026054752_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-6",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-6",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "MODISONLTD",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 2790259000,
+    "total_revenue": 2824450000,
+    "operating_profit": 272159000,
+    "pat": 232889000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740325_16102026063539_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "OBEROIRLTY",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 16709500000,
+    "total_revenue": 17363700000,
+    "operating_profit": 9914300000,
+    "pat": 7616500000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740468_16102026083253_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "ONWARDTEC",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 1701771000,
+    "total_revenue": 1712210000,
+    "operating_profit": 221249000,
+    "pat": 167741000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739695_16102026014945_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "PNB",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 352672400000,
+    "total_revenue": 387911000000,
+    "operating_profit": 75636300000,
+    "pat": 55611400000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740466_16102026082756_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "InterestEarned",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "RPEL",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 928139000,
+    "total_revenue": 939150000,
+    "operating_profit": 271166000,
+    "pat": 216344000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740221_16102026055034_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "SGFIN",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 1609381000,
+    "total_revenue": 1609381000,
+    "operating_profit": 791093000,
+    "pat": 585307000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1740354_16102026065036_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "SHOPERSTOP",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 13662700000,
+    "total_revenue": 13891500000,
+    "operating_profit": 41300000,
+    "pat": 31100000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739758_16102026023928_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "SOLARA",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 4173400000,
+    "total_revenue": 4178800000,
+    "operating_profit": 329600000,
+    "pat": 284600000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740238_16102026055814_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "TEJASNET",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 4056800000,
+    "total_revenue": 4134500000,
+    "operating_profit": -2768800000,
+    "pat": -2069400000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740477_16102026085326_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "URBANCO",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-16",
+    "revenue_operations": 5372900000,
+    "total_revenue": 5784500000,
+    "operating_profit": -1672200000,
+    "pat": -1824800000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1740195_16102026054128_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "360ONE",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 11438300000,
+    "total_revenue": 12614500000,
+    "operating_profit": 3905900000,
+    "pat": 3001100000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739315_15102026070525_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "5PAISA",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 864171000,
+    "total_revenue": 864620000,
+    "operating_profit": 94620000,
+    "pat": 70595000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739363_15102026073252_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "ALOKINDS",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 10777600000,
+    "total_revenue": 10835100000,
+    "operating_profit": -1718000000,
+    "pat": -2084200000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739398_15102026075927_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "ANGELONE",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 14269890000,
+    "total_revenue": 14315360000,
+    "operating_profit": 4584990000,
+    "pat": 3349720000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739190_15102026055725_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-4",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-4",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "CCL",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 12107624000,
+    "total_revenue": 12159925000,
+    "operating_profit": 1508630000,
+    "pat": 1301097000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739452_15102026102237_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-3",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "CYIENTDLM",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 3930900000,
+    "total_revenue": 4157050000,
+    "operating_profit": 393130000,
+    "pat": 340140000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739448_15102026100936_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-4",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "DBCORP",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 5808100000,
+    "total_revenue": 6142700000,
+    "operating_profit": 928600000,
+    "pat": 686200000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739324_15102026070840_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "HDFCAMC",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 11702200000,
+    "total_revenue": 12414800000,
+    "operating_profit": 9766600000,
+    "pat": 7487300000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739204_15102026060332_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "HERITGFOOD",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 13195800000,
+    "total_revenue": 13229460000,
+    "operating_profit": 425990000,
+    "pat": 308570000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1738839_15102026033626_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-4",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "IIFL",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 42464500000,
+    "total_revenue": 42482100000,
+    "operating_profit": 10736700000,
+    "pat": 8050100000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739417_15102026083729_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "INDIANB",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 191489900000,
+    "total_revenue": 233359800000,
+    "operating_profit": 70796200000,
+    "pat": 34468600000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1739303_15102026065914_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "InterestEarned",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossFromOrdinaryActivitiesAfterTax",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "JIOFIN",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 16992800000,
+    "total_revenue": 16994100000,
+    "operating_profit": 5333400000,
+    "pat": 3404400000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739400_15102026080724_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "LOTUSDEV",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 2685830000,
+    "total_revenue": 2807570000,
+    "operating_profit": 1183240000,
+    "pat": 885250000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1739461_15102026105545_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-4",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-4",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "symbol": "LTF",
+    "period_end_date": "2026-09-30",
+    "is_consolidated": true,
+    "filing_date": "2026-10-15",
+    "revenue_operations": 54842300000,
+    "total_revenue": 54842300000,
+    "operating_profit": 13188400000,
+    "pat": 9727600000,
+    "xbrl_link": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_NBFC_INDAS_1739369_15102026074056_WEB.xml",
+    "raw_xbrl_data": {
+      "_parser_provenance": {
+        "selected_facts": {
+          "revenue_operations": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "RevenueFromOperations",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          },
+          "pat": {
+            "period": {
+              "endDate": "2026-09-30",
+              "has_dims": false,
+              "startDate": "2026-07-01"
+            },
+            "concept": "ProfitLossForPeriod",
+            "decimals": "-5",
+            "unit_ref": "INR",
+            "context_id": "OneD"
+          }
+        }
+      }
+    }
+  }
+]

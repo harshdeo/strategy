@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Anvest — Data Provenance and Methodology</title>
+<style>
+  @page { size: A4; margin: 16mm 17mm 18mm; }
+  :root { --ink:#0B0E26; --navy:#1E2761; --violet:#4A3699; --amber:#F5A623; --slate:#434B6B; --muted:#7C88B0; --paper:#F4F7FC; }
+  * { box-sizing: border-box; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--slate); font-size: 9.6pt; line-height: 1.4; margin: 0; }
+  header { border-bottom: 0.8pt solid #E3E7F2; padding-bottom: 4mm; margin-bottom: 5mm; display: flex; justify-content: space-between; align-items: flex-end; }
+  .brand { font-size: 10pt; font-weight: 800; color: var(--violet); letter-spacing: 1.5pt; text-transform: uppercase; }
+  h1 { font-size: 20pt; color: var(--ink); margin: 1mm 0 1mm; letter-spacing: -0.3pt; }
+  .meta { color: var(--muted); font-size: 8.5pt; }
+  .principle { background: var(--navy); color: #fff; border-radius: 2.5mm; padding: 4mm 5mm; margin: 0 0 5mm; font-size: 10.5pt; }
+  .principle b { color: var(--amber); }
+  h2 { font-size: 11pt; color: var(--ink); margin: 3.5mm 0 1.6mm; break-after: avoid; }
+  h2 span { color: var(--violet); margin-right: 2mm; }
+  p { margin: 0 0 2mm; }
+  ul { margin: 0 0 2mm; padding-left: 4.5mm; }
+  li { margin-bottom: 1.4mm; }
+  strong { color: var(--ink); }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5mm; margin: 2mm 0 3mm; }
+  .stats div { background: var(--paper); border-radius: 2mm; padding: 2.6mm 3mm; }
+  .stats b { display: block; font-size: 14pt; color: var(--violet); line-height: 1.1; }
+  .stats span { font-size: 8pt; }
+  .flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.6mm; margin: 2mm 0 3mm; }
+  .flow div { border: 0.8pt solid #E3E7F2; border-radius: 2mm; padding: 2mm 2.4mm; font-size: 8pt; }
+  .flow b { display: block; color: var(--ink); font-size: 9pt; }
+  table { width: 100%; border-collapse: collapse; margin: 1mm 0 3mm; font-size: 8.8pt; }
+  th, td { text-align: left; padding: 1.5mm 2.4mm; border-bottom: 0.6pt solid #E3E7F2; vertical-align: top; }
+  th { color: var(--ink); background: var(--paper); font-size: 8.4pt; }
+  .contact { margin-top: 5mm; padding-top: 3mm; border-top: 0.8pt solid #E3E7F2; color: var(--muted); font-size: 8.5pt; }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="brand">Anvest</div>
+      <h1>Data Provenance and Methodology</h1>
+      <div class="meta">Anvest Fintech Private Limited · Prepared for diligence · October 2026</div>
+    </div>
+    <div class="meta">anvest.in</div>
+  </header>
+
+  <div class="principle"><b>Grounded or silent.</b> Filing answers use source evidence, with arithmetic supplied by calculation engines. Where coverage does not exist, the product says so instead of producing a plausible-sounding number. Coverage gaps remain explicit.</div>
+
+  <h2><span>1</span>Purpose and scope</h2>
+  <p>This memo describes where Anvest's data comes from, how it stays current, and how answers are grounded and verified. It is written for a technical or investment diligence reader.</p>
+
+  <h2><span>2</span>Data sources</h2>
+  <ul>
+    <li><strong>End-of-day prices (bhavcopy):</strong> the daily settlement files NSE and BSE publish at market close. Commercial use of exchange data is subject to each exchange's data policy; licence terms are being finalised as part of the funded compliance work.</li>
+    <li><strong>Statutory filings and XBRL:</strong> quarterly and annual results, annual reports, shareholding patterns and corporate announcements filed with NSE and BSE under SEBI's listing obligations. These are public statutory disclosures, not a licensed third-party dataset.</li>
+    <li><strong>Scanned filings, made searchable:</strong> many small- and mid-cap filings are scanned PDFs rather than machine-readable XBRL. Anvest runs them through OCR so they are searchable and citable on the same footing as structured filings.</li>
+    <li><strong>Funds, bonds and offer documents:</strong> mutual fund NAVs and scheme data (AMFI), government and corporate bond data including the RBI G-Sec benchmark, and IPO offer documents filed with SEBI and the exchanges.</li>
+    <li><strong>Broker account data (opt-in):</strong> when a user connects a brokerage account read-only, holdings and transactions personalise which filings and answers are surfaced. No trading or write access is requested.</li>
+  </ul>
+
+  <h2><span>3</span>Coverage snapshot, 20 October 2026</h2>
+  <div class="stats">
+    <div><b>6K+</b><span>listed NSE/BSE symbols in the warehouse</span></div>
+    <div><b>~584,000</b><span>parsed filings</span></div>
+    <div><b>2.94M</b><span>corporate announcements</span></div>
+    <div><b>1.35M</b><span>indexed filing passages (19 Oct snapshot)</span></div>
+    <div><b>6,119</b><span>AI company profiles generated from filings</span></div>
+    <div><b>991</b><span>mutual fund schemes analysed</span></div>
+  </div>
+  <p>Q2 FY27 announcement-date counts: July 45,997, August 61,875 and September 38,558 (average 48,810/month). Ingestion dates include backfills and cannot measure filing supply. AI profiles and current dashboard symbols have different scopes.</p>
+  <p>Where the exchange never published a usable filing (for example, about 4,500 company-years), the product flags the gap rather than estimating a figure.</p>
+
+  <h2><span>4</span>Update cadence and infrastructure</h2>
+  <p>A primary evening ingestion run at 7:00 PM IST, a morning catch-up run and intraday supplemental refreshes keep the warehouse current to the latest completed trading session. Production runs on Google Cloud in the Mumbai region with the web application on Vercel. Scheduled database backups use encrypted off-site storage with generation checks. A complete decrypted disaster-recovery drill remains to be proven.</p>
+  <p><strong>Live-data roadmap:</strong> first, live filing alerts from the exchange announcement feeds; second, live quotes and portfolio tracking through each user's own broker connection (for example Kite Connect), with an exchange-licensed delayed feed for public pages. The pipeline accepts these sources alongside the nightly batch.</p>
+
+  <h2><span>5</span>How an answer is produced</h2>
+  <div class="flow">
+    <div><b>Interpret</b>The model classifies intent and resolves companies and periods.</div>
+    <div><b>Retrieve</b>Evidence comes from the warehouse and the filing index.</div>
+    <div><b>Compute</b>Engines do the arithmetic: the model never calculates.</div>
+    <div><b>Verify</b>Numbers in the draft are checked against the evidence.</div>
+    <div><b>Cite</b>Each figure links to its filing; gaps are stated.</div>
+  </div>
+  <p>The “grounded or silent” rule is enforced in the retrieval and verification layers, not left to model behaviour. A numeric claim that is not present in the evidence is repaired or removed before the answer is returned.</p>
+
+  <h2><span>6</span>Verification of figures</h2>
+  <p><strong>Source audit, 20 October:</strong> revenue and PAT matched 50 of 50 recent consolidated Q2 FY27 NSE XBRL filings. This checks extraction, not 50 complete AI answers. The earlier four-question live spot-check remains separate. TCS net margin is PAT / total income (18.70%); PAT / revenue from operations is 19.04%. Operating margin fell 67 bps YoY. The screenshot preserves the real 19 October answer.</p>
+  <p><strong>Reported line items</strong> (revenue, profit, assets, equity and similar) are read directly from the source filing and can be checked against the filing PDF or XBRL tag in one click.</p>
+  <p><strong>Derived ratios</strong> (ROE, ROCE, ROA, debt-to-equity and similar) go through an active data-quality programme: automated identity checks (for example, that quarterly figures reconcile to the reported annual figure), cross-validation against independently recomputed values, and sampled comparison with an external public reference. Sector rules are applied deliberately: ROCE, for instance, is withheld for lenders rather than computed. Formula changes follow internal validation and release gates; coverage and freshness remain specific to each dataset.</p>
+  <p>Corrections ship as versioned releases with an internal change log, and point-in-time history is preserved rather than overwritten. A public corrections page is on the roadmap. The current internal data-quality report is available under a standard diligence arrangement.</p>
+
+  <h2><span>7</span>Regulatory posture</h2>
+  <table>
+    <tr><th style="width:32%">Area</th><th>Position</th></tr>
+    <tr><td><strong>Advice boundary</strong></td><td>Hard product rules, not just disclaimers: no buy, sell or hold recommendations, no target prices and no personalised investment advice.</td></tr>
+    <tr><td><strong>Research analyst registration</strong></td><td>SEBI RA registration is a funded priority in the current round. Counsel will confirm the product's position ahead of registration.</td></tr>
+    <tr><td><strong>AI in research</strong></td><td>SEBI's December 2024 amendments address disclosure of AI use in research. The cited, grounded architecture was designed with that standard in mind.</td></tr>
+    <tr><td><strong>Retail algorithmic trading</strong></td><td>SEBI's framework (fully applicable from 1 April 2026) requires exchange registration of retail algos, exchange empanelment of algo providers and RA registration for black-box strategy providers. Anvest's backtesting and paper trading are simulations today; live strategies would run only through partner brokers under that framework.</td></tr>
+  </table>
+
+  <div class="contact">20 Oct 2026. Questions on any of the above, including access to the current internal data-quality report: Harsh Bhardwaj, Founder · harsh@anvest.in</div>
+</body>
+</html>
