@@ -30,6 +30,8 @@ The story in one line: **India's AI research co-pilot: cited filing answers, cos
 
 ## Working documents
 
+- Use the [product and data bug backlog](Internal_Strategy/PRODUCT_DATA_BUG_BACKLOG_2026-10-20.md) for separate follow-up. Each issue records evidence, status and what closes it; the [correction register](Internal_Strategy/ISSUES_AND_FIXES_2026-10-20.md) lists fixes already made in the investor-materials task.
+
 - Read the [pitch review](Internal_Strategy/PITCH_REVIEW_2026-10-19.md) first. It covers the objective, the evidence behind each claim, the competitor sources, what is verified and what is not, the model, and the checklist to complete before sending.
 - [operating_model.py](Financial_Models/operating_model.py) is the single source for every revenue, cost, runway and market-size figure. Run it for a summary; run it with `--xlsx` to regenerate [Anvest_Operating_Model.xlsx](Financial_Models/Anvest_Operating_Model.xlsx). The [pricing reference](Financial_Models/PRICING_AND_UNIT_ECONOMICS.md) is the dated tier-design and unit-cost analysis.
 - Use the [funding plan](Internal_Strategy/FUNDING_PLAN.md), [GTM plan](Internal_Strategy/GTM_PLAN.md) and [targeting plan](Internal_Strategy/INVESTOR_TARGETING_PLAN.md) for priorities and diligence preparation.

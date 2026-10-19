@@ -1,5 +1,7 @@
 # Issues found and fixed, 20 October 2026
 
+For separate product/data work, use the [bug and data-issue backlog](PRODUCT_DATA_BUG_BACKLOG_2026-10-20.md). It distinguishes confirmed bugs, investigations, mitigations and already shipped fixes.
+
 | Issue | Resolution | Remaining limit |
 |---|---|---|
 | TCS net-margin denominator was unclear; repeated company/period header; omitted YoY basis-point change | Captions define PAT / total income; broker code names denominator, computes −67 bps and uses one header | Local response-code fix is not deployed. The real 19 October screenshot is preserved. |
