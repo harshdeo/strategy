@@ -49,7 +49,7 @@ The story in one line: **India's AI research co-pilot: cited filing answers, cos
 /opt/homebrew/bin/python3 /Users/harsh/anvest/Strategy/check_materials.py
 ```
 
-The entire Strategy folder is snapshotted to the private ops repository under `business/Strategy`. After edits run `python3 ops/workspace/sync_workspace.py --commit --only Strategy`. This is a local recovery copy; pushing remains a separate decision.
+This folder is its own git repository (split out of `ops/business/Strategy` on 20 October 2026; the earlier history stays in `ops`). After edits, commit here: `git add <your files> && git commit`. A deck's `.pptx` master and its exported `.pdf` go in the same commit. There is no remote yet; pushing remains a separate decision. Agent rules are in [CLAUDE.md](CLAUDE.md).
 
 ## Before sending
 
