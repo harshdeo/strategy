@@ -1,6 +1,6 @@
 # Strategy Agent Guide (business and investor materials)
 
-Anvest's business workspace: the seed and partner decks, one-pager, data-provenance memo, the monthly operating model, outreach templates and tracker, and internal funding/GTM strategy. No product code lives here. This is its own git repository (split out of `ops/business/Strategy` on 2026-10-20; earlier history stays in `ops`).
+Anvest's business workspace: the seed and partner decks, one-pager, data-provenance memo, the monthly operating model, outreach templates and tracker, and internal funding/GTM strategy. No product code lives here. This is its own git repository, split out of the ops repository's business/Strategy folder on 2026-10-20; earlier history stays in `ops`.
 
 Claude Code also loads the engineering guide at `/Users/harsh/anvest/CLAUDE.md`, because this folder sits inside the engineering workspace. For business work only its collaboration rules apply: commit only your own paths and never push without an explicit ask.
 
@@ -9,10 +9,10 @@ Claude Code also loads the engineering guide at `/Users/harsh/anvest/CLAUDE.md`,
 - `Investor_Materials/`: the editable `.pptx` masters (with speaker notes) and the send-ready `.pdf` copies.
 - `Financial_Models/operating_model.py` is the single source for every revenue, cost, runway and market-size figure. `Anvest_Operating_Model.xlsx` is generated from it. `PRICING_AND_UNIT_ECONOMICS.md` is the dated pricing reference.
 - `Internal_Strategy/`: the pitch review (read before changing claims), funding, GTM and targeting plans, the broker/data strategy, and the 2026-10-20 product/data bug backlog and correction register.
-- `Outreach/`: email templates and the investor tracker (internal only).
+- `Outreach/`: outreach drafts and playbook, contact research, and the investor tracker (all internal; the README lists the current files).
 - `Source/`: deck patchers, document renderers, PDF export, and the read-only metric and filing audits (`audit_metrics.py`, `product_metrics.py`, `check_filings.py`) with their frozen JSON results. See `Source/README.md`.
 - `Brand/`: brand guide and the three background images.
-- `Archive/`: superseded files that must never be sent. `Archive/2026-09_ops-business/` holds the August–September business documents that existed only in `ops/business/`.
+- `Archive/`: superseded files that must never be sent. `Archive/2026-09_ops-business/` holds the August–September business documents that existed only in the ops repository's business folder.
 
 ## Commands
 ```bash
