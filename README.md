@@ -7,7 +7,7 @@
 | Folder | Purpose | Contents |
 |---|---|---|
 | [Investor_Materials](Investor_Materials/) | Presenting the company and supporting diligence | Seed deck and partner deck (editable `.pptx` and send-ready `.pdf`), one-pager and provenance memo |
-| [Outreach](Outreach/) | Preparing messages and tracking conversations | Email templates and investor tracker |
+| [Outreach](Outreach/) | Preparing messages and tracking conversations | Verified contact register, practical playbook, personalized drafts and investor tracker |
 | [Internal_Strategy](Internal_Strategy/) | Deciding what to fund, sell and prioritise | Pitch review, funding plan, GTM plan, investor targeting/Q&A and broker/data strategy |
 | [Financial_Models](Financial_Models/) | Revenue, cost and runway | Monthly operating model (`.py` plus a generated `.xlsx`) and the dated pricing and unit-economics reference |
 | [Source](Source/) | Rebuilding and auditing materials | Document templates, unchanged source screenshot, read-only metric queries, source audit, deck patcher and export scripts |
@@ -36,7 +36,7 @@ The story in one line: **India's AI research co-pilot: cited filing answers, cos
 - [operating_model.py](Financial_Models/operating_model.py) is the single source for every revenue, cost, runway and market-size figure. Run it for a summary; run it with `--xlsx` to regenerate [Anvest_Operating_Model.xlsx](Financial_Models/Anvest_Operating_Model.xlsx). The [pricing reference](Financial_Models/PRICING_AND_UNIT_ECONOMICS.md) is the dated tier-design and unit-cost analysis.
 - Use the [funding plan](Internal_Strategy/FUNDING_PLAN.md), [GTM plan](Internal_Strategy/GTM_PLAN.md) and [targeting plan](Internal_Strategy/INVESTOR_TARGETING_PLAN.md) for priorities and diligence preparation.
 - The [broker/data strategy](Internal_Strategy/LIVE_DATA_AND_BROKER_STRATEGY.md) preserves a dated 9 October audit; it is not a fresh production certification.
-- Prepare personalised messages with the [email templates](Outreach/Anvest_Outreach_Emails.md), and log conversations in the [investor tracker](Outreach/Anvest_Investor_Tracker.xlsx).
+- Start with the [outreach playbook](Outreach/OUTREACH_PLAYBOOK.md): 26 current-round candidates sequenced across three waves, plus clearly marked networks, later-stage funds and unverified routes. Use the [drafts](Outreach/Anvest_Outreach_Emails.md), log actual sends and follow-ups in the [tracker](Outreach/Anvest_Investor_Tracker.xlsx), and review [contact research notes](Outreach/CONTACT_RESEARCH_NOTES.md). Contacts were researched on 20 Oct 2026; no messages were sent.
 - The [brand guide](Brand/BRAND_GUIDE.md) maps the palette and backgrounds; the current seed deck is the visual reference.
 
 ## After any change

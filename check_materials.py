@@ -66,6 +66,56 @@ def inr(cr):
     return "₹" + (f"{cr:.0f}" if cr >= 10 else f"{cr:.2f}".rstrip("0").rstrip(".")) + " Cr"
 
 
+def check_outreach(k, failures):
+    """Reconcile the contact register, CRM export and round terms; no network writes."""
+    from openpyxl import load_workbook
+    register = json.loads((HERE / "Outreach/investor_contacts.json").read_text())
+    records = register["targets"]
+    if len({r["id"] for r in records}) != len(records):
+        failures.append("Outreach contact register has duplicate record IDs")
+    book = load_workbook(HERE / "Outreach/Anvest_Investor_Tracker.xlsx", data_only=True)
+    if book.sheetnames != ["DO THIS NEXT", "Metrics Gate", "Investor Targets", "Round Model", "Timeline", "Sources"]:
+        failures.append("Outreach tracker changed its six-tab workflow")
+    targets = book["Investor Targets"]
+    actual = {row[28]: row for row in targets.iter_rows(min_row=6, max_col=29, values_only=True) if row[28]}
+    if set(actual) != {r["id"] for r in records}:
+        failures.append("Outreach workbook and contact register contain different target IDs")
+    for r in records:
+        row = actual.get(r["id"])
+        if not row:
+            continue
+        for i, field in ((1, "name"), (16, "email"), (18, "url"), (19, "source")):
+            if (row[i] or "") != r[field]:
+                failures.append(f"Outreach {r['id']}: exported {field} differs from contact register")
+        if r["email"] and not r["source"].startswith("https://"):
+            failures.append(f"Outreach {r['id']}: published email lacks a primary source")
+        if row[24] is not None and (not isinstance(row[24], (int, float)) or not 0 <= row[24] <= 2):
+            failures.append(f"Outreach {r['id']}: follow-up count must be 0, 1 or 2")
+    round_sheet = book["Round Model"]
+    for c, case in (("B", "target"), ("C", "first_close"), ("D", "maximum")):
+        for row, expected in ((6, k[case]["raise_usd_k"] * 1000), (8, k["fx"]),
+                              (25, k[case]["arr_cr"] * 1e7), (26, k[case]["teams"]),
+                              (27, k[case]["seats"]), (28, k[case]["partners"]),
+                              (29, k[case]["breakeven_month"])):
+            if round_sheet[f"{c}{row}"].value != expected:
+                failures.append(f"Outreach round {c}{row}: does not match operating model")
+    if round_sheet["B22"].value != 0 or round_sheet["B21"].value != k["target"]["raise_usd_k"] * 1000:
+        failures.append("Outreach target use-of-funds allocation does not reconcile")
+    usage = json.loads((HERE / "Source/product_metrics_snapshot.json").read_text())["users_and_usage"]
+    metrics = {row[0]: row[3] for row in book["Metrics Gate"].iter_rows(min_row=6, max_col=6, values_only=True) if row[0]}
+    for label, expected in (("Registered accounts", usage["registered"]),
+                            ("External accounts with workflow", usage["activated_external"]),
+                            ("External activity in 2+ weeks", usage["retained_external_2plus_weeks"])):
+        if metrics.get(label) != expected:
+            failures.append(f"Outreach metric {label}: differs from dated product snapshot")
+    for sheet in book:
+        for row in sheet:
+            for cell in row:
+                if cell.data_type == "e":
+                    failures.append(f"Outreach {sheet.title}!{cell.coordinate}: {cell.value}")
+    book.close()
+
+
 def main():
     k = key_figures()
     f, t, x, mk = k["first_close"], k["target"], k["maximum"], k["market"]
@@ -110,9 +160,11 @@ def main():
             failures.append(f"{doc}: internal or unsupported text '{m}'")
     # Dated production evidence and source-audit scope must survive every export.
     for doc in ("seed deck .pptx", "seed deck .pdf", "one-pager"):
-        for claim in ("50 / 50", "418", "238", "31", "founder/testing"):
+        for claim in ("50 / 50", "418", "238", "31"):
             if claim not in texts[doc]:
                 failures.append(f"{doc}: missing scoped traction evidence {claim!r}")
+        if not any(scope in texts[doc] for scope in ("founder/testing", "including internal testing")):
+            failures.append(f"{doc}: usage totals omit the internal-testing qualification")
     for doc in ("seed deck .pptx", "seed deck .pdf", "partner deck .pptx", "partner deck .pdf", "one-pager", "memo"):
         if re.search(r"\br[1-9]\d*\b", texts[doc]):
             failures.append(f"{doc}: internal draft label leaked")
@@ -124,6 +176,7 @@ def main():
         failures.append("The 50-filing audit is incomplete or failed")
     if len(audit.get("results",[])) != 50 or len({r["symbol"] for r in audit.get("results",[])}) != 50:
         failures.append("The filing audit does not contain 50 distinct companies")
+    check_outreach(k, failures)
     # Compare the exported snapshot against the Python schedule (not just labels).
     from openpyxl import load_workbook
     from operating_model import SCENARIO, run
@@ -157,4 +210,14 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if "--outreach" in sys.argv:
+        issues = []
+        check_outreach(key_figures(), issues)
+        if issues:
+            print("FAIL: outreach consistency")
+            for issue in issues:
+                print("  -", issue)
+            sys.exit(1)
+        print("PASS: outreach contacts, source IDs, six-tab workflow, formulas, dated metrics and round terms reconcile.")
+    else:
+        main()

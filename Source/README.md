@@ -7,3 +7,7 @@ The PPTX masters remain in `../Investor_Materials`. `update_decks.py` prepares f
 `audit_metrics.py` reads only production aggregate counts and public filing line items. `evidence_snapshot.json` freezes its 20 October results. `filing_selection.json` freezes the deterministic 50-company sample; `check_filings.py` downloads the cited source files and verifies revenue/PAT, quarter, currency and consolidated basis. `filing_check.json` records results and source hashes. Re-run with `--input filing_selection.json --output PATH`; do not silently replace a cited historical result with a new run. This is an extraction audit, not an AI answer benchmark or a release gate.
 
 All source edits and evidence stay within the workspace. Nothing here authorizes publication, model calls, warehouse writes or a production deploy.
+
+`update_outreach.mjs` refreshes the six-tab outreach tracker with the primary-source contact register at `../Outreach/investor_contacts.json` and financial outputs read directly from `operating_model.py --json`. It preserves CRM fields by stable record ID on subsequent refreshes, validates follow-up dates and exports/renders with the bundled Artifact Tool. First send, last touch and outcomes are user-entered actuals; the script never sends a message. An email publication check is not a deliverability guarantee.
+
+Run `../check_materials.py --outreach` for the contact/round/evidence consistency check. The full checker also checks the deck exports and must be run before PDF attachment; a passing outreach check does not certify the PDFs.

@@ -1,6 +1,6 @@
 # Anvest — Who to Target First, and How to Sequence the Round
 
-**INTERNAL — not for sharing.** Revised 14 Oct 2026 to restore product breadth while keeping the financing plan focused; round, numbers and Q&A updated 19 Oct 2026 for the 20 October 2026 materials. Companion to `FUNDING_PLAN.md` (current round), `GTM_PLAN.md` (customer execution) and `../README.md` (file map).
+**INTERNAL — not for sharing.** Contacts, sequencing and current evidence revised 20 Oct 2026. The researched [outreach playbook](../Outreach/OUTREACH_PLAYBOOK.md) and [tracker](../Outreach/Anvest_Investor_Tracker.xlsx) are the current contact and action references. Companion to `FUNDING_PLAN.md` (current round), `GTM_PLAN.md` (customer execution) and `../README.md` (file map).
 
 This version ranks investors on **observable criteria** — stage fit, cheque size, relevant investments, introduction access and conflicts — not on probabilities. Any probability I could give would be a guess; the order below is a reasoned priority, not a forecast.
 
@@ -13,53 +13,50 @@ The headline ask is **$500K**, with a first close at $400K and room to $700K. At
 - Decide which route you are running before Wave 1, because it determines how many conversations you need and whom you ask first.
 - Keep the cap table short. Pool cheques under about ₹10L through one syndicate or SPV rather than taking them directly; a long list of small holders slows every later round.
 
-## 2. Targets, ranked by observable criteria
+## 2. Targets and contact routes
 
-| Priority | Target | Typical cheque | Why it ranks here (observable) | Main constraint |
-|---|---|---|---|---|
-| 1 | Category B angels: SEBI-registered RAs, PMS and advisory founders, ex-brokerage product heads | ₹10–50L each | They are the target customer, can judge the product directly, and the pilot and cheque conversations are the same relationship | Cheques are small; need several, or a lead alongside |
-| 2 | **Eximius Ventures** | Up to ~$500K (published) | Fintech is a named vertical; its published positioning includes pre-product and early-traction investments; Fund II is deploying | Institutional diligence will test commitment (full-time) and early evidence |
-| 3 | **Better Capital** | Pre-seed cheques | Very high volume pre-seed fund backing technical first-time founders; short process | Evidence of customer pull will matter |
-| 4 | Category C angels: fundamentals-focused creators | ₹5–25L (pooled, see §1) | Distribution and capital together | SEBI's finfluencer rules bar registered entities from associating with unregistered creators who give advice or claim returns. Anvest will be bound once RA-registered, so any referral or rev-share terms need counsel sign-off now, or they will have to be unwound later |
-| 5 | India micro-VCs under ~$40M: All In, Gemba, Whiteboard, Inuka, Zeropearl, OTP, Sparrow | $250–800K | Stage and cheque match; the $3.5M cap is below typical entry prices | Many are generalist; fintech nuance varies |
-| 6 | Titan Capital; WaterBridge, India Quotient, Huddle | $250–600K | Pre-seed and seed funds with fintech in the book | Slower; second wave |
-| 7 | AI-lane funds: Z21, Neon, Bold, Grayscale.vc, FortyTwo, Sense AI | $150–500K | Can evaluate the grounded-retrieval architecture | Less Indian retail-fintech context; lead with measured results |
-| 8 | **Rainmatter / Zerodha-adjacent** | Varies | Fintech is within its stated scope; no board seats | Zerodha owns Tickertape, so overlap must be addressed in meeting one; keep the pilot conversation separate |
-| 9 | Larger funds (Accel, Lightspeed, Peak XV, Elevation, Z47, Prime, Blume, Arkam, 3one4) | n/a now | Active in fintech | Stage mismatch today; relationship-building only |
+The tracker contains 50 individual entries, including 26 funds/programs in the first three proposed waves. It also preserves networks, later-stage funds, duplicate personal routes and unnamed prospecting pools, clearly marked. Eighteen entries have a published email, including general and historical routes whose limits are recorded; other entries use official forms or verified social routes. No email is guessed. Publication checks do not establish delivery or available capital.
 
-**Not a target for the equity round:** Groww (partnership conversation only, Template C), Fundamentum (Series B/C), Antler (residency model).
+| Sequence | Targets | Why / how |
+|---|---|---|
+| 20–22 Oct | Eximius, All In, Titan, Inuka, Gemba | Current-round candidates with published pitch or investment-team contact routes. Send the full seed pitch now. |
+| 23–29 Oct | India Quotient, Zeropearl, Whiteboard, z21, First Cheque, Rainmatter, SenseAI, Better, 3one4 | Suitable early-stage or relevant thesis routes; use official forms where preferred. Actual introductions in parallel. |
+| 30 Oct–6 Nov | WaterBridge, Prime, Elevation, Z47, Surge, Grayscale, Antler Direct, Neon, FortyTwo, 100X, OTP, Huddle | Assess specific stage/thesis constraints. Do not invent global traction, frontier-model research or open program intake. |
+| Separate processes | IAN, LVX, AngelList India | Networks or financing administration need actual investors/sponsors, not just platform registration. |
+| Later / verify | Sparrow, Blume, Bertelsmann, Fundamentum, Vertex, Arkam, Lightspeed, Atoms, BoldCap, Axilor, Mumbai Angels, Backrr | Published cheque/stage mismatch, unclear fit, inaccessible route or current intake needing verification. See the row-specific notes rather than blanket exclusions. |
+
+[Contact research notes](../Outreach/CONTACT_RESEARCH_NOTES.md) record sources and open questions. Antler's current India site offers Direct outside residency; the old residency-only exclusion was wrong. Several large funds offer day-zero routes, so size alone does not make a fund relationship-only. Conversely, Sparrow's $1M–$2M range and Blume's published traction guidance make them lower priorities for this $500K pre-revenue round. These are fit judgments, not predictions.
+
+Groww is a separate potential commercial partnership, with no equity mandate or direct contact verified. Sanjay/Prime and Nithin/Rainmatter should be coordinated conversations, not multiple independent leads. Other operator angels need actual introductions. Professional and creator categories remain prospecting pools until named prospects and suitable contacts are established.
 
 ## 3. Sequencing, aligned to evidence
 
-| Timing | Priority | Evidence to produce |
-|---|---|---|
-| Week 1 (from 14 Oct) | Correct claims, verify the user number, fix operational gaps (see below), reconcile the revenue bridge | Consistent materials with dated evidence |
-| Days 8–30 | Interview and sell to one professional segment; start Wave 1 conversations in parallel (angels who are also customers) | Paid pilots and documented objections |
-| Days 31–60 | Improve the workflow customers actually repeat | Retention, renewals, quality and cost-per-task measurements |
-| Days 61–90 | Expand the channel that shows results; advance selected investors | Repeatable sales evidence and a credible financing plan |
+Start suitable pre-seed investors now, while selling to professional customers in parallel. A paid pilot is useful evidence, not a blanket requirement to email a fund whose stated mandate includes pre-revenue founders. Do not broadcast to every tracker row.
 
-**Wave 1 (weeks 1–3):** Category B angels (build a list of ~40 from the SEBI RA register and LinkedIn; open with a demo and a pilot, not a pitch). Pilot outreach has not started yet (19 Oct 2026); do not tell investors it is underway. For Eximius and Better Capital, send a relationship note in the style of Template D now, with no deck.
-**Wave 2 (from the first paid pilot):** the full pitch to Eximius, Better Capital and the micro-VCs, then Category C creators, AI-lane funds and the Rainmatter conversation. These are the likeliest leads, and a "no" given at zero revenue is hard to reverse; one paid pilot changes the meeting. If no pilot has closed by mid-November, open Wave 2 anyway with the measured activation and repeat-use numbers.
-**Throughout:** Template D to large funds (no deck, no ask); the broker pilot (Template C) runs separately.
+Use one personalized first contact per fund. Ask a real mutual for an introduction where useful; wait at most 48 hours before using a suitable official route. Send the seed PDF and a clear $500K ask, with founder full-time from close and pre-revenue status disclosed. The current drafts are in [Anvest_Outreach_Emails.md](../Outreach/Anvest_Outreach_Emails.md).
+
+Follow up on day 7 and, if useful, day 14 on the same thread, then pause without a reply. After a reply or meeting, agree an explicit next action and date. Never manufacture urgency, investor commitments or pilot activity. All tracker sent/touch fields remain blank until a real send is logged.
+
+Customer interviews, paid-pilot offers, activation/retention measurement and product reliability work continue daily. They generate substantive updates for investors. The broker pilot remains a separate commercial conversation with its own tailored materials.
 
 ## 4. Before broad outreach, close these gaps
 
-1. **Verify the user number:** registered vs activated vs monthly active, as-of date, internal and test accounts excluded.
+1. **Use the dated user evidence:** 31 registered accounts in the 20 October production snapshot, including founder/testing. The later 12:51 IST audit identifies 26 external accounts, 15 with a recorded workflow and five active in at least two IST calendar weeks. These are historical activity measures, not D7/D30 cohort retention.
 2. **Operational facts:** verify the production broker authentication path and remove the unofficial session-token fallback (the partner deck says "no unofficial access", so this must be true before it goes to any broker); confirm whether Kite Connect keys are configured in production; separate historical symbol coverage from current ingestion freshness (BSE ingestion is blocked under a renewed exception to 1 Dec 2026); document token handling and permissions.
 3. **Data-use rights:** confirm NSE/BSE licence terms for the actual commercial use before any partner pilot. The provenance memo says data-quality corrections "are published as they are found"; make sure a public corrections log exists, or reword that line, before the memo goes out.
 4. **Counsel:** confirm the financing instrument (the current materials say "convertible instrument (CCD/CCPS)") and the product's regulatory position before registration.
 5. **Full-time commitment:** decided — full-time on Anvest from the close of this round. Have the employment notice period and the date ready.
-6. **Company hygiene (if not already done):** transfer the placeholder family shareholdings, sign the founder IP assignment to Anvest Fintech Private Limited, and read the New Relic employment contract's IP and outside-work clauses. Any one of these can stall a close at the last step.
-7. **Unit costs after 16 Oct:** the Vertex model migration raises inference cost. Re-measure cost per answer and Desk-seat margin before quoting ₹0.36 or any margin figure. The decks no longer quote a margin.
-8. **Demo resilience:** a recorded 3-minute demo, and serving that survives the laptop being offline, before the first investor call.
+6. **Company hygiene:** inspect the actual cap table, founder IP assignment and employment/outside-work clauses with counsel. Current ownership, signed assignment and employer clearance were not verified by this refresh. Do not treat old tracker assumptions as company records or prescribe a share transfer without checking them.
+7. **Unit costs after the model migration:** measure current inference cost rather than assuming an increase or decrease. Re-measure cost per answer and Desk-seat margin before quoting ₹0.36 or any margin figure. The decks no longer quote a margin.
+8. **Demo resilience:** make a real 3-minute recording and test current production routes before calls. Serving now uses Vercel/GCP; verify actual availability rather than repeating the old Mac-hosting dependency. Use the latest resolution table in the dedicated backlog: four broker bugs have production replay closure; cold-run latency and the cash-added tile remain. Reconcile the corpus-count discrepancy before attaching PDFs.
 9. **Product matches the deck:** the deck covers AI across research, screening, backtesting, paper trading, wealth tools and calculators. Check demo routes, coverage disclosures and current product wording. The Anvest Score and tax compiler are outside the main pitch; their actual behaviour still needs to match the stated product scope.
 
 ## 5. Why this round is plausible, and its limits
 
 - The round is small, so a lead plus angels can fill it.
-- The cap is below typical micro-VC entry prices, and terms are identical for every investor.
-- Category activity is high (Indian fintech funding in H1 2026, AI as a funding theme, StockGro's Dec 2025 round and Sep 2026 IPO filing).
-- The honest limit: the product is early, pre-revenue and has about 100 registered users. Expect investors to weight paid pilots and retention heavily, and expect the round to take weeks.
+- The $3.5M proposed post-money cap is consistent across the materials. A fund's actual valuation and instrument terms are not yet agreed; do not claim it is below a verified market benchmark.
+- The shortlist has current first-party evidence of pre-seed, fintech and software mandates. A mandate is not evidence that a fund will invest in Anvest.
+- The honest limit: the product is early, pre-revenue and has 31 registered accounts in the 20 October snapshot, including founder/testing. Expect investors to weight paid pilots and retention heavily, and expect the round to take weeks.
 
 ---
 
@@ -68,7 +65,7 @@ The headline ask is **$500K**, with a first close at $400K and room to $700K. At
 **These answers reflect the documented position and dated observations. Confirm current facts before using them. Do not shorten them into something misleading. If a number is asked for, give the verified one.**
 
 **Q: How many users do you have?**
-About 100 registered users, all organic, no paid marketing. *(Confirm against the database before each call: registered vs activated vs monthly active, as-of date, test accounts excluded.)* Give activation and week-4 return if you have them. It is a starting point, not product-market fit.
+The 20 October production snapshot records 31 registered accounts, including founder/testing. It also records 418 logged research queries across 16 accounts, 238 saved backtest records and 2 saved screens. The later 12:51 IST audit identifies 26 external accounts, 15 with a recorded workflow and five active across at least two IST calendar weeks. External research has 268 rows across 13 users, seven with repeat rows. These definitions do not establish D7/D30 cohort retention or workflow success rates; failed attempts are not recorded.
 
 **Q: Revenue?**
 Pre-revenue. Launch pricing is set (Free / Plus ₹199 / Pro ₹599 a month / Desk ₹2,999 per seat, 1–5+ seats). Paid professional pilots are the first thing I'm selling; checkout goes live in the first 90 days after close.
@@ -80,7 +77,7 @@ SEBI's intermediary directory (checked 19 Oct 2026) lists 2,304 research analyst
 From the monthly operating model (`../Financial_Models/operating_model.py`). $500K target: ₹87 L ARR run-rate (₹7.3 lakh net MRR), 77 Desk teams (~243 seats), 2 paying partner integrations and ~186 retail subscribers; break-even about month 42 without new funding. $400K first close: ₹68 L ARR and 55 teams, with cash to about month 31. $700K (second seller from month 6): ₹1.06 Cr ARR, 88 teams and 3 partners. Also SEBI RA registration and a published head-to-head benchmark. The drivers are planning assumptions: seller productivity (4 teams a month once ramped, the founder 1), 3 seats per team, churn, conversion and partner usage priced ₹15 → ₹10 → ₹6 per user. They will be replaced by measured pilot data. The long-term scenario reaches about ₹23 Cr ARR in year 5. It is conditional on a Series A, approvals and partner contracts; Desk plus retail account for ₹13.4 Cr of it.
 
 **Q: Where does production run?**
-On infrastructure I operate today, in containers with a public tunnel, with nightly pipelines and backups. Part of this round is moving to scaled managed hosting. Don't call it "production-grade".
+The frontend runs on Vercel, with public backends and warehouse services on GCP, per the current operations guide. This is topology, not a fresh availability or end-to-end certification. State dated checks and open issues accurately; do not describe the old Mac production dependency as current.
 
 **Q: How fresh is the data?**
 Daily: evening batch plus a morning catch-up, current to the previous trading day. BSE ingestion is subject to an exception that is renewed to 1 Dec 2026. Live filing alerts are next; live prices would come through each user's own broker and, for public pages, a licensed delayed feed.
@@ -98,7 +95,7 @@ Spot-check on 19 Oct 2026: September-quarter answers for TCS, HCL Technologies a
 Full-time on Anvest from the close of this round; give the notice period and date. Until then, say plainly that you are employed. The first hires add a growth lead, a data engineer and a full-stack/quant engineer; the adviser bench is being built, with no names to give yet.
 
 **Q: Who owns the IP? Does your employer have a claim?**
-Anvest Fintech Private Limited owns it under a signed founder IP assignment, and the employment contract has been checked. *(Both must be true before you say this; see §4.6.)*
+Provide the actual signed founder IP assignment and the counsel-reviewed employment/IP position. These records were not inspected in this refresh. Do not assert company ownership or employer clearance based on the old tracker.
 
 **Q: What's your minimum close?**
 First close at $400K: it funds the three hires, RA registration and launch, with cash to about month 31 on the model. Lead with $500K, which reaches break-even around month 42 without new funding.
@@ -116,7 +113,7 @@ Each already covers part of the task, per their own pages (19 Oct 2026). Screene
 "Applied for Fall 2026, didn't get in." One sentence, then move on.
 
 **Q: Why this cap?**
-It is below typical micro-VC entry prices, identical for every investor, and sized so that month-15 milestones can be judged on evidence. We make no forecast of the next round's size or valuation.
+It is the proposed $3.5M post-money cap used consistently in the materials, sized against the round and month-15 milestones. Final instrument and financing terms are subject to agreement; no market valuation benchmark was established here. We make no forecast of the next round's size or valuation.
 
 
 ## 6. Product breadth and expansion: how to pitch it
@@ -155,7 +152,7 @@ The hypothesis is that adjacent tasks increase retention and paid conversion, an
 **Q: Is this a research product or a broader investing platform?**
 A broader platform is live: research and screening, backtesting and paper trading, wealth tools and calculators. We are testing professional filing research as the first recurring revenue workflow. Paid demand determines how we expand.
 
-**Q: Why so many tools with about 100 registrations?**
+**Q: Why so many tools with only 31 registered accounts, including testing?**
 The build demonstrates execution, but we do not claim every tool has product-market fit. We now need to narrow commercial execution, measure workflow use and renewals, and stop investing in modules that do not earn customer use.
 
 **Q: Are algo trading, brokerage and HFT in this round?**
@@ -171,3 +168,5 @@ The $500K target case reaches month-42 break-even without new funding under the 
 Scenario expenses now include every added seller's salary and higher marketing from months 19 and 37. Scenario cash excludes an unspecified Series A amount and is an unfunded balance, not a funded runway promise. Revenue remains a planning scenario. No later approvals or contracts are presumed complete.
 
 Production snapshot, 20 October 2026: 31 registered accounts; 418 logged research queries across 16 accounts; 238 saved backtest records; 2 saved screens. These include founder and testing activity. They are not paid-customer, retention, completed-run or external-user metrics. Source audit: revenue and PAT matched 50 of 50 recent consolidated Q2 FY27 NSE XBRL filings; this measures line-item extraction, not full AI answer accuracy.
+
+Outreach attachment check (later 20 October audit): VM corpus counts are 6,155,194 passages / 633,688 distinct doc_ids; both current deck masters still contain 1.35M passages. Reconcile all attached exports before sending, preserving other sessions' deck edits. See `../Outreach/CONTACT_RESEARCH_NOTES.md`.

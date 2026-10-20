@@ -1,109 +1,205 @@
-# Anvest — Outreach Email Templates
+# Anvest — outreach drafts
 
-**Revised 20 October 2026** to match the seed deck (materials dated 20 October 2026). Send from harsh@anvest.in and fill in every `[BRACKET]` before sending. There are two separate tracks: **investment** (Templates A, B and D) and **partnership** (Template C). Never mix their attachments.
+**Internal · revised 20 Oct 2026. Nothing sent.** Contacts, sources and priority are in the investor tracker and [playbook](OUTREACH_PLAYBOOK.md). Send from harsh@anvest.in. Use one person or official application per fund, and fill every bracketed placeholder before sending.
 
-**Attach PDFs, never the .pptx.** Send `Anvest_Seed_Deck.pdf` or `Anvest_Strategic_Integration_Deck.pdf` from `../Investor_Materials/`. A .pptx can be edited, renders differently on other machines and carries the speaker notes.
+**Before attaching PDFs:** reconcile the corpus counts against the later 20 October audit (6,155,194 passages / 633,688 distinct doc_ids; older deck text still says 1.35M passages). See [research notes](CONTACT_RESEARCH_NOTES.md). Then attach `../Investor_Materials/Anvest_Seed_Deck.pdf`; the one-pager is optional. Send PDFs, never editable masters, the tracker or internal plans. Check any shared deck link signed out before using it. The five drafts below have real published recipients; publication is not an inbox-delivery guarantee.
 
-**Investment terms, identical for every investor:** a $3.5M post-money cap, a $500K raise (first close at $400K, room to $700K), and a convertible instrument (CCD/CCPS; counsel confirms the exact form).
+Proposed round terms are **$500K target, $400K first close, room to $700K, $3.5M post-money cap**. Exact instrument and final terms require counsel and agreement. Do not lead a cold message with legal mechanics; give them accurately when asked. Do not claim committed capital or scarcity without actual evidence.
 
-**What makes a cold email work:** a one-line company description, one striking proof point, one reason this investor fits, a clear ask and a short request for time. Lead with the product and the opportunity, not with caveats; keep honest qualifiers for the meeting and the data room.
+## First five messages
 
----
+### Eximius Ventures
 
-## Template A — Angels, micro-VCs and fintech pre-seed funds
+**To:** pitches@eximiusvc.com  
+**Subject:** Anvest — cited filing research for Indian professionals | $500K seed
 
-**Attach:** seed deck (PDF) and `../Investor_Materials/Anvest_OnePager.pdf`
+Hi Pearl and team,
 
-**Subject:** Anvest — India's AI research co-pilot (live, raising seed)
+Your pre-seed fintech and enterprise-AI focus fits our filing-grounded research workflow for professional desks.
+
+I'm Harsh, an IIT Guwahati engineer building Anvest, an AI research co-pilot for Indian research and advisory teams. It turns questions about company filings into cited answers, with connected screening, costed backtesting and paper trading.
+
+The product is live at [anvest.in](https://anvest.in). A 20 October source audit matched revenue and PAT across 50 recent consolidated NSE XBRL filings. That validates those extraction results, separately from AI-answer accuracy.
+
+We're pre-revenue. I'm raising $500K to turn the working product into paid professional adoption and partner integrations. I'm currently employed and will work full-time on Anvest from the close.
+
+The seed deck is attached. Would you be open to a 20-minute product demo next week?
+
+Harsh  
+harsh@anvest.in · [anvest.in](https://anvest.in)
+
+### All In Capital
+
+**To:** kb@allincapital.vc  
+**Subject:** Anvest — cited filing research for Indian professionals | $500K seed
+
+Hi Kushal,
+
+You lead first rounds; Anvest has a working product and a focused professional sales experiment for this round.
+
+I'm Harsh, an IIT Guwahati engineer building Anvest, an AI research co-pilot for Indian research and advisory teams. It turns questions about company filings into cited answers, with connected screening, costed backtesting and paper trading.
+
+The product is live at [anvest.in](https://anvest.in). A 20 October source audit matched revenue and PAT across 50 recent consolidated NSE XBRL filings. That validates those extraction results, separately from AI-answer accuracy.
+
+We're pre-revenue. I'm raising $500K to turn the working product into paid professional adoption and partner integrations. I'm currently employed and will work full-time on Anvest from the close.
+
+The seed deck is attached. Would you be open to a 20-minute product demo next week?
+
+Harsh  
+harsh@anvest.in · [anvest.in](https://anvest.in)
+
+### Titan Capital
+
+**To:** manik@titancapital.vc  
+**Subject:** Anvest — cited filing research for Indian professionals | $500K seed
+
+Hi Manik,
+
+Your technology investment team covers the AI and fintech intersection where our professional research workflow sits.
+
+I'm Harsh, an IIT Guwahati engineer building Anvest, an AI research co-pilot for Indian research and advisory teams. It turns questions about company filings into cited answers, with connected screening, costed backtesting and paper trading.
+
+The product is live at [anvest.in](https://anvest.in). A 20 October source audit matched revenue and PAT across 50 recent consolidated NSE XBRL filings. That validates those extraction results, separately from AI-answer accuracy.
+
+We're pre-revenue. I'm raising $500K to turn the working product into paid professional adoption and partner integrations. I'm currently employed and will work full-time on Anvest from the close.
+
+The seed deck is attached. Would you be open to a 20-minute product demo next week?
+
+Harsh  
+harsh@anvest.in · [anvest.in](https://anvest.in)
+
+### Inuka Capital
+
+**To:** pitch@inuka.vc  
+**Subject:** Anvest — cited filing research for Indian professionals | $500K seed
+
+Hi Gautam and Raj,
+
+Anvest aims to reduce the manual filing work of Indian research and advisory firms, matching your efficiency thesis.
+
+I'm Harsh, an IIT Guwahati engineer building Anvest, an AI research co-pilot for Indian research and advisory teams. It turns questions about company filings into cited answers, with connected screening, costed backtesting and paper trading.
+
+The product is live at [anvest.in](https://anvest.in). A 20 October source audit matched revenue and PAT across 50 recent consolidated NSE XBRL filings. That validates those extraction results, separately from AI-answer accuracy.
+
+We're pre-revenue. I'm raising $500K to turn the working product into paid professional adoption and partner integrations. I'm currently employed and will work full-time on Anvest from the close.
+
+The seed deck is attached. Would you be open to a 20-minute product demo next week?
+
+Harsh  
+harsh@anvest.in · [anvest.in](https://anvest.in)
+
+### Gemba Capital
+
+**To:** info@gembacapital.in  
+**Subject:** Anvest — cited filing research for Indian professionals | $500K seed
+
+Hi Gemba team,
+
+Your fintech and B2B-platform focus fits our research software for professional teams; your portfolio includes Wint Wealth.
+
+I'm Harsh, an IIT Guwahati engineer building Anvest, an AI research co-pilot for Indian research and advisory teams. It turns questions about company filings into cited answers, with connected screening, costed backtesting and paper trading.
+
+The product is live at [anvest.in](https://anvest.in). A 20 October source audit matched revenue and PAT across 50 recent consolidated NSE XBRL filings. That validates those extraction results, separately from AI-answer accuracy.
+
+We're pre-revenue. I'm raising $500K to turn the working product into paid professional adoption and partner integrations. I'm currently employed and will work full-time on Anvest from the close.
+
+The seed deck is attached. Would you be open to a 20-minute product demo next week?
+
+Harsh  
+harsh@anvest.in · [anvest.in](https://anvest.in)
+
+## Template A — other current-round funds
+
+**Subject:** Anvest — cited filing research for Indian professionals | $500K seed
+
+Hi [FIRST NAME / TEAM],
+
+[Use the specific, verified opener from this fund's tracker row. Edit it into your own voice.]
+
+I'm Harsh, building Anvest, an AI research co-pilot for Indian research and advisory teams. It connects filing-cited answers with screens, costed backtests and paper trading. The product is live at [anvest.in](https://anvest.in).
+
+We're pre-revenue and testing professional filing research as the first recurring revenue workflow. I'm raising $500K for professional adoption, the first partner integrations and the compliance work in our plan. I will be full-time from the close.
+
+Seed deck attached. Would you be open to a 20-minute demo next week?
+
+Harsh  
+harsh@anvest.in · [anvest.in](https://anvest.in)
+
+## Template B — Rainmatter investment application
+
+Use the official fintech application linked from [Rainmatter](https://rainmatter.com/), with the seed deck. Adapt to the form's exact questions; do not submit the same pitch to multiple founders in parallel.
+
+Anvest is a live AI research co-pilot for Indian professionals: questions about company filings produce source-cited answers, with connected screening, costed backtesting and simulated trading. Professional filing research is our first recurring revenue test. We are pre-revenue, raising $500K, and the founder will work full-time from close. Rainmatter's Indian fintech focus is why we are applying. We would welcome a discussion of portfolio adjacency and differentiation, grounded in the actual workflow and source evidence.
+
+A commercial broker pilot is a separate conversation, not a condition of the investment. Do not imply that Zerodha has agreed to distribute or integrate Anvest.
+
+## Template C — broker partnership, no equity ask
+
+Use only with a verified business-development contact or introduction. Adapt the Zerodha-specific cover, slide 4 and close of `Anvest_Strategic_Integration_Deck.pdf` before approaching another broker. Do not send to customer support or a guessed founder inbox.
+
+**Subject:** Filing-cited research for your users — scoped pilot proposal
 
 Hi [FIRST NAME],
 
-The warehouse records about 49,000 announcements a month for Q2 FY27, by announcement date. India's 3,900 SEBI-registered research, advisory and PMS firms, and serious investors, still read them by hand and jump between screeners, backtesters and spreadsheets. I built Anvest to fix that: ask in plain English, get an answer cited to the exchange filing, then turn it into a screen, a backtest with real Indian costs and a paper trade.
+I'm Harsh, founder of Anvest. It helps Indian investors and research teams answer questions about companies with citations to their filings, then explore the idea through screening and strategy simulation.
 
-It's live at anvest.in. A 20 October source audit matched revenue and PAT in 50 recent consolidated results to their NSE XBRL files. This tests data extraction, separately from live-answer evaluation. Underneath is a verified data engine of 6K+ listed companies, 2.94M corporate announcements and 1.35M indexed filing passages.
+[One specific observation about this broker's product and why this workflow could help its users.]
 
-Two shifts make this the moment: SEBI's retail algo framework has applied in full since April, and brokers like Zerodha now expose accounts to AI agents through MCP. Anvest is the research and strategy layer for both.
+I'd like to explore a scoped, opted-in, read-only pilot, with answer quality, repeat use and cost per useful task agreed as the evaluation criteria. There is no equity ask in this proposal. Any data access, rights and integration scope would be agreed before the pilot.
 
-[REQUIRED — one line on why this investor: a thesis, portfolio company or recent investment that is genuinely adjacent. Don't send without it.]
+The tailored integration deck is attached. Would a 20-minute product discussion be useful?
 
-I'm IIT Guwahati, currently a Senior Engineering Lead at New Relic building agentic LLM systems, and I built Anvest in twelve months without outside capital; I go full-time when this round closes. I'm raising **$500K at a $3.5M post-money cap** (first close $400K) to sell Desk seats to advisers and research firms, sign the first broker integrations and secure SEBI RA registration. Our model reaches break-even at month 42 on $500K; a separate Series A scenario funds faster growth.
+Harsh  
+harsh@anvest.in · [anvest.in](https://anvest.in)
 
-Deck and one-pager attached. Could we find 20 minutes in the next two weeks? I'd love to show you the product live.
+## Template D — a genuine introduction
+
+Send this only to a person you actually know. Asking for an introduction does not authorize anyone to invent an endorsement.
+
+Hi [INTRODUCER],
+
+Do you know [INVESTOR] well enough to introduce us? I built Anvest, a live filing-cited AI research product for Indian professionals, and am raising $500K to test paid professional adoption. [One sentence on this investor's verified fit.]
+
+If you are comfortable, you can forward this:
+
+“Harsh is building Anvest, an AI research co-pilot for Indian research and advisory teams. The product is live at https://anvest.in, and he is raising $500K for professional adoption and initial partner integrations. He would welcome a 20-minute demo conversation. [Attach or link the current seed PDF.]”
+
+No problem if you don't know them closely enough.
 
 Harsh
-harsh@anvest.in · anvest.in
 
----
+## Template E — later-stage relationship, selectively
 
-## Template B — Rainmatter / Zerodha-affiliated investors (investment conversation)
+Do not tell every large fund it is too early: several have day-zero routes. Use this only where the tracker records a specific stage/cheque mismatch, such as Blume's published guidance, and there is a genuine reason to build a relationship.
 
-**Attach:** seed deck (PDF) and `../Investor_Materials/Anvest_OnePager.pdf`
-
-**Subject:** Anvest — grounded AI research and strategy testing for Indian investors
+**Subject:** Anvest — early professional research workflow, would value your perspective
 
 Hi [FIRST NAME],
 
-I'm Harsh, founder of Anvest, India's AI research co-pilot. Advisers and investors ask in plain English and get answers cited to the exchange filing, then turn the idea into a screen, a cost-realistic backtest and a paper trade, all in one place. It runs on a warehouse of 6K+ listed companies and 2.94M corporate announcements, and when the data isn't there it says so.
+I'm building Anvest, a live AI research co-pilot for Indian professionals. [One verified reason to contact this person.]
 
-Zerodha's work on investor education and Kite MCP is why I'm writing to you first. Anvest is built for exactly that future: AI agents that can see an account need a grounded research brain behind them. I know Tickertape overlaps on research. Our focus is the cited "why" behind a holding and the test-before-you-trade workflow.
+We're pre-revenue and testing our first recurring professional revenue workflow. Your published [SPECIFIC STAGE / CHEQUE GUIDANCE] suggests our current $500K round may be earlier or smaller than your usual investment. If the problem interests you, I'd value a brief product conversation and permission to update you when we have paid-adoption evidence.
 
-I'm raising **$500K (first close $400K, room to $700K) at a $3.5M post-money cap**, on the same terms for every investor. Separately, I'd welcome a conversation about a scoped read-only pilot on Kite. The two are independent, and neither depends on the other.
+Harsh  
+harsh@anvest.in · [anvest.in](https://anvest.in)
 
-Deck and one-pager attached. Worth 20 minutes?
+## Follow-ups
 
-Harsh
-harsh@anvest.in · anvest.in
+**Day 7, same thread:**
 
----
+Hi [NAME], a brief follow-up on Anvest. Would a 20-minute demo be useful? I can also send a short recorded walkthrough if easier. [Offer the recording only after making it from the real product.]
 
-## Template C — Broker partnership pilot (Zerodha, Groww and similar; no equity ask)
+**Day 14, optional final follow-up, same thread:**
 
-**Attach:** the strategic integration deck only (PDF), with "Prepared for" filled in on the cover. The cover, slide 4 and the closing slide are written for Zerodha (Kite Connect and Kite MCP). Rewrite those three before sending to any other broker.
+Hi [NAME], closing the loop on this note. [Add one real, relevant development if there is one; otherwise omit this sentence.] If the current stage or focus isn't a fit, I'll leave it here. Happy to reconnect when there is material progress.
 
-**Subject:** A grounded AI research layer for your users — scoped pilot proposal
+After two unanswered follow-ups, pause. Stop immediately on a pass or opt-out. A later update should contain actual new evidence; no invented urgency, investor interest or user numbers.
 
-Hi [FIRST NAME],
+## Facts and meeting preparation
 
-I'm Harsh, building Anvest: a verified data engine and grounded AI layer over Indian company filings (6K+ listed companies, 2.94M corporate announcements). Filing answers cite the evidence they draw on, and when coverage is missing it says so.
-
-Your users own companies, but few read what those companies file. Anvest can explain each holding from its filings, inside your product or behind your AI assistant, and connect that answer to screens, backtests and paper trading. Your ratio tables show what changed; Anvest answers why.
-
-I'm proposing a small, scoped pilot: an opted-in cohort, read-only, 8–12 weeks, with success criteria agreed up front (answer accuracy and citation quality, weekly repeat use and cost per answered question). If the results justify it, we'd discuss commercial terms. There is no investment component.
-
-The short deck attached sets out the pilot. Happy to walk you through it in 15–20 minutes.
-
-Harsh
-harsh@anvest.in · anvest.in
-
----
-
-## Template D — Institutional funds (relationship first, no deck, no ask)
-
-**Subject:** Building India's AI research co-pilot — would value your read
-
-Hi [FIRST NAME],
-
-I'm Harsh, building Anvest, India's AI research co-pilot for SEBI-registered professionals and serious investors. It's live at anvest.in, from answers cited to the exchange filing to cost-realistic backtests and paper trading.
-
-The round I'm raising now is too early for [FIRM]'s stage, so I'm not asking for anything. I'm writing because you've been among the most thoughtful investors in this category — [SPECIFIC: one portfolio company or published thesis of theirs that is genuinely adjacent; check it before sending] — and I'd rather you knew the company before there's an ask.
-
-If you're open to it, 20 minutes in the next month would be valuable. I'll come back with paid-pilot results and usage numbers as they arrive.
-
-Harsh
-harsh@anvest.in · anvest.in
-
----
-
-## Follow-up (all templates)
-
-If there's no reply after 7 days, send one line on the same thread: *"Bumping this up — happy to send a 3-minute product walkthrough instead of a call if that's easier."* Record that walkthrough before the first send; it also covers you if a live demo fails. After that, follow up again in about 60 days, and only when there is genuine news: a paid pilot, a partner, a launch metric or a registration milestone.
-
-## Positioning rules for outreach
-
-- Call Anvest **India's AI research co-pilot**. Lead with the professional pain (~49,000 announcements a month (Q2 FY27) read by hand), the live product (ask → screen → backtest → practise) and the verified data engine. Don't open with F&O loss statistics.
-- Lead the ask with $500K; mention the $400K first close and $700K ceiling once. Say "full-time from the close of this round" if asked about commitment.
-- Don't say Desk pilots are underway: none had started as of 19 October 2026. Keep the four-question live spot-check separate from the 50-filing revenue/PAT extraction audit. Neither is a broad AI-accuracy benchmark.
-- Use **one** "why now" point per email: SEBI's retail algo framework or agent-native brokers.
-- Keep the long-term vision (algo strategies through partner brokers, the API and MCP layer, wealth and learning) to one sentence; the deck carries the detail.
-- Don't attach the financial models, tracker or internal plans. Don't mention ITR; it is still in progress.
-- Before every send, check the claims marked "verify" in `../Internal_Strategy/PITCH_REVIEW_2026-10-19.md`.
+- Positioning: **India's AI research co-pilot**, first revenue test with professional teams. Keep longer-term strategy, distribution and approved execution plans in the deck or meeting.
+- Snapshot 20 Oct 2026, 12:51 IST: **26 external accounts**, **15 with a recorded workflow**, **5 active in at least two IST calendar weeks**. External research: **268 logged queries across 13 users**, with seven having at least two research rows. These are historical activity definitions, not D7/D30 cohort retention. Aggregate totals of 31 accounts, 418 research rows and 238 stored backtests include internal or unattributed work; failed attempts are not recorded, so no success rate is established.
+- The **50 / 50** audit is revenue/PAT extraction across recent consolidated NSE XBRL filings. The earlier four-question answer spot-check is separate. Neither certifies broad AI-answer accuracy.
+- Financial answers: the target model reaches Month-15 **₹87 L** ARR from **77** Desk teams and initial partners; break-even around **M42** without new funding under the assumptions. These are targets. The later scale path assumes a separate Series A.
+- Keep proposed terms consistent: **$500K** target, **$400K** first close, room **$700K**, **$3.5M** post-money cap. Founder full-time from close. Provide actual company/IP documents in diligence; the old tracker is not evidence.
+- Use a real recording and tested routes. Check the [product/data backlog](../Internal_Strategy/PRODUCT_DATA_BUG_BACKLOG_2026-10-20.md) before a live demonstration. Use its latest resolution table: four broker bugs were replayed and closed; cold-run latency and the virtual-cash tile remain. Do not describe those closed bugs as still awaiting rollout.
