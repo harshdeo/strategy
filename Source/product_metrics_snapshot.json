@@ -1,0 +1,209 @@
+{
+  "users_and_usage": {
+    "as_of": "2026-10-20T07:21:21.4334+00:00",
+    "registered": 31,
+    "ids_ever_issued": 1818,
+    "ids_without_a_row_now": 1787,
+    "by_provider": {
+      "google": 22,
+      "local": 9
+    },
+    "email_verified": 22,
+    "internal": 5,
+    "external": 26,
+    "created_by_ist_month": {
+      "2026-04": 14,
+      "2026-05": 1,
+      "2026-07": 3,
+      "2026-08": 4,
+      "2026-09": 3,
+      "2026-10": 6
+    },
+    "activated_external": 15,
+    "retained_external_2plus_weeks": 5,
+    "activated_internal": 3,
+    "external_with_no_workflow_row": 11,
+    "workflows": {
+      "backtest": {
+        "rows": 5,
+        "users": 3,
+        "external_rows": 2,
+        "external_users": 2,
+        "external_repeat_users": 0
+      },
+      "hypothesis": {
+        "rows": 76,
+        "users": 7,
+        "external_rows": 37,
+        "external_users": 4,
+        "external_repeat_users": 3
+      },
+      "paper_order": {
+        "rows": 65,
+        "users": 7,
+        "external_rows": 26,
+        "external_users": 4,
+        "external_repeat_users": 2
+      },
+      "planning": {
+        "rows": 8,
+        "users": 3,
+        "external_rows": 1,
+        "external_users": 1,
+        "external_repeat_users": 0
+      },
+      "research": {
+        "rows": 418,
+        "users": 16,
+        "external_rows": 268,
+        "external_users": 13,
+        "external_repeat_users": 7
+      },
+      "saved_screen": {
+        "rows": 2,
+        "users": 2,
+        "external_rows": 2,
+        "external_users": 2,
+        "external_repeat_users": 0
+      },
+      "simulator": {
+        "rows": 5,
+        "users": 2,
+        "external_rows": 1,
+        "external_users": 1,
+        "external_repeat_users": 0
+      }
+    },
+    "backtests": {
+      "rows": 238,
+      "statuses": {
+        "COMPLETED": 238
+      },
+      "with_trades": 206,
+      "zero_trades": 32,
+      "no_strategy_owner": 158,
+      "linked_to_a_hypothesis": 89,
+      "by_created_month": {
+        "2026-04": 97,
+        "2026-05": 1,
+        "2026-07": 50,
+        "2026-08": 80,
+        "2026-09": 4,
+        "2026-10": 6
+      }
+    },
+    "product_events": {
+      "ai_summary_seen": {
+        "events": 3,
+        "users": 3
+      },
+      "copilot_disambiguation_picked": {
+        "events": 1,
+        "users": 1
+      },
+      "copilot_question_asked": {
+        "events": 103,
+        "users": 10
+      },
+      "digest_strip_clicked": {
+        "events": 3,
+        "users": 2
+      },
+      "digest_strip_seen": {
+        "events": 27,
+        "users": 5
+      },
+      "paper_trading_adjust_cash": {
+        "events": 4,
+        "users": 2
+      },
+      "paper_trading_order_create": {
+        "events": 30,
+        "users": 4
+      },
+      "paper_trading_reset": {
+        "events": 1,
+        "users": 1
+      },
+      "paper_trading_session_open": {
+        "events": 15,
+        "users": 6
+      },
+      "paper_trading_session_update": {
+        "events": 17,
+        "users": 6
+      },
+      "paper_trading_template_bootstrap": {
+        "events": 4,
+        "users": 2
+      },
+      "planning_scenario_create": {
+        "events": 8,
+        "users": 3
+      },
+      "planning_scenario_delete": {
+        "events": 1,
+        "users": 1
+      },
+      "planning_scenario_update": {
+        "events": 2,
+        "users": 1
+      },
+      "research_copilot_query": {
+        "events": 228,
+        "users": 16
+      },
+      "simulator_run_create": {
+        "events": 5,
+        "users": 2
+      },
+      "watchlist_intelligence": {
+        "events": 4,
+        "users": 3
+      },
+      "wealth_profile_update": {
+        "events": 41,
+        "users": 2
+      }
+    },
+    "research_log_rows_with_response": 418
+  },
+  "coverage": {
+    "as_of": "2026-10-20T07:21:25.417687+00:00",
+    "active_symbols": 6354,
+    "dashboard_symbols": 6086,
+    "profile_symbols": 6119,
+    "dashboard_and_profile": 5436,
+    "dashboard_without_profile": 650,
+    "profile_not_on_dashboard": 683,
+    "active_not_on_dashboard": 268,
+    "dashboard_not_active": 0,
+    "active_with_profile": 5692
+  },
+  "announcements": {
+    "as_of": "2026-10-20T07:21:29.300927+00:00",
+    "total_rows": 2937165,
+    "by_announcement_date_ist": {
+      "2026-06": 35135,
+      "2026-07": 45997,
+      "2026-08": 61875,
+      "2026-09": 38558,
+      "2026-10": 7735
+    },
+    "ingested_by_created_at_ist": {
+      "2026-06": 15718,
+      "2026-07": 17300,
+      "2026-08": 221172,
+      "2026-09": 38834,
+      "2026-10": 8032
+    },
+    "distinct_attachment_urls_jul_sep": 145011,
+    "rows_without_attachment_jul_sep": 0
+  },
+  "public_pages_in_sitemap": 4533,
+  "qdrant_corporate_announcements": {
+    "passages_exact": 6155194,
+    "distinct_doc_id": 633688,
+    "distinct_ticker": 6067
+  }
+}
