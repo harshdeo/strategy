@@ -1,0 +1,42 @@
+{
+  "recorded": "2026-10-20 (IST 15:10-15:20), production https://anvest.in, signed-in founder account, built-in browser",
+  "release": "vm-20261020T091938Z-q92ff09e2-b1ad54ca5-d8a6e1e91",
+  "broker_commit": "1ad54ca5a675169599d5dc78e14b0ec765017869",
+  "results": {
+    "BUG-04": {
+      "prompt": "What did TCS report in its latest quarterly results, and how did its operating margin change?",
+      "answer": "Tata Consultancy Services' latest quarterly results (quarter ended 30 Sep 2026, consolidated): revenue from operations 73,188 cr, PAT 13,934 cr. Growth: revenue +1.26% QOQ and +11.23% YOY; PAT +3.83% QOQ and +14.86% YOY. Operating margin 25.47% and net margin 18.70% (PAT / total income). Operating margin fell 67 bps YoY. The same quarter a year earlier: operating margin 26.14% and net margin 18.20%.",
+      "checks": {"company_and_period_header_count": 1, "net_margin_denominator_named": "PAT / total income", "yoy_operating_margin_change": "fell 67 bps", "references": 1, "reference_source": "NSE integrated filing XBRL, Q2 FY27, filed 8 Oct 2026"},
+      "verdict": "PASS"
+    },
+    "BUG-03": {
+      "ui_sentence": "I am 30, retiring at 55, spend 60k a month, have 10L saved, investing 20,000 a month and raising it 10% every year",
+      "backend_response": {"investment_step_up_pct": 10, "monthly_investment": 20000, "current_age": 30, "target_age": 55, "inflation_rate": null, "pre_retirement_return": null, "safe_withdrawal_rate": null},
+      "ui_after_apply": "Step up the investment each year: 10% a year; Year 1 20,000/month",
+      "probes": {
+        "missing_value": {"step_up": null, "monthly": 20000},
+        "explicit_zero": {"step_up": 0, "monthly": 20000},
+        "unrelated_rates (salary 10%, inflation 6%, returns 12%)": {"step_up": null, "inflation_rate": 6, "pre_retirement_return": 12},
+        "follow_up (raise it 8% every year)": {"step_up": 8}
+      },
+      "verdict": "PASS"
+    },
+    "BUG-02": {
+      "scope": "Non-destructive: add then withdraw 50,000 on the live paper account. A sell-with-fees and an account reset were NOT replayed on production (they would change or erase the account); they are covered by the isolated test.",
+      "before": {"cash_balance": 30880.17, "total_equity": 192053.62, "total_pnl": -7946.38, "total_pnl_pct": -4.33, "total_buy_cost": 183319.6, "return_basis": "pnl_over_total_buy_cost"},
+      "after_add_50000": {"cash_balance": 80880.17, "total_equity": 242053.62, "total_pnl": -7946.38, "total_pnl_pct": -4.33, "total_buy_cost": 183319.6},
+      "after_withdraw_50000": {"cash_balance": 30880.17, "total_equity": 192053.62, "total_pnl": -7946.38, "total_pnl_pct": -4.33, "total_buy_cost": 183319.6},
+      "side_effect": "account initial_cash is now 250000 with cash_withdrawals 50000 (net capital unchanged at 200000); the Virtual cash added tile read 2,50,000 until the net-of-withdrawals fix (market-ui 67f0876)",
+      "verdict": "PASS"
+    },
+    "BUG-01": {
+      "journey": "Screener results for 'roe > 17.3 AND debt_to_equity < 0.43 AND market_cap > 87000000000' (nifty500, never run before) -> Backtest this screen -> hypothesis-linked ad-hoc backtest",
+      "first_run": {"endpoint": "POST /api/v1/strategy/backtest/run-ad-hoc", "http_status": 200, "duration_ms": 38018.52, "retried": false},
+      "persisted": {"backtest_status": "COMPLETED", "total_trades": 37, "hypothesis_status": "backtested", "latest_backtest_id_linked": true},
+      "repeat_run": {"http_status": 200, "duration_ms": 70.80},
+      "np_schema_errors_in_broker_log_since_release": 0,
+      "verdict": "PASS for the 500/persistence defect; first-run latency of 38 s remains a separate performance item"
+    }
+  },
+  "test_data_left_in_the_account": "two hypotheses and two stored backtests from the replay (public ids 8a3bb178-414c-42a4-b7f1-50ddf0d746a0 and 5d8cbae1-5aef-4a1b-a288-c04cbc954b1f), one add and one withdraw cash entry"
+}
