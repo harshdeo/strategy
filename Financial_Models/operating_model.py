@@ -20,6 +20,7 @@ from dataclasses import dataclass, field, replace
 
 FX = 95.0                       # INR per USD: spot, USD/INR close 16 Oct 2026 was 95.02
 LAKH, CR = 1e5, 1e7
+POST_MONEY_CAP_USD = 3_500_000  # Proposed financing term; confirm with counsel and investors
 
 # ---------- Market sizing (annual, list prices) ----------
 ACTIVE_NSE_CLIENTS = 4.6 * CR   # NSE Market Pulse, Aug 2026
@@ -244,6 +245,19 @@ def market():
 def key_figures():
     tam_r, tam_p, sam_r, sam_p = market()
     out = {"fx": FX}
+    out["round_terms"] = {
+        "target_raise_usd": TARGET.raise_usd,
+        "first_close_usd": FIRST_CLOSE.raise_usd,
+        "maximum_raise_usd": MAXIMUM.raise_usd,
+        "post_money_cap_usd": POST_MONEY_CAP_USD,
+    }
+    out["pricing"] = {
+        "desk_list_seat_month_inr": DESK_ANNUAL / 12,
+        "desk_net_seat_month_inr": TARGET.seat_net,
+        "partner_tiers_inr_per_user_month": [price for _, price in FIRST_CLOSE.partner_tiers],
+        "strategy_net_month_inr": SCENARIO.strategy_net,
+        "strategy_launch_month": SCENARIO.strategy_launch,
+    }
 
     def arr(rows, m):
         return {k: round(v * 12 / CR, 2) for k, v in rows[m - 1].rev.items()} | {"total": round(rows[m - 1].mrr * 12 / CR, 2)}

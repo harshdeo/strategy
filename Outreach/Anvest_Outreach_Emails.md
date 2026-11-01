@@ -1,8 +1,8 @@
 # Anvest — outreach drafts
 
-**Internal · revised 20 Oct 2026. Nothing sent.** Contacts, sources and priority are in the investor tracker and [playbook](OUTREACH_PLAYBOOK.md). Send from harsh@anvest.in. Use one person or official application per fund, and fill every bracketed placeholder before sending.
+**Internal · revised 1 Nov 2026. Nothing sent.** Contacts, sources and priority are in the investor tracker and [playbook](OUTREACH_PLAYBOOK.md). Send from harsh@anvest.in. Use one person or official application per fund, and fill every bracketed placeholder before sending.
 
-**Before attaching PDFs:** reconcile the corpus counts against the later 20 October audit (6,155,194 passages / 633,688 distinct doc_ids; older deck text still says 1.35M passages). See [research notes](CONTACT_RESEARCH_NOTES.md). Then attach `../Investor_Materials/Anvest_Seed_Deck.pdf`; the one-pager is optional. Send PDFs, never editable masters, the tracker or internal plans. Check any shared deck link signed out before using it. The five drafts below have real published recipients; publication is not an inbox-delivery guarantee.
+**Before attaching PDFs:** use the refreshed 1 Nov materials and confirm the corpus snapshot is described as 6,155,194 passages / 633,688 distinct doc IDs (20 Oct). See [research notes](CONTACT_RESEARCH_NOTES.md). Attach `../Investor_Materials/Anvest_Seed_Deck.pdf`; the one-pager is optional. Send PDFs, never editable masters, the tracker or internal plans. Check any shared deck link signed out before using it. Published addresses do not guarantee inbox delivery.
 
 Proposed round terms are **$500K target, $400K first close, room to $700K, $3.5M post-money cap**. Exact instrument and final terms require counsel and agreement. Do not lead a cold message with legal mechanics; give them accurately when asked. Do not claim committed capital or scarcity without actual evidence.
 
@@ -129,7 +129,7 @@ harsh@anvest.in · [anvest.in](https://anvest.in)
 
 Use the official fintech application linked from [Rainmatter](https://rainmatter.com/), with the seed deck. Adapt to the form's exact questions; do not submit the same pitch to multiple founders in parallel.
 
-Anvest is a live AI research co-pilot for Indian professionals: questions about company filings produce source-cited answers, with connected screening, costed backtesting and simulated trading. Professional filing research is our first recurring revenue test. We are pre-revenue, raising $500K, and the founder will work full-time from close. Rainmatter's Indian fintech focus is why we are applying. We would welcome a discussion of portfolio adjacency and differentiation, grounded in the actual workflow and source evidence.
+Anvest is a live filing-cited research product for Indian professionals, connecting filing questions to screens, costed backtests and simulated paper trading. Professional filing research is our first recurring revenue test. We are pre-revenue and applying for a $500K target round; the founder plans to work full-time from round close. Rainmatter's Indian fintech focus is why we are applying. We would welcome a discussion of portfolio fit, based on the actual workflow and dated source evidence.
 
 A commercial broker pilot is a separate conversation, not a condition of the investment. Do not imply that Zerodha has agreed to distribute or integrate Anvest.
 
@@ -183,6 +183,75 @@ We're pre-revenue and testing our first recurring professional revenue workflow.
 Harsh  
 harsh@anvest.in · [anvest.in](https://anvest.in)
 
+## Template F — Elevation Capital
+
+**Route:** Official pitch form at [elevationcapital.com/pitch](https://www.elevationcapital.com/pitch). Personalize the form; do not infer a partner email.
+**Subject:** Anvest — filing-cited research for Indian advisory teams | $500K seed
+
+Hi [Name],
+
+I’m building **Anvest**, a live research product for Indian markets. It connects questions about company filings to cited source passages, editable screens, backtests with Indian trading charges and simulated paper trading.
+
+The production snapshot on 20 October counted **6,155,194 indexed passages across 633,688 distinct document IDs**. In a separate source audit, revenue and PAT extraction matched **50 of 50** consolidated Q2 FY27 NSE XBRL filings. That tests extraction, not complete AI answers. The pipeline also recovered 15,899 cash-flow rows from malformed XBRL and flagged 3,608 conflicting figures across 1,022 companies.
+
+We are pre-revenue. I’m raising a **$500K target at a proposed $3.5M post-money cap** to test paid professional adoption, partner integrations and the compliance work in our plan. The operating model targets ₹87L ARR, 77 Desk teams and two paid partners by Month 15, with modeled cash break-even in Month 42; these are planning outputs, not current customers or contracts.
+
+I’m currently employed and plan to work full-time on Anvest from round close. I’ve attached the seed deck and provenance memo through the official pitch route. Would you be open to a short product walkthrough?
+
+Harsh Bhardwaj
+harsh@anvest.in · [anvest.in](https://anvest.in)
+
+### Template G — Accel Atoms AI
+
+**Route:** Apply through [Accel Atoms](https://atoms.accel.com/apply); confirm the current cohort and terms in the form.
+**Subject:** Anvest — filing-cited research workflow for Indian markets
+
+Hi [Atoms team],
+
+I’m applying to Accel Atoms with **Anvest**, a live AI-assisted research product for Indian markets. A user can move from a filing question to cited evidence, an editable screen and a backtest with Indian trading charges. Paper trading is simulated; broker access and live execution are not part of the current product claim.
+
+I built the product over 12 months without outside capital. The 20 October production audit counted **6,155,194 indexed passages across 633,688 distinct document IDs**. A 50-filing Q2 FY27 NSE XBRL audit measured revenue/PAT extraction only; it is not an answer-accuracy benchmark. We are pre-revenue and have not established paid adoption or a broker contract.
+
+I’m raising a **$500K target at a proposed $3.5M post-money cap**. The operating model targets ₹87L ARR at Month 15, 77 Desk teams, two partners and Month-42 break-even under its assumptions. I’m currently employed and plan to work full-time from round close.
+
+I’d welcome a conversation about the AI track and whether the professional research wedge fits the current cohort. I’ve included the seed deck and data provenance memo for review.
+
+Harsh Bhardwaj
+harsh@anvest.in · [anvest.in](https://anvest.in)
+
+### Template H — Blume Ventures (warm introduction only)
+
+**Route:** Use only after a genuine introduction through an investor or operator. Blume does not publish a general pitch inbox; do not send this to a finance, media or LP contact. Share the deck only if requested.
+**Subject:** Anvest — building filing-cited research for Indian advisory teams
+
+Hi [Introducer],
+
+Would you be comfortable introducing me to [Blume investor] if you know them well enough? I’m building **Anvest**, a live product that connects Indian company filings to cited research, screening, costed backtests and simulated paper trading.
+
+We are pre-revenue and raising a $500K target. The first commercial test is paid research workflow adoption among professional teams; the product snapshot and model assumptions are documented separately. I understand the current evidence and round size may be earlier than Blume’s usual entry point. If the problem is relevant, I’d value a short conversation and permission to share progress after we have paid-adoption evidence.
+
+No introduction is assumed. Please feel free to decline if you do not know the investor well.
+
+Harsh
+
+### Template I — Zerodha product discussion (no equity ask)
+
+**Route:** Use an appropriate product or engineering introduction. This is separate from Rainmatter’s investment application.
+**Subject:** Proposed filing-research evaluation for Zerodha users
+
+Hi [Name],
+
+I’m the founder of **Anvest**, a live Indian-markets research product. It links filing questions to cited source passages and connects the research to editable screening, costed backtests and simulated paper trading.
+
+The production snapshot on 20 October counted 6,155,194 indexed passages across 633,688 distinct document IDs. Revenue and PAT extraction matched 50 of 50 consolidated Q2 FY27 NSE XBRL filings in a source audit; this is not a test of full AI answers or a partner pilot result.
+
+I’d like to discuss whether a small, opted-in read-only evaluation could be useful. Any account access, user consent, data retention, security review, test cohort and success criteria would need to be agreed before work begins. Possible measures include answer quality, citation quality, repeat use and cost per useful task. I’m not representing an existing Kite integration, approval or agreement.
+
+There is no equity request in this product proposal. Rainmatter’s investment route is separate. Would a short technical discussion be appropriate?
+
+Harsh Bhardwaj
+harsh@anvest.in · [anvest.in](https://anvest.in)
+
 ## Follow-ups
 
 **Day 7, same thread:**
@@ -197,9 +266,10 @@ After two unanswered follow-ups, pause. Stop immediately on a pass or opt-out. A
 
 ## Facts and meeting preparation
 
-- Positioning: **India's AI research co-pilot**, first revenue test with professional teams. Keep longer-term strategy, distribution and approved execution plans in the deck or meeting.
+- Positioning: **Filing-cited research for Indian advisory teams**, first revenue test with professional teams. Keep longer-term strategy and partner access clearly marked as proposed.
 - Snapshot 20 Oct 2026, 12:51 IST: **26 external accounts**, **15 with a recorded workflow**, **5 active in at least two IST calendar weeks**. External research: **268 logged queries across 13 users**, with seven having at least two research rows. These are historical activity definitions, not D7/D30 cohort retention. Aggregate totals of 31 accounts, 418 research rows and 238 stored backtests include internal or unattributed work; failed attempts are not recorded, so no success rate is established.
-- The **50 / 50** audit is revenue/PAT extraction across recent consolidated NSE XBRL filings. The earlier four-question answer spot-check is separate. Neither certifies broad AI-answer accuracy.
-- Financial answers: the target model reaches Month-15 **₹87 L** ARR from **77** Desk teams and initial partners; break-even around **M42** without new funding under the assumptions. These are targets. The later scale path assumes a separate Series A.
+- Production corpus snapshot (20 Oct, 12:51 IST): **6,155,194 passages across 633,688 distinct document IDs**. The **50 / 50** audit is revenue/PAT extraction across distinct consolidated Q2 FY27 NSE XBRL filings; it is not a broad AI-answer benchmark. The separate four-question spot-check and proposed 50-prompt suite have different scopes; the suite has not been run.
+- Web visitor, page-view, login and device figures are omitted because no dated analytics export was documented.
+- Financial answers: `operating_model.py` is the source for round allocations, revenue, costs, runway, market sizing and payback. Its $500K case targets Month-15 **₹87 L** ARR from **77** Desk teams and two partners; break-even is modeled at **M42** under the assumptions. These are not current customers or contracts. The later scale path assumes a separate Series A.
 - Keep proposed terms consistent: **$500K** target, **$400K** first close, room **$700K**, **$3.5M** post-money cap. Founder full-time from close. Provide actual company/IP documents in diligence; the old tracker is not evidence.
 - Use a real recording and tested routes. Check the [product/data backlog](../Internal_Strategy/PRODUCT_DATA_BUG_BACKLOG_2026-10-20.md) before a live demonstration. Use its latest resolution table: four broker bugs were replayed and closed; cold-run latency and the virtual-cash tile remain. Do not describe those closed bugs as still awaiting rollout.

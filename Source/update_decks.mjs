@@ -8,8 +8,8 @@ const runtime=process.env.ANVEST_ARTIFACT_MODULES ?? '/Users/harsh/.cache/codex-
 process.env.RUNTIME_NODE_MODULES ??= runtime;
 const {FileBlob,PresentationFile}=await import(pathToFileURL(path.join(runtime,'@oai/artifact-tool/dist/artifact_tool.mjs')));
 const root=path.resolve(import.meta.dirname,'../..');
-const build=path.join(root,'.tmp/investor-materials-20261020');
-const skill='/Users/harsh/.codex/plugins/cache/openai-primary-runtime/presentations/26.1015.12040/skills/presentations';
+const build=path.join(root,'.tmp/investor-materials-20261101');
+const skill='/Users/harsh/.codex/plugins/cache/openai-primary-runtime/presentations/26.1026.10807/skills/presentations';
 const {finalizePresentation}=await import(pathToFileURL(path.join(skill,'container_tools/artifact_tool_utils.mjs')));
 for(const name of ['Anvest_Seed_Deck','Anvest_Strategic_Integration_Deck']){
   const candidate=path.join(build,`${name}.preserved.pptx`);
@@ -21,7 +21,8 @@ for(const name of ['Anvest_Seed_Deck','Anvest_Strategic_Integration_Deck']){
     const shape=p.slides.items[e.slide-1].shapes.items.find(s=>s.id===e.id);
     if(!shape) throw Error(`Missing shape ${e.slide}/${e.id}`);
     const current=String(shape.text);
-    if(current!==e.new) throw Error(`Unexpected imported text ${e.slide}/${e.id}`);
+    const normalize=value=>value.replace(/\s+/gu,'');
+    if(normalize(current)!==normalize(e.new)) throw Error(`Unexpected imported text ${e.slide}/${e.id}: ${JSON.stringify(current)}`);
     shape.text=e.new;
   }
   await (await PresentationFile.exportPptx(p)).save(path.join(build,`${name}.artifact-draft.pptx`));
@@ -34,8 +35,8 @@ for(const name of ['Anvest_Seed_Deck','Anvest_Strategic_Integration_Deck']){
     integrityValidatorPath:path.join(skill,'container_tools/inspect_presentation_package_integrity.py'),
     layoutValidatorPath:path.join(skill,'container_tools/inspect_presentation_layout_geometry.py'),
     layoutArgs:['--expected-slide-size-emu','12192000,6858000'],
-    explicitTotalSlideCount:name==='Anvest_Seed_Deck'?21:10,
-    requiredNativeChartOwnerSlides:name==='Anvest_Seed_Deck'?[13]:[],
+    explicitTotalSlideCount:name==='Anvest_Seed_Deck'?17:10,
+    requiredNativeChartOwnerSlides:name==='Anvest_Seed_Deck'?[16]:[],
     verifyArtifactToolImport:true,
     receiptPath:path.join(build,`${name}.validation-${Date.now()}.json`)});
   console.log(name,JSON.stringify(result));

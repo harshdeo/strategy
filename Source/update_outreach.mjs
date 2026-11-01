@@ -9,7 +9,7 @@ import {FileBlob, SpreadsheetFile} from '/Users/harsh/.cache/codex-runtimes/code
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const input=process.argv[2] || path.join(root,'Outreach/Anvest_Investor_Tracker.xlsx');
 const output=process.argv[3] || input;
-const previews=path.resolve(root,'../.tmp/outreach-20261020');
+const previews=path.resolve(root,'../.tmp/outreach-20261101');
 await fs.mkdir(previews,{recursive:true});
 const contacts=JSON.parse(await fs.readFile(path.join(root,'Outreach/investor_contacts.json'),'utf8'));
 const model=JSON.parse(execFileSync('/Users/harsh/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',[path.join(root,'Financial_Models/operating_model.py'),'--json'],{encoding:'utf8'}));
@@ -23,7 +23,7 @@ const statuses=['Not started','Intro requested','Sent','Replied','Meeting','Dili
 const old=w.worksheets.getItem('Investor Targets').getRange('A6:AC100').values;
 const history=new Map();
 for(const row of old){if(row[28])history.set(row[28],row);}
-const oldActions=new Map(w.worksheets.getItem('DO THIS NEXT').getRange('A6:I100').values.filter(r=>r[2]).map(r=>[r[2],[r[5],r[6],r[7]]]));
+const oldActions=new Map(w.worksheets.getItem('DO THIS NEXT').getRange('A6:I100').values.filter(r=>r[0]).map(r=>[String(r[0]),[r[5],r[6],r[7]]]));
 const oldTimeline=new Map(w.worksheets.getItem('Timeline').getRange('A6:F100').values.filter(r=>r[2]).map(r=>[r[2],[r[3],r[4],r[5]]]));
 const roundBefore=w.worksheets.getItem('Round Model');
 const priorCapital=history.size?roundBefore.getRange('B13:D14').values:null;
@@ -47,13 +47,16 @@ function write(s,rows){if(rows.length)s.getRange(`A6:${col(rows[0].length)}${row
 function validate(s,range,list){s.getRange(range).dataValidation={allowBlank:true,list:{inCellDropDown:true,source:list}};}
 
 const targets=contacts.targets;
-let s=prep('Investor Targets','AC',targets.length+5,'ANVEST — VERIFIED CONTACTS & OUTREACH PIPELINE','Reviewed 20 Oct 2026 | $500K target; $400K first close; room $700K | Dates are proposed, not sent. Published contacts only; delivery not tested.');
+let s=prep('Investor Targets','AC',targets.length+5,'ANVEST — VERIFIED CONTACTS & OUTREACH PIPELINE','Version 1 Nov 2026 | $500K target; $400K first close; room $700K | Source dates are recorded per row. Planned dates are proposed; nothing has been sent.');
 header(s,'AC',['Wave','Name','Type','Published cheque / terms','Lead role','Fit assessment','Why this target','Constraint / verification note','Introduction path','Priority','Status','Owner','Next action','Planned action date','Notes','Contact person','Published email','Best route','Contact / form URL','Primary source URL','Checked on','Suggested personal opener','First sent','Last touch','Follow-ups sent','Reply / outcome','Intro owner','Next follow-up','Record ID']);
 const rows=targets.map(t=>{
  const active=['1','2','3'].includes(t.wave), verified=!!t.source;
  const prior=history.get(t.id);
  const status=prior?.[10] || (active||['Network','Program'].includes(t.wave)?'Not started':t.wave==='Later'?'Paused':'Research needed');
- const r=[t.wave,t.name,t.type,t.size,t.lead,active?'Current-round candidate':t.wave,t.fit,t.caveat,'No actual introducer recorded',active?'P'+t.wave:t.wave,status,prior?.[11]||'Harsh',prior?.[12]||t.action,prior?.[13]||date(t.date),prior?.[14]||'',t.person,t.email,t.route,t.url,t.source,verified?date(contacts.reviewed_on):null,t.angle,prior?.[22]||null,prior?.[23]||null,prior?.[24]||0,prior?.[25]||'',prior?.[26]||'',null,t.id];
+ const oldPlanned=prior?.[13];
+ const usePriorPlan=oldPlanned && new Date(oldPlanned).getTime()>=Date.parse('2026-11-01T00:00:00Z');
+ const checked=t.verified_on || contacts.reviewed_on;
+ const r=[t.wave,t.name,t.type,t.size,t.lead,active?'Current-round candidate':t.wave,t.fit,t.caveat,'No actual introducer recorded',active?'P'+t.wave:t.wave,status,prior?.[11]||'Harsh',prior?.[12]||t.action,usePriorPlan?oldPlanned:date(t.date),prior?.[14]||'',t.person,t.email,t.route,t.url,t.source,verified?date(checked):null,t.angle,prior?.[22]||null,prior?.[23]||null,prior?.[24]||0,prior?.[25]||'',prior?.[26]||'',null,t.id];
  return r;
 });
 write(s,rows);widths(s,[95,225,135,220,160,155,300,370,220,95,135,95,350,145,240,250,255,265,310,310,125,380,130,130,110,230,180,140,95]);
@@ -71,28 +74,28 @@ for(let i=6;i<=targets.length+5;i++){
 s.getRange('K6:O55').format.font.color='#1D4ED8';s.getRange('W6:AA55').format.font.color='#1D4ED8';
 
 const actions=[
- ['1','Today','Use INV01 and INV02 for first two personalized pitches','Eximius + All In are current-round candidates. Review PDF links and demo before each send.','45 min','Not started',null,'One recipient/route per fund. No bulk BCC.','OUTREACH_PLAYBOOK.md'],
- ['2','Next 48 hours','Send INV03–INV05','Titan, Inuka, Gemba; use researched opener and actual published route.','60 min','Not started',null,'Full pitch now; no artificial paid-pilot prerequisite.','Investor Targets'],
+ ['1','2 Nov','Prepare INV01 and INV02 for first personalized pitches','Eximius + All In are current-round candidates. Review PDF links and demo before each send.','45 min','Not started',null,'One recipient/route per fund. No bulk BCC.','OUTREACH_PLAYBOOK.md'],
+ ['2','2–4 Nov','Prepare INV03–INV05','Titan, Inuka, Gemba; use researched opener and actual published route.','60 min','Not started',null,'Full pitch now; no artificial paid-pilot prerequisite.','Investor Targets'],
  ['3','This week','Ask real mutual contacts for Better / Prime introductions','Record introducer name in AA and intro requested status; do not invent an alumni relationship.','30 min','Not started',null,'Wait up to 48 hours, then use appropriate official contact route.','INV13 / INV16'],
- ['4','Before a call','Record a real 3-minute product walkthrough','Use current anvest.in pages and disclose dated evidence. Replay signed-out mobile screen.','60 min','Not started',null,'Latest backlog closes four broker bugs; cold-run latency and virtual-cash tile remain.','PRODUCT_DATA_BUG_BACKLOG_2026-10-20.md'],
+ ['4','Before a call','Record a real 3-minute product walkthrough','Use current anvest.in pages and disclose dated evidence. Replay signed-out mobile screen.','60 min','Not started',null,'Cold-run latency and virtual-cash tile remain open in the dated product backlog.','PRODUCT_DATA_BUG_BACKLOG_2026-10-20.md'],
  ['5','This week','Prepare verified company and financing answers','Cap table, legal entity, IP assignment/employment position, instrument advice, founder full-time from close.','1–2 hours','Not started',null,'Existing tracker’s assumed family ownership is not verified legal evidence.','Round Model'],
- ['6','23–29 Oct','Work wave 2, two targeted pitches per workday','India Quotient, Zeropearl, Whiteboard, z21, First Cheque, Rainmatter, SenseAI, Better, 3one4.','30–60 min/day','Not started',null,'Check form access and pitch wording; preserve a submission confirmation.','Investor Targets'],
- ['7','30 Oct–6 Nov','Work wave 3 after reviewing objections','Twelve additional funds; fit and round-size exceptions are explicit.','30–60 min/day','Not started',null,'Refine clarity, not numbers. No response-rate promises.','Investor Targets'],
+ ['6','5–11 Nov','Work wave 2, two targeted pitches per workday','India Quotient, Zeropearl, Whiteboard, z21, First Cheque, Rainmatter, SenseAI, Better, 3one4.','30–60 min/day','Not started',null,'Check form access and pitch wording; preserve a submission confirmation.','Investor Targets'],
+ ['7','12–20 Nov','Work wave 3 after reviewing objections','Thirteen additional funds; fit and round-size exceptions are explicit.','30–60 min/day','Not started',null,'Refine clarity, not numbers. No response-rate promises.','Investor Targets'],
  ['8','Parallel','Interview 10 named professional prospects','Sell the research workflow; record customer objections, actual use and paid willingness.','Daily sales block','Not started',null,'Customer pipeline is separate from investor pipeline. No pilots claimed until started.','GTM_PLAN.md'],
  ['9','Within 24 hours of meeting','Send requested evidence and record next step','Keep investor-specific questions, next owner and due date.','15 min','Not started',null,'Diligence files on request; do not attach internal tracker.','Anvest_Outreach_Emails.md'],
  ['10','Day 7 after send','Follow up in same thread','One concise message; Next follow-up column calculates from actual send/touch dates.','10 min/day','Not started',null,'Do not create a second form submission to chase a reply.','Investor Targets AB'],
  ['11','Day 14 after send','Send final useful follow-up, then pause','Two follow-ups maximum without a reply. Later updates only with real progress.','10 min/day','Not started',null,'No fabricated urgency, allocation or other investor interest.','Investor Targets Y / Z'],
- ['12','By 30 Oct','Decide YC application separately','Official Winter 2027 deadline 2 Nov 8pm PT = 3 Nov 9:30am IST; in-person SF Jan–Mar.','Founder decision','Not started',null,'An application is optional; no assumed commitment to relocate.','INV30'],
+ ['12','By 2 Nov','Decide YC application separately','Official Winter 2027 deadline 2 Nov 8pm PT = 3 Nov 9:30am IST; in-person SF Jan–Mar.','Founder decision','Not started',null,'An application is optional; no assumed commitment to relocate.','INV30'],
  ['13','Weekly','Review replies and update qualified pipeline','Count actual sends, meetings, diligence and commitments separately; update date-sensitive claims.','30 min','Not started',null,'No send or commitment has been logged by this refresh.','Metrics Gate'],
- ['14','Before using parked rows','Confirm missing routes and mandates','Axilor site errors, Atoms intake, Mumbai Angels transition, operator angels and broker partnership contacts.','As relevant','Not started',null,'Blank email is deliberate. Do not infer addresses.','CONTACT_RESEARCH_NOTES.md'],
- ['15','Before attaching PDFs','Reconcile corpus counts across investor PDFs','Latest product audit has 6,155,194 passages / 633,688 distinct doc_ids on VM, not 1.35M / 584K.','Materials check','Not started',null,'Confirm corrected exported PDF before attachment. Intro requests can start now.','CONTACT_RESEARCH_NOTES.md']
+ ['14','Before using Atoms route','Submit Atoms AI application through official form','INV38 now has a verified official application route; confirm current cohort and terms in the form.','As relevant','Not started',null,'Application is not an investment decision. Blank email is deliberate; do not infer addresses.','INV38'],
+ ['15','Before attaching PDFs','Confirm refreshed PDFs carry the dated corpus snapshot','Use 6,155,194 passages / 633,688 distinct doc_ids, dated 20 Oct 2026.','Materials check','Not started',null,'Attach PDFs only after the full materials check passes.','Source/product_metrics_snapshot.json']
 ];
-s=prep('DO THIS NEXT','I',actions.length+5,'ANVEST — DO THIS NEXT','20 Oct 2026 | Start suitable pre-seed funds now, in measured batches. This is a preparation and tracking workbook; nothing has been sent.');
-for(const row of actions){const prior=oldActions.get(row[2]);if(prior){row[5]=prior[0];row[6]=prior[1];row[7]=prior[2]||row[7];}}
+s=prep('DO THIS NEXT','I',actions.length+5,'ANVEST — DO THIS NEXT','Version 1 Nov 2026 | Start with suitable pre-seed funds in measured batches. This is a preparation and tracking workbook; nothing has been sent.');
+for(const row of actions){const prior=oldActions.get(String(row[0]));if(prior){row[5]=prior[0];row[6]=prior[1];row[7]=prior[2]||row[7];}}
 header(s,'I',['#','When','Do this','Why / what it unblocks','Effort','Status','Done date','Notes','Reference']);write(s,actions);widths(s,[55,150,360,420,140,135,140,420,300]);validate(s,'F6:F20',['Not started','In progress','Done','Blocked']);s.getRange('G6:G20').setNumberFormat('dd-mmm-yyyy');
 
 const metrics=[
- ['Contact provenance','Published first-party sources checked 20 Oct','Suitable email or official pitch/social route','Source links in Investor Targets / Sources','Ready for researched routes','Publication verified; inbox deliverability and form submission are untested.'],
+ ['Contact provenance','Primary-source dates recorded by target','Suitable email or official pitch/social route','Source links in Investor Targets / Sources','Ready for researched routes','Publication verified; inbox deliverability and form submission are untested.'],
  ['Headline round','Proposed, not raised','$500K target; $400K first close; $700K room',500000,'Ready','$3.5M post-money cap proposed; exact instrument subject to counsel.'],
  ['Registered accounts','Production aggregate, 20 Oct 12:51 IST','Disclose scope; not active users',usage.registered,'Scoped evidence',`${usage.internal} internal; ${usage.external} external under documented account filter.`],
  ['Logged research queries','Production aggregate, same snapshot','Disclose scope; not accuracy',418,'Scoped evidence','Across 16 accounts, includes founder/testing.'],
@@ -111,15 +114,15 @@ const metrics=[
  ['Company / IP / cap table','Records not inspected in this refresh','Founder provides verified documents',null,'Needs documents','Do not quote family ownership or signed IP assignment without actual documents.'],
  ['Outreach started','No send actions authorized or performed','Log real sends and meetings',null,'Not started','Sending dates stay blank until user actually sends.']
 ];
-s=prep('Metrics Gate','F',metrics.length+5,'ANVEST — EVIDENCE & READINESS','20 Oct 2026 | Early-stage outreach can start with honest disclosures. These are evidence states, not invented MAU/revenue hurdles.');
+s=prep('Metrics Gate','F',metrics.length+5,'ANVEST — EVIDENCE & READINESS','Version 1 Nov 2026 | Early-stage outreach can start with honest disclosures. Evidence dates remain attached to each measure.');
 header(s,'F',['Item','Evidence date / basis','What to communicate / measure','Verified value / current state','Readiness','Definition / limitation']);write(s,metrics);widths(s,[215,290,320,245,185,490]);
 s.getRange('D7').setNumberFormat('"$"#,##0');s.getRange('D8:D12').setNumberFormat('#,##0');
 
-s=prep('Round Model','F',39,'ANVEST — PROPOSED ROUND TERMS','20 Oct 2026 | Proposed target, not committed capital. USD and INR units are explicit. See operating_model.py for the full monthly plan.');
+s=prep('Round Model','F',39,'ANVEST — PROPOSED ROUND TERMS','Version 1 Nov 2026 | Proposed target, not committed capital. USD and INR units are explicit. See operating_model.py for the full monthly plan.');
 header(s,'F',['Input / calculation','Target','First close','Maximum','Unit','Basis / limitation']);
 const round=[
  ['Raise',model.target.raise_usd_k*1000,model.first_close.raise_usd_k*1000,model.maximum.raise_usd_k*1000,'USD','Proposed amounts; no investor commitment implied.'],
- ['Post-money cap',3500000,3500000,3500000,'USD','Proposed financing cap; exact instrument subject to counsel.'],
+ ['Post-money cap',model.round_terms.post_money_cap_usd,model.round_terms.post_money_cap_usd,model.round_terms.post_money_cap_usd,'USD','Proposed financing cap from the operating model; exact instrument subject to counsel.'],
  ['Planning exchange rate',model.fx,model.fx,model.fx,'INR / USD','From Financial_Models/operating_model.py; not a live FX quote.'],
  ['Raise at planning FX',null,null,null,'INR crore','USD raise × INR/USD ÷ 10,000,000.'],
  ['Simple raise / cap ratio',null,null,null,'%','Illustrative ratio only; not an actual cap-table dilution calculation.'],
@@ -164,24 +167,24 @@ s.getRange('B32').formulas=[['=B31/100000']];s.getRange('B32').setNumberFormat('
 for(const r of [16,24])s.getRange(`A${r}:F${r}`).format={fill:navy,font:{bold:true,color:'#FFFFFF'}};
 
 const timeline=[
- ['20–22 Oct','Wave 1','5 suitable funds: Eximius, All In, Titan, Inuka, Gemba','Not started',null,'Personalize each email. Batch limits are workload recommendations, not expected conversion rates.'],
- ['23–29 Oct','Wave 2','9 funds; official forms and genuinely accessible introductions','Not started',null,'Learn from first calls. Do not wait for paid pilots as a blanket condition.'],
- ['30 Oct–6 Nov','Wave 3','12 additional funds after refining explanation of buyer and source quality','Not started',null,'Keep facts consistent; selectively prioritize strong warm intros sooner.'],
- ['By 30 Oct','Optional program','Decide and prepare YC Winter 2027 application','Not started',null,'Official on-time deadline 3 Nov 09:30 IST; SF in-person program.'],
+ ['2–4 Nov','Wave 1','5 suitable funds: Eximius, All In, Titan, Inuka, Gemba','Not started',null,'Personalize each email. Batch limits are workload recommendations, not expected conversion rates.'],
+ ['5–11 Nov','Wave 2','9 funds; official forms and genuinely accessible introductions','Not started',null,'Learn from first calls. Do not wait for paid pilots as a blanket condition.'],
+ ['12–20 Nov','Wave 3','13 additional funds after refining explanation of buyer and source quality','Not started',null,'Keep facts consistent; selectively prioritize strong warm intros sooner.'],
+ ['By 2 Nov','Optional program','Decide and prepare YC Winter 2027 application','Not started',null,'Official on-time deadline 3 Nov 09:30 IST; SF in-person program.'],
  ['Day 7 / Day 14','Follow-ups','At most 2 unanswered follow-ups, in the existing thread','Not started',null,'Set actual sent date, last touch and count. Replies/pass/commitment stop automated due dates.'],
  ['Every working day','Customer evidence','Separate professional sales block alongside fundraising','Not started',null,'Log real interviews, paid demand and usage; none assumed by this schedule.'],
  ['Weekly','Pipeline review','Review meetings, objections, diligence, terms and next owners','Not started',null,'Do not count platform profiles or repeated fund contacts as independent leads.'],
  ['After real progress','Later / parked','Update relevant later-stage funds and verify unavailable routes','Not started',null,'Use measured progress; no fabricated urgency. No blanket broadcast to all 50 entries.']
 ];
-s=prep('Timeline','F',timeline.length+5,'ANVEST — PRACTICAL OUTREACH SEQUENCE','Proposed start 20 Oct 2026 | Parallel customer learning and investor conversations. Exact dates may be edited; no messages have been sent.');
+s=prep('Timeline','F',timeline.length+5,'ANVEST — PRACTICAL OUTREACH SEQUENCE','Proposed start 2 Nov 2026 | Parallel customer learning and investor conversations. Exact dates may be edited; no messages have been sent.');
 for(const row of timeline){const prior=oldTimeline.get(row[2]);if(prior){row[3]=prior[0];row[4]=prior[1];row[5]=prior[2]||row[5];}}
 header(s,'F',['When','Track','Deliverable','Status','Done date','Notes']);write(s,timeline);widths(s,[160,165,500,145,140,530]);validate(s,'D6:D13',['Not started','In progress','Done','Blocked']);s.getRange('E6:E13').setNumberFormat('dd-mmm-yyyy');
 
-const sources=targets.filter(t=>t.source).map(t=>[t.id,t.name,t.source,t.url,date(contacts.reviewed_on),t.email||'No suitable public email verified',t.caveat]);
-sources.push(['MODEL','Round / financial outputs','Financial_Models/operating_model.py','',date(contacts.reviewed_on),'Internal source','Planning assumptions; rounded outputs. Proposed cap comes from current funding materials.']);
-sources.push(['METRICS','Production usage snapshot','Source/product_metrics_snapshot.json','',date(contacts.reviewed_on),'Internal evidence','Founder/testing included; registered accounts are not active external users.']);
-sources.push(['AUDIT','50-filing extraction audit','Source/filing_check.json','',date(contacts.reviewed_on),'Internal evidence','Revenue/PAT extraction, not broad live-answer benchmark.']);
-s=prep('Sources','G',sources.length+5,'ANVEST — CONTACT SOURCES & LIMITS','Public sources reviewed 20 Oct 2026. Primary-source publication verified; SMTP delivery, investor availability and completed form submission remain untested.');
+const sources=targets.filter(t=>t.source).map(t=>[t.id,t.name,t.source,t.url,date(t.verified_on || contacts.reviewed_on),t.email||'No suitable public email verified',t.caveat]);
+sources.push(['MODEL','Round / financial outputs','Financial_Models/operating_model.py','',date('2026-11-01'),'Internal source','Planning assumptions; rounded outputs. Proposed cap comes from the operating model.']);
+sources.push(['METRICS','Production usage snapshot','Source/product_metrics_snapshot.json','',date('2026-10-20'),'Internal evidence','Founder/testing included; registered accounts are not active external users.']);
+sources.push(['AUDIT','50-filing extraction audit','Source/filing_check.json','',date('2026-10-20'),'Internal evidence','Revenue/PAT extraction, not broad live-answer benchmark.']);
+s=prep('Sources','G',sources.length+5,'ANVEST — CONTACT SOURCES & LIMITS','Contact sources carry their individual verification dates. Metrics and filing evidence retain their own source dates. Publication verified; delivery and form submission are untested.');
 header(s,'G',['Record','Target / evidence','Primary source','Contact route URL','Checked on','Email / evidence type','Scope / limitation']);write(s,sources);widths(s,[95,270,440,400,140,295,550]);s.getRange(`E6:E${sources.length+5}`).setNumberFormat('dd-mmm-yyyy');
 
 // Recalculation checks exercise date changes, reply handling and follow-up cap, then restore blank actuals.

@@ -33,10 +33,11 @@ STALE = ["₹8.3 L", "₹8.29", "₹51.8", "₹52 Cr", "₹50 Cr+", "₹14.5", "
          "100% exact", "100% match", "100% source", "outreach underway", "pilots underway", "unmetered",
          "ILLUSTRATIVE", "Illustrative example", "~17K", "~17,000", "17,300", "15,718", "~100", "5,405",
          "6,137 stock pages with AI profiles", "2.89M", "Only Anvest", "zero-CAC", "Zero-CAC", "Product capability (live today)", "₹13 Cr"]
+STALE.append("Anvest · Confidential · 20 Oct 2026")
 # Speaker notes travel with every .pptx: nothing internal may sit in them.
 NOTES_FORBIDDEN = re.compile(r"\.py\b|\.md\b|Internal_Strategy|Financial_Models|VERIFY|[Vv]erify before|TODO|"
                              r"data check pending|returned an error|bug\b", re.I)
-VERSION_RX = re.compile(r"20 Oct 2026")
+VERSION_RX = re.compile(r"Version 1 Nov 2026")
 
 
 def squash(t):
@@ -45,7 +46,7 @@ def squash(t):
 
 def pptx_text(path):
     with zipfile.ZipFile(path) as z:
-        parts = [n for n in z.namelist() if re.match(r"ppt/(slides|slideLayouts)/[^/]+\.xml$", n)]
+        parts = [n for n in z.namelist() if re.match(r"ppt/(slides|slideLayouts|slideMasters)/[^/]+\.xml$", n)]
         return squash(" ".join(unescape(t) for n in parts for t in re.findall(r"<a:t>([^<]*)</a:t>", z.read(n).decode("utf8"))))
 
 
@@ -89,11 +90,18 @@ def check_outreach(k, failures):
                 failures.append(f"Outreach {r['id']}: exported {field} differs from contact register")
         if r["email"] and not r["source"].startswith("https://"):
             failures.append(f"Outreach {r['id']}: published email lacks a primary source")
+        checked = row[20]
+        expected_checked = __import__("datetime").date.fromisoformat(r.get("verified_on", register["reviewed_on"]))
+        if r["source"] and (checked is None or checked.date() != expected_checked):
+            failures.append(f"Outreach {r['id']}: checked-on date differs from its source record")
+        if not r["source"] and checked is not None:
+            failures.append(f"Outreach {r['id']}: unchecked route has a verification date")
         if row[24] is not None and (not isinstance(row[24], (int, float)) or not 0 <= row[24] <= 2):
             failures.append(f"Outreach {r['id']}: follow-up count must be 0, 1 or 2")
     round_sheet = book["Round Model"]
     for c, case in (("B", "target"), ("C", "first_close"), ("D", "maximum")):
-        for row, expected in ((6, k[case]["raise_usd_k"] * 1000), (8, k["fx"]),
+        for row, expected in ((6, k[case]["raise_usd_k"] * 1000),
+                              (7, k["round_terms"]["post_money_cap_usd"]), (8, k["fx"]),
                               (25, k[case]["arr_cr"] * 1e7), (26, k[case]["teams"]),
                               (27, k[case]["seats"]), (28, k[case]["partners"]),
                               (29, k[case]["breakeven_month"])):
@@ -169,8 +177,25 @@ def main():
         if re.search(r"\br[1-9]\d*\b", texts[doc]):
             failures.append(f"{doc}: internal draft label leaked")
     for doc in ("seed deck .pptx", "seed deck .pdf"):
-        for claim in ("₹13.4 Cr", "₹9.7 Cr", "₹23.1 Cr", "team workspaces planned", "19%", "CA/wealth", "67 bps", "total income"):
+        for claim in ("₹13.4 Cr", "₹9.7 Cr", "₹23.11 Cr", "team workspaces planned", "19%", "CA/wealth", "67 bps", "total income"):
             if claim not in texts[doc]: failures.append(f"{doc}: missing reconciliation {claim!r}")
+    for doc in ("seed deck .pptx", "seed deck .pdf", "partner deck .pptx", "partner deck .pdf", "one-pager", "memo"):
+        for claim in ("6,155,194", "633,688"):
+            if claim not in texts[doc]: failures.append(f"{doc}: missing dated corpus count {claim!r}")
+        for unsupported in ("1.35M", "600M+ ARR", "$7.5B valuation", "1,734 visitors", "5,591 page views", "276 /login hits"):
+            if unsupported in texts[doc]: failures.append(f"{doc}: unsupported or stale claim {unsupported!r}")
+    uses = t["use_of_funds_usd_k"]
+    target_k = k["round_terms"]["target_raise_usd"] / 1000
+    for doc in ("seed deck .pptx", "seed deck .pdf", "one-pager"):
+        for key in ("team", "compliance_infra", "growth_founder", "reserve_runway"):
+            pct = round(uses[key] / target_k * 100)
+            if f"${uses[key]}K" not in texts[doc] or f"{pct}%" not in texts[doc]:
+                failures.append(f"{doc}: use-of-funds {key} amount/share does not reconcile with operating model")
+    for label, pdf, expected_pages in (("seed deck", SEED_PDF, 17), ("partner deck", PARTNER_PDF, 10),
+                                       ("one-pager", ONEPAGER, 1)):
+        pages = len(fitz.open(pdf))
+        if pages != expected_pages:
+            failures.append(f"{label}: expected {expected_pages} pages, found {pages}")
     audit=json.loads((HERE/"Source/filing_check.json").read_text())
     if audit.get("passed") != 50 or audit.get("total") != 50 or any(r.get("status") != "pass" for r in audit.get("results",[])):
         failures.append("The 50-filing audit is incomplete or failed")

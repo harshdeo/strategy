@@ -5,7 +5,7 @@ import {spawnSync} from 'node:child_process';
 import {PresentationFile,FileBlob} from '/Users/harsh/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/@oai/artifact-tool/dist/artifact_tool.mjs';
 const root=path.resolve(import.meta.dirname,'../..');
 for(const name of ['Anvest_Seed_Deck','Anvest_Strategic_Integration_Deck']){
- const dir=path.join(root,'.tmp/investor-materials-20261020/rendered',name);await fs.mkdir(dir,{recursive:true});
+ const dir=path.join(root,'.tmp/investor-materials-20261101/rendered',name);await fs.mkdir(dir,{recursive:true});
  const source=path.join(root,'Strategy/Investor_Materials',`${name}.pptx`);
  const p=await PresentationFile.importPptx(await FileBlob.load(source));
  for(const [i,slide] of p.slides.items.entries()){

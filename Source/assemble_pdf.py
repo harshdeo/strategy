@@ -5,6 +5,7 @@ layer comes only from that same PPTX, for search/accessibility; no screenshot OC
 text substitution or screenshot fabrication. PPTX remains the editable master.
 """
 import sys,re
+import posixpath
 from pathlib import Path
 from zipfile import ZipFile
 from lxml import etree as E
@@ -15,10 +16,21 @@ doc=fitz.open()
 with ZipFile(source) as z:
     dim=E.fromstring(z.read('ppt/presentation.xml')).find('p:sldSz',ns)
     width,height=[int(dim.get(k))/12700 for k in ['cx','cy']]
-    for i,image in enumerate(sorted(images.glob('*.png')),1):
+    presentation=E.fromstring(z.read('ppt/presentation.xml'))
+    relationships=E.fromstring(z.read('ppt/_rels/presentation.xml.rels'))
+    relns={'rel':'http://schemas.openxmlformats.org/package/2006/relationships'}
+    targets={rel.get('Id'):rel.get('Target') for rel in relationships}
+    slide_parts=[]
+    for item in presentation.find('p:sldIdLst',ns):
+        target=targets[item.get('{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id')].lstrip('/')
+        part=target if target.startswith('ppt/') else posixpath.join('ppt',target)
+        slide_parts.append(posixpath.normpath(part))
+    pngs=sorted(images.glob('*.png'))
+    if len(pngs)!=len(slide_parts):raise RuntimeError(f'Expected {len(slide_parts)} slide renders; found {len(pngs)}')
+    for i,(image,slide_part) in enumerate(zip(pngs,slide_parts),1):
         page=doc.new_page(width=width,height=height);page.insert_image(page.rect,filename=str(image))
         page.insert_font(fontname='anvest',fontfile=font)
-        tree=E.fromstring(z.read(f'ppt/slides/slide{i}.xml'))
+        tree=E.fromstring(z.read(slide_part))
         for shape in tree.xpath('//p:sp',namespaces=ns):
             text=' '.join(shape.xpath('.//a:t/text()',namespaces=ns))
             if not text:continue
@@ -41,7 +53,7 @@ with ZipFile(source) as z:
             x,y,cx,cy=[int(obj.get(k))/12700 for obj,k in [(off,'x'),(off,'y'),(ext,'cx'),(ext,'cy')]]
             text='\n'.join(' '.join(row.xpath('.//a:t/text()',namespaces=ns)) for row in tables[0].findall('a:tr',ns))
             page.insert_textbox(fitz.Rect(x,y,x+cx,y+cy),text,fontname='anvest',fontsize=5,render_mode=3)
-        page.insert_text((42,height-10),'Anvest · Confidential · 20 Oct 2026',fontname='anvest',fontsize=5,render_mode=3)
-    doc.set_metadata({'title':source.stem.replace('_',' '),'author':'Anvest','subject':'Investor materials, 20 October 2026','creator':'Rendered from editable PPTX; original product screenshots preserved'})
+        page.insert_text((42,height-10),'Anvest · Confidential · Version 1 Nov 2026',fontname='anvest',fontsize=5,render_mode=3)
+    doc.set_metadata({'title':source.stem.replace('_',' '),'author':'Anvest','subject':'Investor materials, 1 November 2026','creator':'Rendered from editable PPTX; original product screenshots preserved'})
     doc.save(out,garbage=4,deflate=True)
 print(out)

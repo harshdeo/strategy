@@ -1,6 +1,6 @@
 # Anvest Strategy — File Guide
 
-**Organised by use case, 14 October 2026. Current investor materials: 20 Oct 2026.**
+**Organised by use case, 14 October 2026. Current investor materials: 1 Nov 2026.**
 
 ## Folder map
 
@@ -19,14 +19,14 @@
 
 | File | Use |
 |---|---|
-| [Seed deck](Investor_Materials/Anvest_Seed_Deck.pptx) ([PDF](Investor_Materials/Anvest_Seed_Deck.pdf)) | Seed pitch: 16 main slides and 5 appendix slides, with speaker notes. "India's AI research co-pilot": problem, solution (the founder's flow slide), product, traction, why now, market, task-based competition, moat, business model, go-to-market, future of trading, financial plan, team, the $500K ask and close |
-| [Strategic integration deck](Investor_Materials/Anvest_Strategic_Integration_Deck.pptx) ([PDF](Investor_Materials/Anvest_Strategic_Integration_Deck.pdf)) | Scoped read-only broker pilot (no equity). The cover, slide 4 and the closing slide are Zerodha/Kite-specific |
+| [Seed deck](Investor_Materials/Anvest_Seed_Deck.pptx) ([PDF](Investor_Materials/Anvest_Seed_Deck.pdf)) | Seed pitch: 12 core slides and 5 appendix slides, with speaker notes. Product replay and source-audit scope are separated from customer traction and answer-quality claims. |
+| [Strategic integration deck](Investor_Materials/Anvest_Strategic_Integration_Deck.pptx) ([PDF](Investor_Materials/Anvest_Strategic_Integration_Deck.pdf)) | Partner discussion proposal for a potential scoped, approved read-only pilot; no current pilot or equity request is represented. Zerodha/Kite-specific concepts are proposed integration paths. |
 | [One-pager](Investor_Materials/Anvest_OnePager.pdf) | Investor overview to attach to the first email |
 | [Data provenance memo](Investor_Materials/Anvest_Data_Provenance_Memo.pdf) | Diligence memo, on request |
 
 The `.pptx` files are the editable masters, with speaker notes. The `.pdf` files are the copies to send: they render the same everywhere and leave out the notes. Each PDF carries the same version label as its master.
 
-The story in one line: **India's AI research co-pilot: cited filing answers, costed backtests and portfolio impact, for SEBI-registered professionals and serious investors.** Desk seats and partner API/MCP licences carry this round; retail subscriptions are self-serve upside. The ask leads with $500K (first close $400K, room to $700K). Exchange-registered strategies belong to the long-term scenario, after approvals. ITR is deliberately left out while it is in progress.
+The story in one line: **Filing-cited research for Indian advisory teams, with screening, costed backtesting and paper workflows in one product.** Desk seats are the first modeled revenue stream; partner APIs and individual subscriptions are modeled expansion paths. The $500K target, $400K first close and $700K room are proposed terms. Exchange-registered strategies belong to the long-term scenario after applicable approvals. ITR is deliberately left out while it is in progress.
 
 ## Working documents
 
@@ -36,13 +36,13 @@ The story in one line: **India's AI research co-pilot: cited filing answers, cos
 - [operating_model.py](Financial_Models/operating_model.py) is the single source for every revenue, cost, runway and market-size figure. Run it for a summary; run it with `--xlsx` to regenerate [Anvest_Operating_Model.xlsx](Financial_Models/Anvest_Operating_Model.xlsx). The [pricing reference](Financial_Models/PRICING_AND_UNIT_ECONOMICS.md) is the dated tier-design and unit-cost analysis.
 - Use the [funding plan](Internal_Strategy/FUNDING_PLAN.md), [GTM plan](Internal_Strategy/GTM_PLAN.md) and [targeting plan](Internal_Strategy/INVESTOR_TARGETING_PLAN.md) for priorities and diligence preparation.
 - The [broker/data strategy](Internal_Strategy/LIVE_DATA_AND_BROKER_STRATEGY.md) preserves a dated 9 October audit; it is not a fresh production certification.
-- Start with the [outreach playbook](Outreach/OUTREACH_PLAYBOOK.md): 26 current-round candidates sequenced across three waves, plus clearly marked networks, later-stage funds and unverified routes. Use the [drafts](Outreach/Anvest_Outreach_Emails.md), log actual sends and follow-ups in the [tracker](Outreach/Anvest_Investor_Tracker.xlsx), and review [contact research notes](Outreach/CONTACT_RESEARCH_NOTES.md). Contacts were researched on 20 Oct 2026; no messages were sent.
+- Start with the [outreach playbook](Outreach/OUTREACH_PLAYBOOK.md): 27 current-round candidates sequenced across three waves, plus clearly marked networks, later-stage funds and unverified routes. Use the [drafts](Outreach/Anvest_Outreach_Emails.md), log actual sends and follow-ups in the [tracker](Outreach/Anvest_Investor_Tracker.xlsx), and review [contact research notes](Outreach/CONTACT_RESEARCH_NOTES.md). The contact register preserves source dates per target; Elevation, Blume, Accel/Atoms and Rainmatter were rechecked on 1 Nov 2026. No messages were sent.
 - The [brand guide](Brand/BRAND_GUIDE.md) maps the palette and backgrounds; the current seed deck is the visual reference.
 
 ## After any change
 
-1. Update the model inputs or the `.pptx` master. Keep the date consistent in every footer; internal draft identifiers never appear in materials sent to investors.
-2. Re-export each changed deck to PDF (PowerPoint or Keynote: File → Export → PDF).
+1. Update the model inputs or the `.pptx` master. Keep the version label consistent in every material; evidence snapshot dates stay attached to the evidence.
+2. Re-export each changed deck to PDF with the maintained export scripts.
 3. Run the check; it must print PASS:
 
 ```bash
