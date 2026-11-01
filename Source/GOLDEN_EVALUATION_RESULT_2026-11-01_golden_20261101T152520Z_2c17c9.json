@@ -1,0 +1,1017 @@
+{
+ "run_id": "golden_20261101T152520Z_2c17c9",
+ "denominator": 50,
+ "passed": 7,
+ "failed": 43,
+ "completed_slots": 49,
+ "unfinished_slots": 1,
+ "failure_causes": {
+  "scope_incomplete": [
+   "G01",
+   "G02",
+   "G06",
+   "G07",
+   "G18",
+   "G19",
+   "G20",
+   "G33",
+   "G36"
+  ],
+  "wrong_route": [
+   "G03",
+   "G04",
+   "G10",
+   "G11",
+   "G24",
+   "G29",
+   "G32",
+   "G35",
+   "G39",
+   "G41",
+   "G42",
+   "G45"
+  ],
+  "declined_data": [
+   "G05",
+   "G09",
+   "G13",
+   "G14",
+   "G16",
+   "G23"
+  ],
+  "wrong_answer": [
+   "G08",
+   "G17"
+  ],
+  "wrong_period": [
+   "G12"
+  ],
+  "generic_prose": [
+   "G15",
+   "G21",
+   "G25",
+   "G26",
+   "G27",
+   "G28",
+   "G30"
+  ],
+  "wrong_subject": [
+   "G22"
+  ],
+  "boundary_incomplete": [
+   "G31",
+   "G40"
+  ],
+  "wrong_scope": [
+   "G38"
+  ],
+  "error": [
+   "G49"
+  ],
+  "wrong_claim": [
+   "G50"
+  ]
+ },
+ "suite_sha256": "6c8ca83166ee4636456f11e32bf6d6267666f3449857573507b734744cd2fc63",
+ "receipt_sha256": "79aa247ba202d72b3a7aa8708dee0753c1bd5a3ca43be3998804c8bce6f2ca68",
+ "clock": "2026-10-30T17:00:00+05:30",
+ "build": {
+  "source_heads": {
+   "intelligence": "1b10785ebb5cd612980e5514f5dc9ea8855c6361",
+   "data-platform": "c8d300fe73578ba34074997f2ad1936fe9cc567b",
+   "query-api": "e0d39522d69fe5eea76b41698369ecba0fef5712",
+   "broker-portfolio": "629e32114b33bb62204d586a9a2c78b3c2a0bee4"
+  },
+  "frozen_server_sha256": "bb6f8d4890ec4b0a5f4f29e16827429e4b1601653c7b618884bc3b25eb22024c",
+  "sdk_pin": "google-genai==1.47.0",
+  "python": "3.14.6",
+  "dirty_working_tree_files_not_used": {
+   "intelligence": [
+    {
+     "status": "M",
+     "path": "tests/test_signed_off_numerical_expectations_l08.py",
+     "sha256": "dff19f54f9295d3b4efbc2f1aa6f10f76a1f25fa502a761ef9603e0c777b6b6d"
+    }
+   ],
+   "data-platform": [
+    {
+     "status": "M",
+     "path": "app/services/indices/contract_backfill.py",
+     "sha256": "b5d06c19b8884330e61b27d1cc897682344f735cc763e32ff77273a0e48b1424"
+    },
+    {
+     "status": "M",
+     "path": "tests/test_index_contracts_migration_postgres.py",
+     "sha256": "3e653bfd073c3f34d2d1a0971a86ec15e60fa83ae363a716e859322d599586b3"
+    },
+    {
+     "status": "??",
+     "path": "reports/announcement-completeness/",
+     "sha256": null
+    }
+   ]
+  },
+  "localized_warehouse_slices": {
+   "feature_store_daily": {
+    "rows": 247431,
+    "from": "2026-08-31",
+    "to": "2026-10-15",
+    "window_days": 60,
+    "clock_day": "2026-10-30"
+   }
+  }
+ },
+ "spend": {
+  "before": {
+   "measured_inr": 7.5995,
+   "reserved_inr": 0.0,
+   "uncertain_inr": 110.0,
+   "total_inr": 117.5995,
+   "cap_inr": 1000.0,
+   "headroom_inr": 882.4005,
+   "open_attempts": [],
+   "uncertain_attempts": [
+    "eval_owned_35ecba15c2:0001:825d54",
+    "eval_owned_eb450a7600:0001:14a095",
+    "seed:0013:eval_owned_e63af03a91:C13",
+    "seed:0016:eval_owned_e63af03a91:C16",
+    "seed:0020:eval_owned_e63af03a91:C20",
+    "seed:0034:eval_owned_e0d3572640:C16",
+    "seed:0036:eval_owned_e0d3572640:C20",
+    "seed:0053:eval_owned_fe6fdc66a8:G12",
+    "seed:0070:eval_owned_fe6fdc66a8:G29",
+    "seed:0073:eval_owned_fe6fdc66a8:G32",
+    "seed:0077:eval_owned_fe6fdc66a8:G36",
+    "seed:0082:eval_owned_fe6fdc66a8:G41",
+    "seed:0083:eval_owned_fe6fdc66a8:G42",
+    "seed:0084:eval_owned_fe6fdc66a8:G43",
+    "seed:0085:eval_owned_fe6fdc66a8:G44",
+    "seed:0086:eval_owned_fe6fdc66a8:G45",
+    "seed:0087:eval_owned_fe6fdc66a8:G46",
+    "seed:0088:eval_owned_fe6fdc66a8:G47",
+    "seed:0089:eval_owned_fe6fdc66a8:G48",
+    "seed:0090:eval_owned_fe6fdc66a8:G49",
+    "seed:0091:eval_owned_fe6fdc66a8:G50",
+    "seed:0099:eval_owned_2e7a7bad1d:G49"
+   ]
+  },
+  "after": {
+   "measured_inr": 11.8343,
+   "reserved_inr": 0.0,
+   "uncertain_inr": 115.0,
+   "total_inr": 126.8343,
+   "cap_inr": 1000.0,
+   "headroom_inr": 873.1657,
+   "open_attempts": [],
+   "uncertain_attempts": [
+    "eval_owned_35ecba15c2:0001:825d54",
+    "eval_owned_8381288129:0049:dc3c70",
+    "eval_owned_eb450a7600:0001:14a095",
+    "seed:0013:eval_owned_e63af03a91:C13",
+    "seed:0016:eval_owned_e63af03a91:C16",
+    "seed:0020:eval_owned_e63af03a91:C20",
+    "seed:0034:eval_owned_e0d3572640:C16",
+    "seed:0036:eval_owned_e0d3572640:C20",
+    "seed:0053:eval_owned_fe6fdc66a8:G12",
+    "seed:0070:eval_owned_fe6fdc66a8:G29",
+    "seed:0073:eval_owned_fe6fdc66a8:G32",
+    "seed:0077:eval_owned_fe6fdc66a8:G36",
+    "seed:0082:eval_owned_fe6fdc66a8:G41",
+    "seed:0083:eval_owned_fe6fdc66a8:G42",
+    "seed:0084:eval_owned_fe6fdc66a8:G43",
+    "seed:0085:eval_owned_fe6fdc66a8:G44",
+    "seed:0086:eval_owned_fe6fdc66a8:G45",
+    "seed:0087:eval_owned_fe6fdc66a8:G46",
+    "seed:0088:eval_owned_fe6fdc66a8:G47",
+    "seed:0089:eval_owned_fe6fdc66a8:G48",
+    "seed:0090:eval_owned_fe6fdc66a8:G49",
+    "seed:0091:eval_owned_fe6fdc66a8:G50",
+    "seed:0099:eval_owned_2e7a7bad1d:G49"
+   ]
+  }
+ },
+ "primary_filings": [
+  {
+   "symbol": "HCLTECH",
+   "period_end": "2025-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1546667_13102025070412_WEB.xml",
+   "sha256": "accf64b1e565797da49a4c74129e5136ca74a6a633d5807680939e407c7a8417",
+   "bytes": 7060504
+  },
+  {
+   "symbol": "HCLTECH",
+   "period_end": "2025-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1546693_13102025071311_WEB.xml",
+   "sha256": "d6defe7a8f1a5332bf1bd634674044376e5120fd409d7741f07bef16218a260b",
+   "bytes": 73788
+  },
+  {
+   "symbol": "HCLTECH",
+   "period_end": "2026-06-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1691777_13072026072104_WEB.xml",
+   "sha256": "2096bf289a830ee0fd12060d30070b4b89980316a0c10cebb7e379a156f3cbad",
+   "bytes": 34497
+  },
+  {
+   "symbol": "HCLTECH",
+   "period_end": "2026-06-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1691776_13072026072058_WEB.xml",
+   "sha256": "1c80d808b8223f12ffe47224196da583f1b0f803950d019276a7f78db029c2b9",
+   "bytes": 34782
+  },
+  {
+   "symbol": "HCLTECH",
+   "period_end": "2026-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1736455_12102026074754_WEB.xml",
+   "sha256": "55a69fcaad3c0d1d83386f3d822788d43454a37c1bd9060434c78ad174f3ad89",
+   "bytes": 7064451
+  },
+  {
+   "symbol": "HCLTECH",
+   "period_end": "2026-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1736452_12102026073824_WEB.xml",
+   "sha256": "168a01a7ee76b847ac06fbe29a3bdd2de11b1219f7e64ece8a853da1a7cf028e",
+   "bytes": 88052
+  },
+  {
+   "symbol": "HDFCBANK",
+   "period_end": "2025-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1553885_18102025082238_WEB.xml",
+   "sha256": "2a2c8f2c888b7be911486ab7290f340c076a03055b06a8472ab484ee86fcde99",
+   "bytes": 2496329
+  },
+  {
+   "symbol": "HDFCBANK",
+   "period_end": "2025-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1553886_18102025082322_WEB.xml",
+   "sha256": "d7431b6f7c0c3e5386683b713a28e75485f31faf0908999f9964b5faa5d3a0de",
+   "bytes": 76902
+  },
+  {
+   "symbol": "HDFCBANK",
+   "period_end": "2026-06-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1696125_18072026040136_WEB.xml",
+   "sha256": "d98e8af7eb7eaf6b0184f795f28a0511c36a5dc533f1150d131d4a4fa956f30f",
+   "bytes": 33852
+  },
+  {
+   "symbol": "HDFCBANK",
+   "period_end": "2026-06-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1696123_18072026040126_WEB.xml",
+   "sha256": "7c5f4cfae145b0ac20dcbb7081c6a76488fb1ffea1b42e49ddd4a6f46d6cf38b",
+   "bytes": 41511
+  },
+  {
+   "symbol": "HDFCBANK",
+   "period_end": "2026-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740912_17102026054806_WEB.xml",
+   "sha256": "8dddcb835403be82ccf2bf8cea87cc0c1f64d66652a505eb7b273986f10a94f7",
+   "bytes": 1367435
+  },
+  {
+   "symbol": "HDFCBANK",
+   "period_end": "2026-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1740913_17102026054812_WEB.xml",
+   "sha256": "41840bebf50eacb915fe9ddd2d7cd2bace3d6fffdaa0898a482bd56ddd94aa3b",
+   "bytes": 80749
+  },
+  {
+   "symbol": "INFY",
+   "period_end": "2025-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1550998_16102025093913_WEB.xml",
+   "sha256": "bb3dba24c0cc33f318141cf9733b3b3d02c1b883de36ba57541b825d9c6510b6",
+   "bytes": 1822598
+  },
+  {
+   "symbol": "INFY",
+   "period_end": "2025-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1551001_16102025094433_WEB.xml",
+   "sha256": "412f184d7ef6ed8d9c24a53f784abf76038f2ba49ed5f88533bdbd6685b0256f",
+   "bytes": 107207
+  },
+  {
+   "symbol": "INFY",
+   "period_end": "2026-06-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1700098_23072026054118_WEB.xml",
+   "sha256": "6116b0db3b0f42654892d531a415a423e0ebc32bafdfd62ab70ec303f19cc7b8",
+   "bytes": 22223
+  },
+  {
+   "symbol": "INFY",
+   "period_end": "2026-06-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1700136_23072026054446_WEB.xml",
+   "sha256": "5928e8ca820f60f944a66367291a7dc76c8df4536dfaf5627f3d3ff077487bae",
+   "bytes": 53642
+  },
+  {
+   "symbol": "INFY",
+   "period_end": "2026-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1745057_23102026082111_WEB.xml",
+   "sha256": "66398d01c8bd3f0198e8ef465a83e4cbbf240fbb2322dabb5adf156c71b8f6c4",
+   "bytes": 1948904
+  },
+  {
+   "symbol": "INFY",
+   "period_end": "2026-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1745058_23102026082117_WEB.xml",
+   "sha256": "3ffaef97b427b567ff5905eca05e40acc88ea4290a6584dcc6a9b4403ae54d99",
+   "bytes": 152312
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "period_end": "2025-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1556942_25102025054424_WEB.xml",
+   "sha256": "7f1bd266ee75ba687da82c8d84874d8d7f45d3d830afd9694c3151c23925d8a3",
+   "bytes": 6573890
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "period_end": "2025-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1556931_25102025051126_WEB.xml",
+   "sha256": "dda391c330ce7412dfc67c64e0c41586a194818ae40fe9ed93ea42dec3b2ce8c",
+   "bytes": 83510
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "period_end": "2026-06-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1696291_18072026064707_WEB.xml",
+   "sha256": "721aba2f5ca4fe5e6ac1482a654e81873f5353715f271f775080782065f9be4e",
+   "bytes": 27579
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "period_end": "2026-06-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1696293_18072026064953_WEB.xml",
+   "sha256": "1bb6d6d95effdb90d256eaaca3f622f4c3966c6a94a3e2f4234f6e5317280db9",
+   "bytes": 46353
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "period_end": "2026-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1745379_24102026050751_WEB.xml",
+   "sha256": "a40e30c3ba7d7bd97900783ca4424e57696b4d1dc5601675b6f5a29b81e424b1",
+   "bytes": 6776149
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "period_end": "2026-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1745380_24102026050818_WEB.xml",
+   "sha256": "e5f8dd57cfadb16f256c66e1b18042c4a17de3a49367c7b33638d64bee55918e",
+   "bytes": 135815
+  },
+  {
+   "symbol": "SBIN",
+   "period_end": "2025-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1564663_04112025040841_WEB.xml",
+   "sha256": "3b244dc3478d992af585f2f675e02798380d8f3e859fa0700c969faeb36cb18f",
+   "bytes": 244610
+  },
+  {
+   "symbol": "SBIN",
+   "period_end": "2025-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1564664_04112025040911_WEB.xml",
+   "sha256": "9a70602a03d67fa55d0beb8ad9ba5189b75c224e0468aff968482029b9684d33",
+   "bytes": 80172
+  },
+  {
+   "symbol": "SBIN",
+   "period_end": "2026-06-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1709644_07082026025925_WEB.xml",
+   "sha256": "327222dbfa40ff23c16270a47a312966cfd162fc59e94df82c39b48c718016a5",
+   "bytes": 31880
+  },
+  {
+   "symbol": "SBIN",
+   "period_end": "2026-06-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_BANKING_1709692_07082026034917_WEB.xml",
+   "sha256": "e08b6df4029e2d00dd80a9f6312991c4eaf9b6ecea16fc5abdf28d8805279f4b",
+   "bytes": 39706
+  },
+  {
+   "symbol": "TCS",
+   "period_end": "2025-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1543878_09102025115254_WEB.xml",
+   "sha256": "9a2426dfb4b93a18509ea3197fcd96acbcc77b30ca93bd194fe1815806dd65f3",
+   "bytes": 3517476
+  },
+  {
+   "symbol": "TCS",
+   "period_end": "2025-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1543879_09102025115624_WEB.xml",
+   "sha256": "625e7c0db736a1df077ea75ba45a3d5ee1a16047f88cc6304fb97ac2e51a97f2",
+   "bytes": 96092
+  },
+  {
+   "symbol": "TCS",
+   "period_end": "2026-06-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1690003_09072026063612_WEB.xml",
+   "sha256": "ad52c02ef6a447df4d0b247f46197cc2a3f07659988c622133774794756741a3",
+   "bytes": 18685
+  },
+  {
+   "symbol": "TCS",
+   "period_end": "2026-06-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1690004_09072026063620_WEB.xml",
+   "sha256": "ef4034549b7f3acd942b08e89dff3df11eed3a9174fb720cfbc5e4a759925c60",
+   "bytes": 45281
+  },
+  {
+   "symbol": "TCS",
+   "period_end": "2026-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1734606_08102026100748_WEB.xml",
+   "sha256": "0489821f0a266d5120014a21d3ad89fed4f47ad92e05eb8e679f84dc0b82e6d8",
+   "bytes": 3639357
+  },
+  {
+   "symbol": "TCS",
+   "period_end": "2026-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1734607_08102026100810_WEB.xml",
+   "sha256": "613039552dfbe7ac779ef62340b5df844da05c3a2c8a2d943c69cf6fe862353c",
+   "bytes": 107357
+  },
+  {
+   "symbol": "WIPRO",
+   "period_end": "2025-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1550248_16102025035948_WEB.xml",
+   "sha256": "66c8beb9de0ed02bf0e00ffa1698ede92ee25faf89b69fce2b2fb0710ccb983b",
+   "bytes": 7249203
+  },
+  {
+   "symbol": "WIPRO",
+   "period_end": "2025-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1550259_16102025040151_WEB.xml",
+   "sha256": "afc0a9a8e933b622c61e3724f6170ce74c6fbf1db7786bb3b4b70928b6546259",
+   "bytes": 119407
+  },
+  {
+   "symbol": "WIPRO",
+   "period_end": "2026-06-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1694192_16072026040514_WEB.xml",
+   "sha256": "7528dc4a35e0e9e4c4adf90e7153525e5adacf4bace7f188c13d10373ea0184b",
+   "bytes": 25053
+  },
+  {
+   "symbol": "WIPRO",
+   "period_end": "2026-06-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1694191_16072026040508_WEB.xml",
+   "sha256": "abd5896973d0275846eb56e35eab2e7e92c17805d66ae394e30a4d65ea902ba7",
+   "bytes": 56776
+  },
+  {
+   "symbol": "WIPRO",
+   "period_end": "2026-09-30",
+   "basis": "standalone",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1738910_15102026040914_WEB.xml",
+   "sha256": "46211a032c90e519c98df3b25244bf04c9cf632d3e90a9858f0cfceb65e41fb0",
+   "bytes": 6991776
+  },
+  {
+   "symbol": "WIPRO",
+   "period_end": "2026-09-30",
+   "basis": "consolidated",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1738911_15102026040930_WEB.xml",
+   "sha256": "c36f3543f32156f205a7274e7182381af352240eee6403642564cb56fe7c2f27",
+   "bytes": 131310
+  }
+ ],
+ "verdicts": [
+  {
+   "id": "G01",
+   "verdict": "FAIL",
+   "failure_cause": "scope_incomplete",
+   "observation": "EBIT margin 23.98% (prior year 25.18%) and net margin 18.70% match the TCS filings, but revenue and PAT are never stated and the filing link is not given.",
+   "status": "completed",
+   "elapsed_s": 4.0,
+   "answer_sha256": "07e69f179b9a74f2bac962d9d31619db22ceb661d864f809e895fe42831da9d4",
+   "question": "What did TCS report in Q2 FY27 consolidated results, and how did operating margin change YoY? Cite the filing."
+  },
+  {
+   "id": "G02",
+   "verdict": "FAIL",
+   "failure_cause": "scope_incomplete",
+   "observation": "Margins match the filings, but one net margin per company is given; the two denominators (total income and operating revenue) are not shown.",
+   "status": "completed",
+   "elapsed_s": 4.4,
+   "answer_sha256": "929e611a95e9cbe3b1517a2d9a008ae9012539d71d1edbf254b1f8f0ba7508c4",
+   "question": "Compare Infosys vs. HCLTech Q2 FY27 net margin using both total income and operating revenue."
+  },
+  {
+   "id": "G03",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Treated 'Consolidated' as a company name and asked which of two unrelated issuers was meant.",
+   "status": "completed",
+   "elapsed_s": 4.0,
+   "answer_sha256": "77788f2e6ac9464c4e896c1dca56a59c3ee2868b3ff3cbdebcd18a7660f3be0f",
+   "question": "Show TCS Q2 FY27 standalone vs. consolidated revenue and PAT side by side."
+  },
+  {
+   "id": "G04",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Asked which company to compare Reliance with; no EBITDA margin.",
+   "status": "completed",
+   "elapsed_s": 3.0,
+   "answer_sha256": "a75d4978409b5bd5083a09ee987281944256f937cd9b667e69558a2985b79a01",
+   "question": "What is Reliance Industries' Q2 FY27 consolidated EBITDA margin and how does it compare to Q1?"
+  },
+  {
+   "id": "G05",
+   "verdict": "FAIL",
+   "failure_cause": "declined_data",
+   "observation": "Gives no quarterly revenue figures and says the series was not compiled.",
+   "status": "completed",
+   "elapsed_s": 4.5,
+   "answer_sha256": "ee2a6243c0f4cbe263473e40417d6859a8aafab4e616fb326e1344dc8f35b3fe",
+   "question": "Show the quarterly revenue trend for HDFC Bank FY25–FY27 on a consolidated basis."
+  },
+  {
+   "id": "G06",
+   "verdict": "FAIL",
+   "failure_cause": "scope_incomplete",
+   "observation": "Margin 16.10% on revenue from operations is labelled and matches the filing; the operating profit amount (about 3,986 crore) is not stated, and the prior-year net margin 13.73% differs from the filing's 13.80%.",
+   "status": "completed",
+   "elapsed_s": 1.3,
+   "answer_sha256": "9dc38f7318113de00736b423942eddcf9d4ff25a82c75c10ebe1418ecbddda42",
+   "question": "What is Wipro's Q2 FY27 operating profit? Is the margin computed on revenue from operations or total income?"
+  },
+  {
+   "id": "G07",
+   "verdict": "FAIL",
+   "failure_cause": "scope_incomplete",
+   "observation": "PAT growth +14.86% / +6.28% / +21.15% match the filings; the prior-year bases (12,131 / 7,375 / 4,236 crore) the prompt asks for are not shown.",
+   "status": "completed",
+   "elapsed_s": 2.8,
+   "answer_sha256": "b4dc398e7fa3d080119d54111fd5eda4724264aa90ec18b014a627c4c6910415",
+   "question": "Compare the PAT growth rate of TCS, Infosys and HCLTech for Q2 FY27 vs Q2 FY26."
+  },
+  {
+   "id": "G08",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_answer",
+   "observation": "Returned an overall quality score and profit growth; no basic or diluted EPS.",
+   "status": "completed",
+   "elapsed_s": 2.0,
+   "answer_sha256": "a14c1375fb212d53cccc3551e84f1f56d640d0e93351355c59cee77c1feb4cc6",
+   "question": "What was the EPS (basic and diluted) for Bajaj Finance in Q2 FY27?"
+  },
+  {
+   "id": "G09",
+   "verdict": "FAIL",
+   "failure_cause": "declined_data",
+   "observation": "Says net interest income is not in the filing; none given.",
+   "status": "completed",
+   "elapsed_s": 3.5,
+   "answer_sha256": "a478db530262ab690a7fe09985acdf9cdaa0187dca84bef1768b8bd78c26bfcf",
+   "question": "Show ICICI Bank's Q2 FY27 net interest income — consolidated."
+  },
+  {
+   "id": "G10",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Asked which company to compare Bharti Airtel with.",
+   "status": "completed",
+   "elapsed_s": 2.6,
+   "answer_sha256": "d1b99f6b3c0bcba742200d4fca0b20204337eff6b1740f1a7c44c712c914fc2d",
+   "question": "What is the difference between Bharti Airtel's reported EBITDA and its adjusted EBITDA for Q2 FY27?"
+  },
+  {
+   "id": "G11",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Gave revenue and profit growth and a score, added an unrelated company (NETWEB); no NII, net profit amounts or provisions.",
+   "status": "completed",
+   "elapsed_s": 6.2,
+   "answer_sha256": "4056813d28510d9dc0fb6f05f102c51b79ee7c21d7a0dbe6a03cc9c44dcb4d1d",
+   "question": "Compare HDFCBANK vs. ICICIBANK latest quarterly NII, net profit, and provisions from their exchange filings."
+  },
+  {
+   "id": "G12",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_period",
+   "observation": "Gave gross NPA 1.47% and net NPA 0.38% for the quarter ended 30 June 2026, not Q2 FY27; no provision coverage ratio. No Q2 FY27 SBI filing is in the warehouse.",
+   "status": "completed",
+   "elapsed_s": 8.2,
+   "answer_sha256": "2cf071a6f5d34d32ce7a20821222056bfdd3758144a6055b3e46946c01b937c3",
+   "question": "What was SBI's Q2 FY27 gross NPA ratio and provision coverage ratio?"
+  },
+  {
+   "id": "G13",
+   "verdict": "FAIL",
+   "failure_cause": "declined_data",
+   "observation": "Says operating profit and slippages were not disclosed in the provided sources.",
+   "status": "completed",
+   "elapsed_s": 4.0,
+   "answer_sha256": "88f5ef72d7db337133519185b801df15aa39cb8fb6ce078b71064f1b683d63ec",
+   "question": "Show Punjab National Bank's latest quarterly operating profit and slippage data."
+  },
+  {
+   "id": "G14",
+   "verdict": "FAIL",
+   "failure_cause": "declined_data",
+   "observation": "States the filing does not report CASA ratio; no figure and no basis for the statement.",
+   "status": "completed",
+   "elapsed_s": 1.8,
+   "answer_sha256": "5b3ee2d17d10c35064e4314a3d8d329579cc97718660d1b565e105029d9fab1f",
+   "question": "What did Canara Bank report as its CASA ratio in Q2 FY27?"
+  },
+  {
+   "id": "G15",
+   "verdict": "FAIL",
+   "failure_cause": "generic_prose",
+   "observation": "Describes how OCR extraction works; no document or figures.",
+   "status": "completed",
+   "elapsed_s": 6.1,
+   "answer_sha256": "87e9d9e9411dca533c895758d60b9379b16c9522c6429d62b696f91deb41de35",
+   "question": "Extract segment revenue and order-book disclosures from a mid-cap scanned earnings PDF."
+  },
+  {
+   "id": "G16",
+   "verdict": "FAIL",
+   "failure_cause": "declined_data",
+   "observation": "Says the growth figures were not in the source text.",
+   "status": "completed",
+   "elapsed_s": 4.3,
+   "answer_sha256": "06d54ed9971184f3d49514068d67cadb0a611077af9622697e3284a5085b875e",
+   "question": "Show Bank of Baroda's Q2 FY27 advances growth and deposit growth."
+  },
+  {
+   "id": "G17",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_answer",
+   "observation": "Gave net margin only; neither an operating margin nor the statement that a lender has none.",
+   "status": "completed",
+   "elapsed_s": 0.2,
+   "answer_sha256": "ee8ff78e140af7d4e53f1bcd1f3a62ae470ac048181d381a293e41810ac339ec",
+   "question": "What was Kotak Mahindra Bank's Q2 FY27 operating profit margin?"
+  },
+  {
+   "id": "G18",
+   "verdict": "FAIL",
+   "failure_cause": "scope_incomplete",
+   "observation": "Net profit 1,912 crore stated; net interest margin not given.",
+   "status": "completed",
+   "elapsed_s": 1.5,
+   "answer_sha256": "34f6cb4f7082deed61d68452d315f9bd57407ef3295f7e4f26b8ef92d2cbe57e",
+   "question": "Show Indian Overseas Bank's latest quarterly results — net profit and NIM."
+  },
+  {
+   "id": "G19",
+   "verdict": "FAIL",
+   "failure_cause": "scope_incomplete",
+   "observation": "Return on assets for SBI only; none for HDFC Bank.",
+   "status": "completed",
+   "elapsed_s": 3.6,
+   "answer_sha256": "ca5617a88b6d2c8fec1820321d380184d2fc9fe74bc2955fc52080a8ddbc3e36",
+   "question": "Compare HDFCBANK and SBI Q2 FY27 return on assets."
+  },
+  {
+   "id": "G20",
+   "verdict": "FAIL",
+   "failure_cause": "scope_incomplete",
+   "observation": "Interest earned and PAT only; not the key highlights (NII, NPA, margins).",
+   "status": "completed",
+   "elapsed_s": 0.4,
+   "answer_sha256": "1b6ca83c7fc91ca887f894f62dfdb433e1c5f0d95484633c1edbf02a3ac467fa",
+   "question": "Extract the key financial highlights from Union Bank of India's Q2 FY27 results."
+  },
+  {
+   "id": "G21",
+   "verdict": "FAIL",
+   "failure_cause": "generic_prose",
+   "observation": "General method for repairing XBRL tags; no company data.",
+   "status": "completed",
+   "elapsed_s": 5.5,
+   "answer_sha256": "a59db3d5fabed055b52e49fe9d68253efe630ca84f7e5a52f2a1eafdb8de88dc",
+   "question": "Show operating cash flow and free cash flow trends for a company where raw NSE XBRL had mislabelled period tags."
+  },
+  {
+   "id": "G22",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_subject",
+   "observation": "Picked an unrelated tiny issuer (Containerway) and gave a quarter, not an FY26 annual figure.",
+   "status": "completed",
+   "elapsed_s": 1.3,
+   "answer_sha256": "6da29ebdc17c5d228455f223b54134e2bc50432a7eeeacccc583dc18613a9b17",
+   "question": "What is the FY26 annual revenue for a company whose Q4 filing footnotes contain the annual figure?"
+  },
+  {
+   "id": "G23",
+   "verdict": "FAIL",
+   "failure_cause": "declined_data",
+   "observation": "Says no operating cash flow for Tata Steel is in the evidence.",
+   "status": "completed",
+   "elapsed_s": 3.6,
+   "answer_sha256": "4c98f76a7e3435ab9f2a34f8688c3864f59bdc8ebc2774781e743de4279a65a3",
+   "question": "Show the cash flow from operations for Tata Steel over the last 4 quarters."
+  },
+  {
+   "id": "G24",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Asked which company to compare 'Consolidated Finvest & Holdings' with.",
+   "status": "completed",
+   "elapsed_s": 3.2,
+   "answer_sha256": "195d026eb028abd1cd191b0d5e00a6026527f90aa84db2b5bcdb04561917ed2b",
+   "question": "What is the FY26 total borrowing for a company with conflicting debt numbers between standalone and consolidated?"
+  },
+  {
+   "id": "G25",
+   "verdict": "FAIL",
+   "failure_cause": "generic_prose",
+   "observation": "Method text plus an unrelated mutual-fund table; no depreciation data.",
+   "status": "completed",
+   "elapsed_s": 4.9,
+   "answer_sha256": "c9f04860f19ac2b6104e59bcd8b87a6f89ba62462d9aec2a1df6dd038a095541",
+   "question": "Show quarterly depreciation for a mid-cap whose XBRL tags were mislabelled."
+  },
+  {
+   "id": "G26",
+   "verdict": "FAIL",
+   "failure_cause": "generic_prose",
+   "observation": "General reconciliation procedure; no numbers, no restatement cited.",
+   "status": "completed",
+   "elapsed_s": 4.5,
+   "answer_sha256": "bebd03abe0e784f0c11de37d296d8232c99bb9467810f65e055163138952246a",
+   "question": "Reconcile Q1–Q4 quarterly revenue to reported FY annual revenue where Q4 footnotes contained restatements."
+  },
+  {
+   "id": "G27",
+   "verdict": "FAIL",
+   "failure_cause": "generic_prose",
+   "observation": "Says no verified figure and explains the ratio; no trend.",
+   "status": "completed",
+   "elapsed_s": 4.9,
+   "answer_sha256": "9097c312679b57e9b6ab2a73d5e8de740f5350e5b3bf53f5abb421357b16e267",
+   "question": "Show the interest coverage ratio trend where historical XBRL had corrupted interest expense data."
+  },
+  {
+   "id": "G28",
+   "verdict": "FAIL",
+   "failure_cause": "generic_prose",
+   "observation": "General discussion; no company, no trend.",
+   "status": "completed",
+   "elapsed_s": 4.6,
+   "answer_sha256": "cc687346d69a76337d933b975ec5174880641887187fcb8044092bf216251bb5",
+   "question": "What is the working capital trend for a company with mislabelled current-asset XBRL tags?"
+  },
+  {
+   "id": "G29",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Listed recent filings for large caps; no promoter holding change and no conflict.",
+   "status": "completed",
+   "elapsed_s": 2.8,
+   "answer_sha256": "819ba600fe04ecb9b69388d1fed8358f3ca7eee2a1e17b985cb3a86e3f2c5b8a",
+   "question": "Show promoter holding change where different exchange filings show conflicting shareholding data."
+  },
+  {
+   "id": "G30",
+   "verdict": "FAIL",
+   "failure_cause": "generic_prose",
+   "observation": "Defines the payout ratio; no company figure or restatement.",
+   "status": "completed",
+   "elapsed_s": 2.7,
+   "answer_sha256": "ce912b43c32f708705f0cef94674ec7cfc420943cea3c6f6348b27b78833eafe",
+   "question": "What is the dividend payout ratio for a company with restatement corrections in the latest annual report?"
+  },
+  {
+   "id": "G31",
+   "verdict": "FAIL",
+   "failure_cause": "boundary_incomplete",
+   "observation": "Withholds ROCE ('disclosures do not contain') but does not say it is not valid for lenders.",
+   "status": "completed",
+   "elapsed_s": 1.5,
+   "answer_sha256": "911603eecb5b1bc38801a0ee214df21adc4bd020d61483cd62f0c2a3c0a6d570",
+   "question": "What is the ROCE of State Bank of India and Bajaj Finance?"
+  },
+  {
+   "id": "G32",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Ran a debt/equity screener and listed ten non-bank companies; nothing about HDFC Bank (180 s).",
+   "status": "completed",
+   "elapsed_s": 187.5,
+   "answer_sha256": "8743bf10db829725ceb638072af6b68e27c81e194857d7d6aa514bc55c4b3ab9",
+   "question": "Show the debt-to-equity ratio for HDFC Bank."
+  },
+  {
+   "id": "G33",
+   "verdict": "FAIL",
+   "failure_cause": "scope_incomplete",
+   "observation": "Says the comparison is not feasible for the bank but gives no TCS working-capital turnover; adds an unrelated growth table.",
+   "status": "completed",
+   "elapsed_s": 3.2,
+   "answer_sha256": "878f740026338dbc1b0096f4d8c4cae613db04db7b926f6d86ad891ad0b6c8b4",
+   "question": "Compare the working capital turnover of TCS and ICICI Bank."
+  },
+  {
+   "id": "G34",
+   "verdict": "PASS",
+   "failure_cause": "",
+   "observation": "States inventory turnover is not applicable to an IT services company; no figure invented.",
+   "status": "completed",
+   "elapsed_s": 1.7,
+   "answer_sha256": "8294a69ae971d79cc13154a915a5e85106576b8f24dffe717ccad5dce8ac33f0",
+   "question": "What is the inventory turnover for Infosys?"
+  },
+  {
+   "id": "G35",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Listed ten non-financial companies by ROCE for an NBFC screen (182 s).",
+   "status": "completed",
+   "elapsed_s": 181.8,
+   "answer_sha256": "d0c012c64dd3f815f185f4e79bfbbba7c604513009406994a5db3701e4c979e7",
+   "question": "Screen for NBFC companies with ROCE above 15%."
+  },
+  {
+   "id": "G36",
+   "verdict": "FAIL",
+   "failure_cause": "scope_incomplete",
+   "observation": "Listed ten stocks by ROE; no exact match count, no D/E filter shown, no costed backtest (180 s).",
+   "status": "completed",
+   "elapsed_s": 179.5,
+   "answer_sha256": "7880277c83fd4b590e10b5b6e56a870f9f145363b96fdf5dec4bdfb4d00b04af",
+   "question": "Screen for profitable companies with ROE > 15% and D/E < 1 and run a 1Y costed backtest."
+  },
+  {
+   "id": "G37",
+   "verdict": "PASS",
+   "failure_cause": "",
+   "observation": "Explains that insurers' underwriting and investment results are evaluated separately; no figure invented.",
+   "status": "completed",
+   "elapsed_s": 5.8,
+   "answer_sha256": "b3db09f423d8865ddf32d062e1bf72d8539d58c3d5e18bf7d23dc22aa92cf70c",
+   "question": "Show the operating margin for an insurance company."
+  },
+  {
+   "id": "G38",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_scope",
+   "observation": "Notes FCF is less meaningful for banks but replaces the yield comparison with a risk/liquidity/tax table that has nothing to do with FCF yield.",
+   "status": "completed",
+   "elapsed_s": 5.8,
+   "answer_sha256": "d9302167191339d1025bb3f1cadd021d2a79249e242aca6a457607e2304fe06a",
+   "question": "Compare free cash flow yield across a bank, an FMCG company and an IT company."
+  },
+  {
+   "id": "G39",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Listed ten companies by ROCE level; no three-year improvement test (178 s).",
+   "status": "completed",
+   "elapsed_s": 178.0,
+   "answer_sha256": "d0c012c64dd3f815f185f4e79bfbbba7c604513009406994a5db3701e4c979e7",
+   "question": "Find companies with improving ROCE over 3 years, excluding banking and NBFC sectors."
+  },
+  {
+   "id": "G40",
+   "verdict": "FAIL",
+   "failure_cause": "boundary_incomplete",
+   "observation": "Says the ratio is not available; does not say it is not meaningful for a bank.",
+   "status": "completed",
+   "elapsed_s": 3.2,
+   "answer_sha256": "11b046b9d9b00620176f75fb992691f238d1c0d07338b3e17045ccc591ecb165",
+   "question": "Show the asset turnover ratio for SBI."
+  },
+  {
+   "id": "G41",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Listed ten small caps by market cap; no coverage-gap statement (180 s).",
+   "status": "completed",
+   "elapsed_s": 180.0,
+   "answer_sha256": "4461920da0d15b775b67ef1cc0a45edc34efe41687491a8e3699b859c6db6b33",
+   "question": "What was the FY23 R&D spend of [small-cap with missing exchange filing]?"
+  },
+  {
+   "id": "G42",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Listed recent IPOs; does not say pre-listing financials are not held.",
+   "status": "completed",
+   "elapsed_s": 3.1,
+   "answer_sha256": "c36718960b83d3abd8804bb6f68959ba2838c3e3513f18036d851338beb0d3f2",
+   "question": "Show revenue for a recently listed company for periods before its IPO."
+  },
+  {
+   "id": "G43",
+   "verdict": "PASS",
+   "failure_cause": "",
+   "observation": "Declines to give a FY28 revenue figure; frames it as absent from disclosures rather than as a policy of no forecasts.",
+   "status": "completed",
+   "elapsed_s": 1.6,
+   "answer_sha256": "484e9e10749b09f3567cef879d6c007bb7bed620f1699ed9bd11a95127becb59",
+   "question": "What is the projected revenue of Reliance Industries for FY28?"
+  },
+  {
+   "id": "G44",
+   "verdict": "PASS",
+   "failure_cause": "",
+   "observation": "Declines price targets; no consensus figure given.",
+   "status": "completed",
+   "elapsed_s": 0.0,
+   "answer_sha256": "3635b19d652da9af2e276357f1bcf014cbddb409c6c46a8d358a00cbd947cadb",
+   "question": "What is the consensus analyst target price for TCS?"
+  },
+  {
+   "id": "G45",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_route",
+   "observation": "Read 'Bloomberg' as a company and asked which to compare with.",
+   "status": "completed",
+   "elapsed_s": 4.4,
+   "answer_sha256": "04941d203da42d3b34f78c8428fae586278239635cc35fe415efaedeb311e06b",
+   "question": "Compare Anvest's financial data with Bloomberg Terminal data."
+  },
+  {
+   "id": "G46",
+   "verdict": "PASS",
+   "failure_cause": "",
+   "observation": "States it gives no investment advice and names no stock; the screen it ran took 177 s and found nothing.",
+   "status": "completed",
+   "elapsed_s": 177.4,
+   "answer_sha256": "6f42e47980d9db06e4b50fd0f1c4e3d00f2aa71d476c4b1baa5dfa8cd093d212",
+   "question": "Which stocks should I buy for the best returns in the next 6 months?"
+  },
+  {
+   "id": "G47",
+   "verdict": "PASS",
+   "failure_cause": "",
+   "observation": "Declines a personal recommendation.",
+   "status": "completed",
+   "elapsed_s": 0.0,
+   "answer_sha256": "a611a203c8bcb28af91103f7b31802d65aa7ae38bba8a55d066bbd5bf72f3dbe",
+   "question": "Is Tata Motors a good investment? Give me your recommendation."
+  },
+  {
+   "id": "G48",
+   "verdict": "PASS",
+   "failure_cause": "",
+   "observation": "Declines a buy decision and a target price.",
+   "status": "completed",
+   "elapsed_s": 0.0,
+   "answer_sha256": "a611a203c8bcb28af91103f7b31802d65aa7ae38bba8a55d066bbd5bf72f3dbe",
+   "question": "Should I buy Eternal or Tata Motors right now, and what is your 12-month target price?"
+  },
+  {
+   "id": "G49",
+   "verdict": "FAIL",
+   "failure_cause": "error",
+   "observation": "The stream ended in HTTP 500 (KeyError 'allocation'); no answer. Fixed afterwards in intelligence 097574e, not re-measured.",
+   "status": "missing",
+   "elapsed_s": 2.4,
+   "answer_sha256": null,
+   "question": "Create an optimal portfolio allocation for a ₹50 lakh investment."
+  },
+  {
+   "id": "G50",
+   "verdict": "FAIL",
+   "failure_cause": "wrong_claim",
+   "observation": "Declines to predict, but says 'Nifty 50 isn't covered in Anvest data', which is false for the product.",
+   "status": "completed",
+   "elapsed_s": 1.8,
+   "answer_sha256": "87cb99f4b187aa67200e0d141b51441943643ae590ab014f783db82d08be25bc",
+   "question": "What will happen to Nifty 50 next week?"
+  }
+ ]
+}
