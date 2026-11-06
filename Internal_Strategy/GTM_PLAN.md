@@ -1,10 +1,10 @@
 # Anvest — Current Go-to-Market Plan
 
-**INTERNAL — not for sharing. Updated 14 October 2026; synced with the materials on 20 October 2026.**
+**INTERNAL, not for sharing. Updated 14 October 2026; synced with the materials on 1 November 2026.**
 
 ## Product and customer entry point
 
-Anvest offers one AI experience across investing tasks. Users ask in plain English and receive explanations with links into relevant workflows. Live tools include cited filing research, AI screening, portfolio X-ray, historical backtesting, paper trading, wealth planning, calculators and educational guides.
+The aim is the public: the tools institutions use, in plain language, usable by a novice. Anvest offers one AI experience across investing tasks. Users ask in plain English and receive explanations with links into relevant workflows. Live tools include cited filing research, AI screening, portfolio X-ray, historical backtesting, paper trading, wealth planning, calculators and educational guides.
 
 The first paid customer test is a professional team reviewing disclosures across a coverage list. Sell that recurring job first. Retail workflows test the longer-term platform opportunity without assuming that every module retains users or earns revenue.
 
@@ -41,6 +41,12 @@ Measure whether AI-led transitions help users complete tasks:
 - Guide or explanation to successful use of a tool.
 
 Record activation, repeat use, paid conversion and task cost by workflow and cohort. Cross-tool clicks alone are not value or retention. Keep simulated performance distinct from realised investment outcomes.
+
+## What the traffic says so far (Vercel, to 1 Nov 2026)
+
+- India weekly visitors: 42, 55, 48, 314, 249 from the week of 28 Sep. 57% on phones, 5.7 pages per visitor.
+- Search visitors rose from about 1 a day to about 13 a day, but 85% landed on the home page. That points to people looking for Anvest by name, so stock-page SEO is still unproven. 4,533 stock pages are now in the sitemap, which starts that test. Check Search Console for queries and indexing.
+- Wealth, retirement and calculators redirect signed-out visitors to /login, so they cannot be free discovery pages today. Decide whether a public version should exist: it is the most direct route to the novice in the mission.
 
 ## Acquisition channels
 

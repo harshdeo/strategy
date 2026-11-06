@@ -7,3 +7,14 @@ __pycache__/
 ~$*
 .~lock.*#
 *.tmp
+# Deck build outputs (masters and PDFs are installed to Investor_Materials)
+Source/deck/capture/
+Source/deck/r_seed/
+Source/deck/r_partner/
+Source/deck/seed.pptx
+Source/deck/seed.pdf
+Source/deck/partner.pptx
+Source/deck/partner.pdf
+Source/deck/model.json
+Source/deck/onepager_filled.html
+Source/deck/*.png

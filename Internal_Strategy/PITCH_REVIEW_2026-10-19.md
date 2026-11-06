@@ -79,3 +79,57 @@ Before a live backtest demo, pre-run the same date window to warm the existing 2
 The deck's existing competitor matrix remains a dated 19 October public-page comparison, not a hands-on benchmark. Sources: [Trendlyne](https://trendlyne.com/features/matrix/), [Screener Premium](https://www.screener.in/premium/), [Tijori](https://www.tijorifinance.com/), [Tickertape](https://www.tickertape.in/premium), [StockGro](https://www.stockgro.club/faq/), [Streak](https://streak.tech/). A dash means not found on those pages, not proven unavailable. Jio's screenshot remains real; the price band and dates also appear in [Reliance's exchange announcement](https://links.sgx.com/FileOpen/RIL_SE_14102026_.ashx?App=Announcement&FileID=907073). The ₹30,213 Cr maximum is 27 crore shares at ₹1,119. These are IPO terms, not an Anvest projection.
 
 Before sending: obtain counsel's review of investment terms, IP/employer clauses, licensing and registration posture; confirm founder/adviser status and any new pilot claims; fill email and partner placeholders; run `../check_materials.py`. Payment checkout and the complete sitemap remain first-90-days deliverables. Measure external activation/retention before describing registered accounts or internal tests as customer traction.
+
+## Reviews of 1 November 2026: what was adopted, and why some of it was not
+
+The founder set the aim: institutional tools for the public at large, with Anvest Intelligence helping even a novice plan through conversation. Four reviews and three suggested rewrites were read against the live site, Vercel analytics, the 20 Oct production snapshot and the model. Production could not be re-queried in this pass (permission declined), so usage stays dated 20 Oct.
+
+### Adopted
+
+| Suggestion | What changed |
+|---|---|
+| One-line thesis; claim-led titles; 12 core slides; risks on a slide | Opening page plus 12 slides, each title a full sentence. Page 12 is "Six reasons to pass" |
+| Move the filing insight forward | Page 3, with real cases (RELIANCE, TCS, ADANIPORTS, City Union Bank) |
+| Replace the checkmark matrix | Page 10: what each product does well, where the user has to leave, and where Anvest is behind |
+| Sequence the revenue lines | Desk first, Plus and Pro for individuals, partners unsigned, baskets later |
+| Show organic traffic | Page 6 and appendix, India only, with the filter stated |
+| Break down internal versus external use | 31 accounts, 5 ours; 268 of 418 questions from 13 outside accounts |
+| Address Tijori and Streak; drop the anti-equity line | Partner deck page 2; Rainmatter handled as a separate, open track |
+| Engineering criteria for the pilot | Accuracy, p95 latency, cost, data handling, repeat use, with thresholds set by the partner |
+| Say what the $150K does | "Runway after month 18", which is what it funds |
+| Headline AlphaSense | Kept as a row on page 7, verified: $600M+ ARR, $7.5B, Jun 2026 |
+| Fix one-pager rendering | Vector text, embedded fonts with a rupee glyph, sensible reading order, no spaced-out headings |
+
+### Not adopted, because it would be untrue or would not survive diligence
+
+| Suggestion | Why not |
+|---|---|
+| "76% desktop means serious analysts" | In India 57% are on phones. The desktop share comes from one-page Windows and Linux sessions from Singapore, the US and China |
+| "+198%" and "1,734 visitors" as organic growth | All-country totals; the last days' rise is non-India one-page traffic. India's 5× is the defensible figure, and stronger for it |
+| "34% homepage-to-login conversion" | /login is a redirect target for six signed-in paths, not a funnel step |
+| "Programmatic SEO validated", "7,000+ pages" | 85% of search visitors landed on the home page; 4,533 stock pages are in the sitemap; calculators and wealth tools require login |
+| Remove "including founder/testing" | Replaced with the actual split, which is more persuasive and is true |
+| Invented pilot quote ("6 hours to 15 minutes") | No such customer. No quote until one exists |
+| "Ex-" or "previously" for the current job; drop full-time status entirely | The founder is employed today. Kept to five words: "Full-time at first close" |
+| "100% extraction accuracy", "zero-hallucination" | The audit is revenue and profit on 50 filings. Answers have no published benchmark |
+| Memo text claiming a Golden Suite with results, "periodic staging restoration" | Neither has happened. Both are listed as open items and actions |
+| Keep "25.47% operating margin" as the hero | A pre-tax margin mislabelled; TCS reports about 24.0%. Removed from all materials and listed as an open item in the memo. The cover no longer uses that screenshot |
+| "Passage-cited RAG", "exact footnote sentences", "shareable watermarked links" | Citations are at filing level; share links are not live |
+| "Sub-3s p95", "zero-PII stateless" | Not measured or built. Pilot criteria instead |
+| "Top decile for a $3M to $5M Series A" | ₹87 lakh is about $92K ARR. The slide says what evidence the round produces |
+| Relabel $150K as data infrastructure and exchange licensing | Those are already in the $65K line. Double-counting |
+| Lift the B2B SAM to ₹250+ Cr with AIFs, family offices, CA practices | No verified counts. Left out, and the slide says so |
+| "1 to 2% of the professional SAM is a massive, profitable business" | 1 to 2% of ₹78 Cr is about ₹1 Cr a year. It funds the proof; scale comes from the public |
+| Competitor claims ("built on summary vendor feeds", "social trading games") | Not verifiable from public pages |
+| "You are fully prepared" | See the actions below |
+
+### Actions only the founder can take, in priority order
+
+1. **Fix the AI on production before investors try it.** The AI is the 21 Oct build with the analyst tier off. Relabel the margin, then release once the evaluation passes.
+2. **Talk to advisers.** No customer conversations are recorded. Ten to fifteen conversations with RAs and IAs would change the problem and traction pages more than any edit.
+3. **Run the 50-question evaluation** on a released build and attach the dated result, whatever it is.
+4. **Run a timed full restore** with the offline key. It is more than 30 minutes of work on a warehouse this size, and it clears a standard diligence flag.
+5. **Clear the nightly failures** (12 of the last 14 runs marked failed at 1 Nov), and refresh the production snapshot with `Source/product_metrics_20261101.py`.
+6. **Find out what drove 24 to 26 Oct**, and export Search Console queries to confirm the brand-search reading.
+7. **Decide on public wealth tools.** Planning and calculators sit behind login, which conflicts with the mission's novice entry point.
+8. **Read every line and put it in your own words.** Confirm the stop rule on page 12, and take legal advice on employer IP before saying "full-time at first close" to anyone.

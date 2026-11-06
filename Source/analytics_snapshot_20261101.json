@@ -1,0 +1,37 @@
+{
+  "source": "Vercel Web Analytics, project market-ui (anvest.in), production environment, read through the Vercel API",
+  "exported": "2026-11-01",
+  "window": "2 Oct to 1 Nov 2026 unless stated; 1 Nov is a part day",
+  "definition": "Vercel hashes visitors per day, so a person returning on two days counts as two visitors. Nothing here identifies a person.",
+  "india_weekly": [
+    {"week_from": "2026-09-28", "visitors": 42, "pageviews": 283},
+    {"week_from": "2026-10-05", "visitors": 55, "pageviews": 224},
+    {"week_from": "2026-10-12", "visitors": 48, "pageviews": 230},
+    {"week_from": "2026-10-19", "visitors": 314, "pageviews": 2186},
+    {"week_from": "2026-10-26", "visitors": 249, "pageviews": 1202}
+  ],
+  "india_daily_visitors": {"2026-10-02":6,"2026-10-03":2,"2026-10-04":2,"2026-10-05":3,"2026-10-06":0,"2026-10-07":2,"2026-10-08":2,"2026-10-09":33,"2026-10-10":11,"2026-10-11":4,"2026-10-12":6,"2026-10-13":17,"2026-10-14":9,"2026-10-15":4,"2026-10-16":3,"2026-10-17":4,"2026-10-18":5,"2026-10-19":8,"2026-10-20":7,"2026-10-21":8,"2026-10-22":7,"2026-10-23":7,"2026-10-24":170,"2026-10-25":107,"2026-10-26":83,"2026-10-27":33,"2026-10-28":39,"2026-10-29":30,"2026-10-30":35,"2026-10-31":22,"2026-11-01":7},
+  "by_country": [
+    {"country":"IN","visitors":676,"pageviews":3882},{"country":"SG","visitors":487,"pageviews":899},{"country":"US","visitors":472,"pageviews":696},{"country":"Others","visitors":123,"pageviews":145},{"country":"CN","visitors":92,"pageviews":95},{"country":"BR","visitors":41,"pageviews":41},{"country":"DE","visitors":23,"pageviews":32},{"country":"JP","visitors":17,"pageviews":17},{"country":"MX","visitors":16,"pageviews":16},{"country":"CO","visitors":14,"pageviews":14},{"country":"GB","visitors":14,"pageviews":14},{"country":"AE","visitors":13,"pageviews":35},{"country":"EC","visitors":13,"pageviews":13},{"country":"HK","visitors":13,"pageviews":13},{"country":"ID","visitors":11,"pageviews":11},{"country":"FR","visitors":10,"pageviews":10}
+  ],
+  "by_country_os": [
+    {"country":"IN","os":"Android","visitors":329,"pageviews":2065},{"country":"IN","os":"Windows","visitors":226,"pageviews":1129},{"country":"IN","os":"Mac","visitors":58,"pageviews":433},{"country":"IN","os":"iOS","visitors":55,"pageviews":242},{"country":"IN","os":"GNU/Linux","visitors":8,"pageviews":13},
+    {"country":"SG","os":"Windows","visitors":465,"pageviews":483},{"country":"SG","os":"Mac","visitors":22,"pageviews":416},
+    {"country":"US","os":"Windows","visitors":218,"pageviews":228},{"country":"US","os":"GNU/Linux","visitors":217,"pageviews":390},{"country":"US","os":"Mac","visitors":16,"pageviews":37},
+    {"country":"CN","os":"Windows","visitors":90,"pageviews":93},{"country":"BR","os":"Windows","visitors":38,"pageviews":38}
+  ],
+  "india_paths": {"/":512,"/screener":145,"/login":128,"/stocks":97,"/research":75,"/strategy":50,"/register":42,"/wealth":36,"/paper-trading":30,"/mutual-funds":22,"/ipo":21,"/simulator":15},
+  "india_referrers": {"direct_or_unknown":592,"google.com":214,"bing.com":31,"android_google_search":31,"l.instagram.com":11,"search.brave.com":10,"duckduckgo.com":4,"search.yahoo.com":4,"in.search.yahoo.com":3,"chatgpt.com":1,"vercel.com":1},
+  "search_referred": {
+    "note": "google, bing, android google search, brave, duckduckgo, yahoo",
+    "daily_visitors": {"2026-10-02":1,"2026-10-03":1,"2026-10-04":0,"2026-10-05":1,"2026-10-06":0,"2026-10-07":0,"2026-10-08":1,"2026-10-09":1,"2026-10-10":1,"2026-10-11":0,"2026-10-12":1,"2026-10-13":2,"2026-10-14":3,"2026-10-15":1,"2026-10-16":0,"2026-10-17":3,"2026-10-18":4,"2026-10-19":3,"2026-10-20":2,"2026-10-21":3,"2026-10-22":1,"2026-10-23":0,"2026-10-24":111,"2026-10-25":60,"2026-10-26":41,"2026-10-27":6,"2026-10-28":14,"2026-10-29":14,"2026-10-30":17,"2026-10-31":12,"2026-11-01":3},
+    "landing_pages": {"/":261,"others":35,"/screener":12,"/indices/NIFTY500":6,"/login":6,"/register":5,"/stocks/RELIANCE":4,"/stocks/TRENT":4}
+  },
+  "device_all_countries": {"desktop":1614,"mobile":411,"tablet":8,"unknown":2},
+  "spike_24_to_26_oct_india": {
+    "os": {"Android":188,"Windows":122,"iOS":31,"Mac":14,"GNU/Linux":5},
+    "paths": {"/":301,"/screener":78,"/login":67,"/stocks":52,"/research":40,"/register":36,"/wealth":22,"/strategy":21},
+    "referrers": {"direct_or_unknown":311,"google.com":157,"android_google_search":29,"bing.com":7,"search.brave.com":6}
+  },
+  "not_available": "UTM breakdown needs a paid Vercel add-on, so campaign tags could not be read. 'No marketing spend' is the founder's statement."
+}

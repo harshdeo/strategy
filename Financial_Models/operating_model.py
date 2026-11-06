@@ -234,6 +234,31 @@ def runway(p: Plan, horizon=72):
     return out, breakeven, rows
 
 
+def sensitivities():
+    """What happens to the $500K plan when one assumption misses. Costs stay as planned in every row."""
+    base = TARGET
+    cases = (
+        ("Plan as modelled", base),
+        ("No paying partner", replace(base, partner_live=())),
+        ("Sellers close 3 teams a month, not 4", replace(base, seller_starts=((3, 3.0), (9, 3.0)))),
+        ("Sellers close 2 teams a month, not 4", replace(base, seller_starts=((3, 2.0), (9, 2.0)))),
+        ("Teams average 2 seats, not 3", replace(base, seats_per_team=2.0)),
+        ("Monthly team churn 4%, not 2%", replace(base, team_churn=0.04)),
+        ("First Desk sales slip three months", replace(base, founder_teams_from=6, seller_starts=((6, 4.0), (12, 4.0)))),
+        ("No partner, 3 teams a month, 2 seats", replace(base, partner_live=(), seats_per_team=2.0,
+                                                         seller_starts=((3, 3.0), (9, 3.0)))),
+    )
+    out = []
+    for label, p in cases:
+        rows = run(p)
+        cash_out, breakeven, long_rows = runway(p)
+        low = min(long_rows, key=lambda r: r.cash)
+        out.append({"case": label, "arr_m15_cr": round(rows[14].mrr * 12 / CR, 2), "arr_m18_cr": round(rows[17].mrr * 12 / CR, 2),
+                    "teams_m15": round(rows[14].teams), "seats_m15": round(rows[14].seats), "cash_out_month": cash_out,
+                    "breakeven_month": breakeven, "cash_low_cr": round(low.cash / CR, 2)})
+    return out
+
+
 def market():
     retail_tam = ACTIVE_NSE_CLIENTS * PLUS_ANNUAL
     pro_tam = (MFD_PROFESSIONALS + SEBI_FIRMS) * DESK_ANNUAL
@@ -297,6 +322,7 @@ def key_figures():
             "cash_low_cr": round(low.cash / CR, 2), "cash_low_month": low.m,
             "use_of_funds_usd_k": uses,
         }
+    out["sensitivity"] = sensitivities()
     sc = run(SCENARIO)
     y5_gm, _, _, _ = unit_economics(SCENARIO, sc, 60)
     out["scenario_additional_capital_floor_cr"] = round(max(0, -min(r.cash for r in sc)) / CR, 2)
@@ -341,6 +367,9 @@ def print_summary():
     for y, v in k["scenario_drivers"].items():
         print("  ", y, v)
     print("Market:", k["market"])
+    print("Sensitivity on the $500K plan:")
+    for r in k["sensitivity"]:
+        print("  ", r)
 
 
 def write_xlsx(path=None):
@@ -355,7 +384,7 @@ def write_xlsx(path=None):
     build = root / ".tmp/investor-materials-20261020"
     build.mkdir(parents=True, exist_ok=True)
     payload = {"Read me": [[text] for text in [
-        "Anvest operating model, 20 Oct 2026. Value snapshot: edit Python inputs and regenerate; workbook cells do not recalculate the model.",
+        "Anvest operating model, 1 Nov 2026. Value snapshot: edit Python inputs and regenerate; workbook cells do not recalculate the model.",
         "First close $400K; target $500K; maximum $700K. Planning assumptions, not measured conversion or contracted revenue. Planning FX Rs 95/USD.",
         "Round cases extend to month 72 with no new funding. Target reaches break-even at M42 under the model assumptions.",
         "The separate scale scenario assumes a Series A near M18, approvals and contracts. Its cash balance excludes that unpriced financing.",
@@ -378,6 +407,18 @@ def write_xlsx(path=None):
     output = Path(path).resolve() if path else Path(__file__).with_name("Anvest_Operating_Model.xlsx")
     subprocess.run(["/Users/harsh/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
         str(root / "Strategy/Source/update_workbook.mjs"),str(data),str(output)],check=True)
+    from openpyxl import load_workbook
+    wb = load_workbook(output)
+    if "Sensitivity" in wb.sheetnames:
+        del wb["Sensitivity"]
+    ws = wb.create_sheet("Sensitivity")
+    ws.append(["Case (Target $500K, costs as planned)", "ARR M15 (Rs Cr)", "ARR M18 (Rs Cr)", "Teams M15", "Seats M15", "Cash-out month", "Break-even month", "Cash low (Rs Cr)"])
+    for r in sensitivities():
+        ws.append([r["case"], r["arr_m15_cr"], r["arr_m18_cr"], r["teams_m15"], r["seats_m15"], r["cash_out_month"] or "none", r["breakeven_month"], r["cash_low_cr"]])
+    ws.column_dimensions["A"].width = 44
+    for col in "BCDEFGH":
+        ws.column_dimensions[col].width = 16
+    wb.save(output)
 
 
 if __name__ == "__main__":

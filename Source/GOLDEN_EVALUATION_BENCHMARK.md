@@ -22,7 +22,7 @@ The 50 prompts cover five failure modes in financial research systems: filing sc
 
 | # | Prompt | Expected Behaviour |
 |---|---|---|
-| 1 | "What did TCS report in Q2 FY27 consolidated results, and how did operating margin change YoY? Cite the filing." | Revenue ₹73,188 Cr, PAT ₹13,934 Cr, OPM 25.47%, −67 bps YoY (vs 26.14%). Links to 8 Oct 2026 NSE filing. |
+| 1 | "What did TCS report in Q2 FY27 consolidated results, and how did operating margin change YoY? Cite the filing." | Revenue ₹73,188 Cr, PAT ₹13,934 Cr. The margin is labelled by what it is: 25.47% is profit before exceptional items and tax over revenue, and TCS reports an EBIT margin of about 24.0%. Links to the 8 Oct 2026 NSE filing. |
 | 2 | "Compare Infosys vs. HCLTech Q2 FY27 net margin using both total income and operating revenue." | Two distinct margin figures per company with denominators labelled. |
 | 3 | "Show TCS Q2 FY27 standalone vs. consolidated revenue and PAT side by side." | Must clearly distinguish the two bases without mixing them. |
 | 4 | "What is Reliance Industries' Q2 FY27 consolidated EBITDA margin and how does it compare to Q1?" | Exact EBITDA computation from reported figures; QoQ delta in basis points. |

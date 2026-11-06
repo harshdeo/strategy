@@ -2,143 +2,111 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Anvest — Investor Overview</title>
+<title>Anvest investor overview</title>
 <style>
   @page { size: A4; margin: 0; }
-  :root { --ink:#0B0E26; --navy:#1E2761; --violet:#4A3699; --amber:#F5A623; --slate:#434B6B; --muted:#7C88B0; --paper:#F4F7FC; --light:#C9D3F0; --green:#1FA971; }
+  :root { --ink:#14182B; --body:#363C50; --mute:#6A7084; --rule:#C9CDD6; --hair:#E2E4E9; --violet:#3A2C88; --tint:#F4F4F0; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { width: 210mm; height: 297mm; font-family: "Helvetica Neue", Arial, sans-serif; color: var(--slate); background: #fff; font-size: 7.7pt; line-height: 1.22; }
-  .hero { background: linear-gradient(120deg, #4A3699 0%, #1E2761 55%, #0B0E26 100%); color: #fff; padding: 4.5mm 9mm 3.8mm; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 5mm; align-items: center; position: relative; overflow: hidden; }
-  .hero::after { content: ""; position: absolute; right: -30mm; bottom: -40mm; width: 90mm; height: 90mm; background: radial-gradient(circle, rgba(245,166,35,0.35), rgba(245,166,35,0) 70%); }
-  .brand { font-size: 30pt; font-weight: 800; letter-spacing: -0.5pt; line-height: 1; }
-  .tag { color: var(--amber); font-size: 13pt; font-weight: 700; margin-top: 2.5mm; }
-  .sub { color: var(--light); font-size: 9pt; margin-top: 1.5mm; }
-  .meta { color: var(--light); font-size: 7.5pt; margin-top: 4mm; opacity: 0.9; }
-  .shot { position: relative; z-index: 1; background: #161A33; border: 0.6pt solid #2A3060; border-radius: 3mm; padding: 2.4mm 1.4mm 1.4mm; box-shadow: 0 3mm 7mm rgba(0,0,0,0.35); }
-  .shot .dots { position: absolute; top: 0.8mm; left: 2mm; display: flex; gap: 1mm; }
-  .shot .dots i { width: 1.3mm; height: 1.3mm; border-radius: 50%; display: block; }
-  .shot img { width: 100%; display: block; border-radius: 1mm; }
-  .stats { display: grid; grid-template-columns: repeat(5, 1fr); background: var(--paper); padding: 2.1mm 9mm; gap: 2mm; }
-  .stat b { display: block; font-size: 13.5pt; color: var(--violet); font-weight: 800; line-height: 1.05; }
-  .stat span { font-size: 6.8pt; color: var(--slate); }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; padding: 2.7mm 9mm 0; }
-  h2 { font-size: 7.2pt; letter-spacing: 1.2pt; color: var(--violet); font-weight: 800; text-transform: uppercase; margin: 0 0 0.9mm; }
-  section { margin-bottom: 1.7mm; }
-  p { margin-bottom: 0.7mm; }
+  body { width: 210mm; height: 297mm; padding: 10mm 13mm 7mm; font-family: "Helvetica Neue", Helvetica, sans-serif; color: var(--body); font-size: 8.2pt; line-height: 1.29; display: flex; flex-direction: column; }
+  .top { display: flex; justify-content: space-between; align-items: baseline; }
+  .brand { font-size: 17pt; font-weight: 700; color: var(--violet); }
+  .when { color: var(--mute); font-size: 8pt; }
+  h1 { font-family: Georgia, serif; font-size: 17.5pt; line-height: 1.12; color: var(--ink); margin: 1.6mm 0 1.2mm; }
+  .sub { font-size: 9pt; margin-bottom: 2mm; }
+  .facts { display: flex; gap: 6mm; border-top: 0.7pt solid var(--ink); border-bottom: 0.7pt solid var(--hair); padding: 1.4mm 0; margin-bottom: 2.2mm; }
+  .facts div { flex: 1; }
+  .facts b { display: block; font-size: 12.5pt; color: var(--ink); }
+  .facts span { font-size: 7.6pt; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; flex: 1; }
+  h2 { font-family: Georgia, serif; font-size: 10pt; color: var(--ink); margin: 1.9mm 0 0.6mm; }
+  .col > h2:first-child { margin-top: 0; }
+  p { margin-bottom: 1.1mm; }
+  ul { padding-left: 3.2mm; margin-bottom: 1.1mm; }
+  li { margin-bottom: 0.7mm; }
   strong { color: var(--ink); }
-  ul { list-style: none; }
-  li { padding-left: 3.6mm; position: relative; margin-bottom: 0.4mm; }
-  li::before { content: ""; position: absolute; left: 0; top: 1.5mm; width: 1.6mm; height: 1.6mm; border-radius: 50%; background: var(--amber); }
-  .checks li::before { background: var(--green); }
-  .flow { display: flex; gap: 1mm; margin: 0.9mm 0 0.8mm; flex-wrap: wrap; }
-  .flow span { background: #EEEBFA; color: var(--violet); font-weight: 700; font-size: 6.8pt; border-radius: 3mm; padding: 0.6mm 1.7mm; }
-  .flow span.next { background: #FFF1D6; color: #8A5A00; }
-  .tam { display: grid; grid-template-columns: auto 1fr; gap: 0.6mm 3mm; align-items: baseline; }
-  .tam b { color: var(--ink); font-size: 10pt; white-space: nowrap; }
-  .engines { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2mm; }
-  .eng { background: var(--paper); border-radius: 2mm; padding: 1.3mm 1.7mm; }
-  .eng b { display: block; color: var(--ink); font-size: 8.4pt; }
-  .eng em { display: block; font-style: normal; color: var(--violet); font-weight: 700; font-size: 7.6pt; margin: 0.3mm 0 0.5mm; }
-  .eng small { font-size: 7.2pt; line-height: 1.3; display: block; }
-  .ask { background: var(--navy); color: #fff; border-radius: 2.5mm; margin: 2.2mm 9mm 0; padding: 2.1mm 3mm; display: grid; grid-template-columns: 1.1fr 1.2fr; gap: 0.5mm 4mm; }
-  .ask h2 { grid-column: 1 / -1; margin-bottom: 0; }
-  .ask .big, .ask p { grid-column: 1; }
-  .ask h2 { color: var(--amber); }
-  .ask .big { font-size: 11.6pt; font-weight: 800; line-height: 1.15; }
-  .ask p { color: var(--light); }
-  .ask .ms { grid-column: 2; grid-row: 2 / 4; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1mm; margin-top: 0; }
-  .ask .ms div { background: rgba(255,255,255,0.08); border-radius: 1.6mm; padding: 0.8mm 1.2mm; color: var(--light); font-size: 6.5pt; line-height: 1.2; }
-  .ask .ms b { display: block; color: #fff; font-size: 9pt; }
-  footer { position: absolute; bottom: 0; left: 0; right: 0; padding: 2.6mm 9mm; border-top: 0.6pt solid #E3E7F2; display: flex; justify-content: space-between; font-size: 6.8pt; color: var(--muted); }
-  footer b { color: var(--ink); }
-  .src { font-size: 5.8pt; color: var(--muted); padding: 0 9mm; position: absolute; bottom: 8mm; left: 0; right: 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 8pt; margin: 0.6mm 0 1.2mm; }
+  th { text-align: left; font-weight: 700; color: var(--mute); font-size: 7.4pt; border-bottom: 0.6pt solid var(--ink); padding: 0.4mm 1.4mm 0.6mm 0; }
+  td { border-bottom: 0.5pt solid var(--hair); padding: 0.45mm 1.4mm 0.45mm 0; vertical-align: top; }
+  td.n, th.n { text-align: right; padding-right: 0; }
+  .bars { display: flex; align-items: flex-end; gap: 2.2mm; height: 17mm; margin: 0.8mm 0 0.3mm; border-bottom: 0.6pt solid var(--rule); }
+  .bars div { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; font-weight: 700; color: var(--ink); font-size: 7.8pt; }
+  .bars i { display: block; width: 100%; background: var(--violet); margin-top: 0.4mm; }
+  .barlab { display: flex; gap: 2.2mm; font-size: 7pt; color: var(--mute); margin-bottom: 1mm; }
+  .barlab span { flex: 1; text-align: center; }
+  .note { font-size: 6.8pt; color: var(--mute); line-height: 1.22; margin: 1.2mm 0 1mm; }
+  footer { display: flex; justify-content: space-between; font-size: 7.4pt; color: var(--mute); border-top: 0.6pt solid var(--hair); padding-top: 1.2mm; margin-top: 1mm; }
+  footer b { color: var(--ink); font-weight: 600; }
 </style>
 </head>
 <body>
-  <div class="hero">
-    <div>
-      <div class="brand">Anvest</div>
-      <div class="tag">Filing-cited AI research for Indian advisory teams</div>
-      <div class="sub">Read company filings with source-linked answers, screen with transparent rules, then test ideas with Indian trading costs.</div>
-      <div class="meta">Anvest Fintech Private Limited &nbsp;·&nbsp; anvest.in &nbsp;·&nbsp; Seed round, November 2026</div>
-    </div>
-    <div class="shot"><div class="dots"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i></div><img src="assets/answer_tcs.jpg" alt="Anvest answer citing the NSE filing"><div style="font-size:6.2pt;color:#C9D3F0;padding:1.3mm 1mm 0">TCS Q2 FY27: operating margin 25.47%, down 67 bps YoY; revenue ₹73,188 Cr; PAT ₹13,934 Cr.</div></div>
+  <div class="top"><div class="brand">Anvest</div><div class="when">Investor overview, seed round, November 2026</div></div>
+  <h1>The research tools institutions use, in plain language, for every Indian investor.</h1>
+  <p class="sub">Ask Anvest Intelligence a question in ordinary words. It answers from exchange filings, builds the screen, tests the idea with Indian trading costs and helps you plan the money. A first-time investor can start here. A SEBI-registered analyst can open the filing behind the answer.</p>
+  <div class="facts">
+    <div><b>6,086</b><span>listed symbols in the warehouse</span></div>
+    <div><b>2.94 million</b><span>corporate announcements</span></div>
+    <div><b>50 of 50</b><span>filings matched on revenue and profit extraction</span></div>
+    <div><b>5×</b><span>India weekly visitors in October, no marketing spend</span></div>
   </div>
-  <div class="stats">
-    <div class="stat"><b>6,086</b><span>listed symbols in warehouse</span></div>
-    <div class="stat"><b>2.94M</b><span>corporate announcements</span></div>
-    <div class="stat"><b>6,155,194</b><span>indexed filing passages</span></div>
-    <div class="stat"><b>50 / 50</b><span>Q2 FY27 filings: revenue/PAT extraction matched</span></div>
-    <div class="stat"><b>31</b><span>accounts, includes internal/testing activity</span></div>
-  </div>
-  <div class="grid">
-    <div>
-      <section>
-        <h2>The problem &amp; our earned insight</h2>
-        <p>Research teams move between exchange filings, summary screeners, spreadsheets and backtest tools. Machine-readable filings can still have period and tagging problems; many disclosures also arrive as scanned PDFs.</p>
-        <p>Anvest's ingestion pipeline has <strong>recovered 15,899 cash-flow rows</strong> from malformed XBRL and <strong>flagged 3,608 conflicting figures</strong> across 1,022 companies. A production audit counted 6,155,194 indexed passages across 633,688 distinct document IDs on 20 Oct 2026.</p>
-      </section>
-      <section>
-        <h2>The product (live at anvest.in)</h2>
-        <p>Filing answers link to their evidence; unsupported coverage is stated. Deterministic code performs calculations.</p>
-        <div class="flow"><span>Ask (Cited)</span><span>Screen (Rules)</span><span>Backtest (Costed)</span><span>Practise (Paper)</span><span class="next">Live execution: future, subject to approvals</span></div>
-        <ul class="checks">
-          <li>Filing-cited research, transparent stock screens and Indian-cost backtests</li>
-          <li>Paper trading, IPO documents, mutual-fund comparisons, bonds and planning tools</li>
-          <li>Usage snapshot, 20 Oct: 31 accounts, 418 logged research rows and 238 saved backtest records; internal/testing activity is included</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Why now</h2>
-        <ul>
-          <li>SEBI's December 2024 research-analyst amendments address disclosure of the extent of AI use in research.</li>
-          <li>The retail algo framework applies to brokers from 1 Apr 2026, with specific requirements for live algos and black-box providers. Anvest backtests and paper trading are simulations today.</li>
-          <li>These rules shape our product and partner roadmap; they do not establish demand or regulatory approval for Anvest.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Product position</h2>
-        <p>Anvest combines filing citations, screening, costed backtests and paper workflows in one product. A review of public product pages on 19 Oct 2026 was directional, not a hands-on benchmark; a feature not shown publicly is not assumed unavailable.</p>
-      </section>
+  <div class="cols">
+    <div class="col">
+      <h2>The problem</h2>
+      <p>Institutions have analysts, terminals and quant desks. A retail investor or a two-person advisory firm has exchange PDFs (61,875 announcements in August 2026 alone), ratio screeners, spreadsheets and tips. Neither can afford the desk.</p>
+      <h2>What we learned building it</h2>
+      <p>Indian filings are not machine-ready, and a model pointed at them inherits every error.</p>
+      <ul>
+        <li>XBRL dates a full-year column with the quarter's dates (RELIANCE Q4).</li>
+        <li><strong>15,899</strong> cash-flow rows recovered from year-to-date blocks parsers reject, none failing reconciliation.</li>
+        <li><strong>3,608</strong> source conflicts across 1,022 companies. ADANIPORTS FY25 profit: ₹1,09,197 Cr in a secondary source, ₹11,092 Cr as filed.</li>
+        <li>10 of 10 tier-1 bank results in a sample were scans. City Union Bank's capital adequacy reads 21.73 on the page and 27.73 in the hidden text.</li>
+      </ul>
+      <h2>The product, live at anvest.in</h2>
+      <p><strong>For a question:</strong> ask, get a screen with rules you can read, backtest it with brokerage, STT, stamp duty and slippage, then paper-trade it. On 19 Oct one prompt produced a 516-stock screen, a one-year costed backtest and a 10-stock paper basket.</p>
+      <p><strong>For a beginner:</strong> a portfolio simulator in everyday words, retirement and goal planners that show their assumptions, fund comparisons and IPO pages. One conversation across all of these is being built and ships once it clears evaluation.</p>
+      <p>The model reads the question; code does the arithmetic. No buy, sell or hold calls, and no target prices.</p>
+      <h2>Why now</h2>
+      <ul>
+        <li>Since Dec 2024, SEBI-registered RAs and IAs must disclose AI use and are solely responsible for its output.</li>
+        <li>SEBI's retail algo framework applies to all brokers from 1 Apr 2026.</li>
+        <li>Kite MCP connects accounts to AI agents, and models are now cheap enough for a free tier.</li>
+        <li>AlphaSense passed $600M ARR at a $7.5B valuation selling source-cited research to institutions. Anvest Desk is ₹%%DESK_LIST%% a seat a month.</li>
+      </ul>
+      <h2>Team</h2>
+      <p><strong>Harsh Bhardwaj, founder.</strong> Full-time at first close. IIT Guwahati. Seven years on distributed systems at New Relic, Shiprocket, Weave and Jaguar Land Rover; senior engineering lead on production multi-agent AI. Built Anvest in twelve months with no outside capital. First hires: growth lead, data engineer, full-stack and quant engineer.</p>
     </div>
-    <div>
-      <section>
-        <h2>Market</h2>
-        <div class="tam">
-          <b>$%%TAM_USD_B%%B / yr</b><span>Model TAM: individual investors and financial professionals at list prices.</span>
-          <b>$%%SAM_USD_M%%M / yr</b><span>Model SAM: ₹%%SAM_RETAIL_CR%% Cr active retail segment and ₹%%SAM_PRO_CR%% Cr professional segment; initial professional SAM is %%SAM_PRO_SEATS%% seats.</span>
-          <b>₹%%SC_Y5_CR%% Cr ARR</b><span>Year-five scenario; assumes Series A funding, approvals, partner access and signed contracts.</span>
-        </div>
-      </section>
-      <section>
-        <h2>Business model — Act I (Seed) &amp; Act II (Series A)</h2>
-        <div class="engines">
-          <div class="eng"><b>Anvest Desk · %%DESK_SHARE%%% of M15 ARR</b><em>₹%%DESK_LIST%% / seat / month</em><small>Model: %%T_TEAMS%% teams, %%T_SEATS%% seats. ₹%%DESK_CAC%%L team CAC; %%PAY_REV%%-month revenue recovery and %%PAY_GP%%-month gross-profit payback.</small></div>
-          <div class="eng"><b>Broker &amp; Wealth APIs · %%PARTNER_SHARE%%% of M15</b><em>Tiered per active user</em><small>Model assumes %%T_PARTNERS%% paid partners by M15.</small></div>
-          <div class="eng"><b>Plus &amp; Pro · %%RETAIL_SHARE%%% of M15 ARR</b><em>Individual subscriptions</em><small>Self-serve subscriptions are a modeled revenue stream.</small></div>
-          <div class="eng"><b>Act II: Model portfolios</b><em>₹%%STRATEGY_PRICE%%/mo + rev share</em><small>Model launch M%%STRATEGY_M%%, after regulatory and partner gates.</small></div>
-        </div>
-      </section>
-      <section>
-        <h2>Traction &amp; founder</h2>
-        <p><strong>Pre-revenue.</strong> Built in 12 months without outside capital. The 20 Oct snapshot has 31 registered accounts, 418 logged research rows across 16 accounts and 238 saved backtest records; these totals include founder/testing activity and other internal activity. Separately, revenue and PAT extraction matched 50 of 50 consolidated Q2 FY27 NSE XBRL filings; this is not an AI-answer accuracy score.</p>
-        <p><strong>Harsh Bhardwaj, Founder &amp; CEO:</strong> IIT Guwahati; Senior Engineering Lead on production multi-agent LLM systems; seven years in distributed backends (New Relic, Shiprocket, Weave, JLR). Currently employed; full-time on Anvest from round close.</p>
-      </section>
+    <div class="col">
+      <h2>Traction: organic, with no marketing spend</h2>
+      <p>Visitors from India per week:</p>
+      <div class="bars">
+        <div>42<i style="height:1.8mm"></i></div><div>55<i style="height:2.3mm"></i></div><div>48<i style="height:2mm"></i></div><div>314<i style="height:13mm"></i></div><div>249<i style="height:10.3mm"></i></div>
+      </div>
+      <div class="barlab"><span>28 Sep</span><span>5 Oct</span><span>12 Oct</span><span>19 Oct</span><span>26 Oct</span></div>
+      <p>5.7 pages per visitor. 57% on phones. Search arrivals rose from about 1 a day to about 13 a day. By 20 Oct: 31 accounts, 5 of them ours. 13 outside accounts asked 268 of the 418 logged research questions (the rest were internal testing), and 7 asked more than once. <strong>Pre-revenue:</strong> checkout is not live.</p>
+      <h2>Market, sized at list prices</h2>
+      <p>$%%TAM_USD_B%%B total (4.6 crore active NSE clients, plus professionals). $%%SAM_USD_M%%M reachable: active traders ₹%%SAM_RETAIL_CR%% Cr, first buyers ₹%%SAM_PRO_CR%% Cr (%%SEBI_FIRMS%% SEBI firms and 3,350 top distributors, %%SAM_PRO_SEATS%% seats). The plan needs %%T_SEATS%% seats by month 15, about 1% of that list.</p>
+      <h2>Who pays</h2>
+      <table>
+        <tr><th>Plan</th><th>Price (launch)</th><th class="n">Month-15 revenue</th></tr>
+        <tr><td>Free: public tools</td><td>₹0</td><td class="n">Reach</td></tr>
+        <tr><td>Plus, Pro: individuals</td><td>₹199–₹599 a month</td><td class="n">%%RETAIL_SHARE%%%</td></tr>
+        <tr><td><strong>Desk: advisers, RAs, PMS</strong></td><td>₹%%DESK_LIST%% a seat a month</td><td class="n">%%DESK_SHARE%%%</td></tr>
+        <tr><td>Partner API (none signed)</td><td>₹15, ₹10, ₹6 a user</td><td class="n">%%PARTNER_SHARE%%%</td></tr>
+      </table>
+      <p>Professionals pay first, which keeps the public tools open. Rule-based baskets come after RA registration and empanelment.</p>
+      <h2>Competition</h2>
+      <p>Screener.in, Tijori, Trendlyne, Multibagg, Streak and Perplexity Finance each do part of this well. We found none that runs from filing to tested idea to plan in one account. Anvest is behind on broker links, page-level citations and concall answers.</p>
+      <h2>The ask</h2>
+      <p><strong>$%%ROUND_TARGET_K%%K at a $%%ROUND_CAP_M%%M post-money cap.</strong> CCD or CCPS, to be settled with counsel. First close $%%ROUND_FIRST_K%%K, room to $%%ROUND_MAX_K%%K.</p>
+      <table>
+        <tr><td>Team</td><td class="n">$%%U_TEAM%%K (%%U_TEAM_SHARE%%%)</td></tr>
+        <tr><td>Compliance, data, serving</td><td class="n">$%%U_COMP%%K (%%U_COMP_SHARE%%%)</td></tr>
+        <tr><td>Growth and founder</td><td class="n">$%%U_GROW%%K (%%U_GROW_SHARE%%%)</td></tr>
+        <tr><td>Runway from month 19 to break-even</td><td class="n">$%%U_RES%%K (%%U_RES_SHARE%%%)</td></tr>
+      </table>
+      <p><strong>Targets:</strong> 10 paid pilots by month 3. %%T_ARR%% ARR, %%T_TEAMS%% teams and a public benchmark by month 15 (%%X_ARR%% at $%%ROUND_MAX_K%%K). Break-even in month %%T_BE%% on plan. Any single missed assumption still leaves at least 33 months of cash.</p>
     </div>
   </div>
-  <div class="ask">
-    <h2>The ask</h2>
-    <div class="big">Raising $%%ROUND_TARGET_K%%K at a $%%ROUND_CAP_M%%M post-money cap</div>
-    <p>Proposed CCD/CCPS, subject to counsel. First close $%%ROUND_FIRST_K%%K; room to $%%ROUND_MAX_K%%K. Team $%%U_TEAM%%K (%%U_TEAM_SHARE%%%) · compliance &amp; infrastructure $%%U_COMP%%K (%%U_COMP_SHARE%%%) · growth &amp; founder $%%U_GROW%%K (%%U_GROW_SHARE%%%) · reserve $%%U_RES%%K (%%U_RES_SHARE%%%). RA work and public evaluation remain targets.</p>
-    <div class="ms">
-      <div><b>%%T_ARR%%</b>M15 model ARR</div>
-      <div><b>M%%T_BE%%</b>modeled cash break-even</div>
-      <div><b>%%X_ARR%%</b>M15 ARR at $%%X_RAISE_K%%K</div>
-      <div><b>₹%%SC_Y5_ROUND%% Cr</b>conditional Year-5 scenario ARR</div>
-    </div>
-  </div>
-  </div>
-  <div class="src">Sources: Anvest production snapshot, 20 Oct 2026 (12:51 IST); operating_model.py for all financial and market-size figures; NSE Market Pulse (2025–26); SEBI RA and retail algo rules. The 50-filing test covers revenue/PAT extraction, not complete AI answers. Model outputs are targets/scenarios, not forecasts. Planning FX ₹%%FX%%/$.</div>
-  <footer><span><b>Harsh Bhardwaj</b> &nbsp;·&nbsp; harsh@anvest.in &nbsp;·&nbsp; anvest.in</span><span>Confidential · Version %%VERSION%% · No buy/sell calls, no target prices</span></footer>
+  <p class="note">Sources: Anvest warehouse and read-only production snapshot, 20 Oct 2026; Vercel Web Analytics, India only, 1 Nov 2026 (one-page crawler-like traffic from other countries excluded; visitors counted per day); NSE Market Pulse; SEBI directory and circulars; fintech.global. All plan figures are targets from the Anvest operating model, not forecasts. ₹%%FX%% = $1. The 50-filing audit tests extraction, not AI answers.</p>
+  <footer><span><b>Harsh Bhardwaj</b>  |  harsh@anvest.in  |  anvest.in</span><span>Confidential  |  Version %%VERSION%%</span></footer>
 </body>
 </html>

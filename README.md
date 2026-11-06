@@ -10,7 +10,7 @@
 | [Outreach](Outreach/) | Preparing messages and tracking conversations | Verified contact register, practical playbook, personalized drafts and investor tracker |
 | [Internal_Strategy](Internal_Strategy/) | Deciding what to fund, sell and prioritise | Pitch review, funding plan, GTM plan, investor targeting/Q&A and broker/data strategy |
 | [Financial_Models](Financial_Models/) | Revenue, cost and runway | Monthly operating model (`.py` plus a generated `.xlsx`) and the dated pricing and unit-economics reference |
-| [Source](Source/) | Rebuilding and auditing materials | Document templates, unchanged source screenshot, read-only metric queries, source audit, deck patcher and export scripts |
+| [Source](Source/) | Rebuilding and auditing materials | Deck generators in `Source/deck`, document templates, read-only metric queries, frozen evidence and the style audit |
 | [Brand](Brand/) | Reusing Anvest's visual identity | Brand guide and three backgrounds |
 | [Archive](Archive/) | Superseded files, never sent | 14 October originals, external review files, superseded calculators, the old brand template and a Keynote duplicate |
 | [check_materials.py](check_materials.py) | Consistency check | Confirms every material matches the operating model and carries one version label |
@@ -19,14 +19,14 @@
 
 | File | Use |
 |---|---|
-| [Seed deck](Investor_Materials/Anvest_Seed_Deck.pptx) ([PDF](Investor_Materials/Anvest_Seed_Deck.pdf)) | Seed pitch: 12 core slides and 5 appendix slides, with speaker notes. Product replay and source-audit scope are separated from customer traction and answer-quality claims. |
-| [Strategic integration deck](Investor_Materials/Anvest_Strategic_Integration_Deck.pptx) ([PDF](Investor_Materials/Anvest_Strategic_Integration_Deck.pdf)) | Partner discussion proposal for a potential scoped, approved read-only pilot; no current pilot or equity request is represented. Zerodha/Kite-specific concepts are proposed integration paths. |
+| [Seed deck](Investor_Materials/Anvest_Seed_Deck.pptx) ([PDF](Investor_Materials/Anvest_Seed_Deck.pdf)) | Seed pitch: opening page, 12 core slides and 9 appendix slides, with speaker notes. |
+| [Strategic integration deck](Investor_Materials/Anvest_Strategic_Integration_Deck.pptx) ([PDF](Investor_Materials/Anvest_Strategic_Integration_Deck.pdf)) | Five-page proposal for a small, approved, read-only pilot, written for Zerodha. No integration exists. Rewrite the ecosystem page for any other broker. |
 | [One-pager](Investor_Materials/Anvest_OnePager.pdf) | Investor overview to attach to the first email |
 | [Data provenance memo](Investor_Materials/Anvest_Data_Provenance_Memo.pdf) | Diligence memo, on request |
 
 The `.pptx` files are the editable masters, with speaker notes. The `.pdf` files are the copies to send: they render the same everywhere and leave out the notes. Each PDF carries the same version label as its master.
 
-The story in one line: **Filing-cited research for Indian advisory teams, with screening, costed backtesting and paper workflows in one product.** Desk seats are the first modeled revenue stream; partner APIs and individual subscriptions are modeled expansion paths. The $500K target, $400K first close and $700K room are proposed terms. Exchange-registered strategies belong to the long-term scenario after applicable approvals. ITR is deliberately left out while it is in progress.
+The story in one line: **the research tools institutions use, in plain language, for every Indian investor.** Professionals pay first, which keeps the public tools open; the public is the market. The $500K target, $400K first close and $700K room are proposed terms. ITR is deliberately left out while it is in progress.
 
 ## Working documents
 
@@ -42,7 +42,7 @@ The story in one line: **Filing-cited research for Indian advisory teams, with s
 ## After any change
 
 1. Update the model inputs or the `.pptx` master. Keep the version label consistent in every material; evidence snapshot dates stay attached to the evidence.
-2. Re-export each changed deck to PDF with the maintained export scripts.
+2. Rebuild with `Source/deck/build.sh`, export with `Source/deck/render.sh`, install with `Source/deck/install.py`, and render the documents with `Source/render_documents.py`.
 3. Run the check; it must print PASS:
 
 ```bash

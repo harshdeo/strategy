@@ -1,13 +1,31 @@
 # Material sources and evidence
 
-The PPTX masters remain in `../Investor_Materials`. The seed deck has 12 core slides followed by five appendix slides. `update_decks.py` prepares focused text edits, reorders the existing slide parts, keeps the original screenshot bytes and writes candidates in `.tmp/investor-materials-20261101`. `update_decks.mjs` imports, edits and validates them with the bundled Artifact Tool before installing the masters. It preserves the original OOXML charts and media. The four flow screenshots and original TCS screenshot remain unchanged.
+## Decks
+`deck/` builds both `.pptx` masters from scratch. `seed.js` and `partner.js` hold the slide content, `lib.js` the house style, and `finish_deck.py` adds the founder's flow screenshots (bytes in `deck/img_flow`, crops and positions in `deck/flow_images.json`, never edited), the native charts and the document properties.
 
-`render_documents.py` fills the one-pager from the operating model and renders both document PDFs from their HTML sources. `export_deck_pdf.mjs` renders final decks at 2.5× resolution and `assemble_pdf.py` follows presentation order when it supplies a searchable layer from the same PPTX text. This avoids the current macOS Keynote permission block. The visible pages are the real slide render, with no screenshot fabrication. `export_pdf.applescript` is also available when macOS permits Keynote automation. The original deck source was temporary; current masters plus these focused patch scripts are the maintained source. The proposed 50-prompt benchmark is in `GOLDEN_EVALUATION_BENCHMARK.md`; it has not been run. The workbook refresh runs via `../Financial_Models/operating_model.py --xlsx` and `update_workbook.mjs`.
+```bash
+export NODE_MODULES_DIR=<folder with pptxgenjs> PY_LIBS=<folder with python-pptx>
+Source/deck/build.sh                 # model.json, seed.pptx, partner.pptx
+Source/deck/render.sh seed           # Keynote PDF and page images
+Source/deck/render.sh partner
+/opt/homebrew/bin/python3 Source/deck/install.py   # copies masters and PDFs to Investor_Materials
+```
 
-`audit_metrics.py` reads only production aggregate counts and public filing line items. `evidence_snapshot.json` freezes its 20 October results. `filing_selection.json` freezes the deterministic 50-company sample; `check_filings.py` downloads the cited source files and verifies revenue/PAT, quarter, currency and consolidated basis. `filing_check.json` records results and source hashes. Re-run with `--input filing_selection.json --output PATH`; do not silently replace a cited historical result with a new run. This is an extraction audit, not an AI answer benchmark or a release gate.
+`capture_public.mjs` and `capture_tiles.mjs` take the signed-out product screenshots. Earlier patching scripts are in `Archive/2026-11-01_superseded_build/`.
 
-All source edits and evidence stay within the workspace. Nothing here authorizes publication, model calls, warehouse writes or a production deploy.
+## Documents
+`render_documents.py` fills `onepager.html` from the operating model and prints it and `provenance.html` to PDF, then sets the PDF properties.
 
-`update_outreach.mjs` refreshes the six-tab outreach tracker with the primary-source contact register at `../Outreach/investor_contacts.json` and financial outputs read directly from `operating_model.py --json`. It preserves CRM fields by stable record ID on subsequent refreshes, validates follow-up dates and exports/renders with the bundled Artifact Tool. First send, last touch and outcomes are user-entered actuals; the script never sends a message. An email publication check is not a deliverability guarantee.
+## Evidence
+Never replace a cited result. Write a new dated file.
 
-Run `../check_materials.py --outreach` for the contact/round/evidence consistency check. The full checker also checks the deck exports and must be run before PDF attachment; a passing outreach check does not certify the PDFs.
+- `analytics_snapshot_20261101.json`: Vercel Web Analytics figures behind the traction page, with the definition of a visitor.
+- `product_metrics_snapshot.json`: read-only production aggregates, 20 Oct 2026. `product_metrics_20261101.py` takes a new dated snapshot; the run needs the owner's approval because it reads production.
+- `evidence_snapshot.json`, `filing_selection.json`, `filing_check.json`: the 50-filing source audit. It tests extraction, not AI answers.
+- `GOLDEN_EVALUATION_BENCHMARK.md`: the proposed 50-question evaluation. It has not been run.
+- `update_outreach.mjs` refreshes the outreach tracker; `check_materials.py --outreach` checks it.
+
+## Checks
+`../check_materials.py` must print PASS. It reconciles every material with the model, rejects stale or unsupported claims and bad PDF properties, and runs `style_audit.py`, a plain-language lint. The lint does not detect AI authorship.
+
+Nothing here authorises publication, model calls, warehouse writes or a production deploy.

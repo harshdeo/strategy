@@ -32,7 +32,7 @@ STALE = ["₹8.3 L", "₹8.29", "₹51.8", "₹52 Cr", "₹50 Cr+", "₹14.5", "
          "₹83 L", "₹29.9", "$247M", "₹95.69", "$330K", "investing co-pilot", "9 in 10", "F&O traders lost",
          "100% exact", "100% match", "100% source", "outreach underway", "pilots underway", "unmetered",
          "ILLUSTRATIVE", "Illustrative example", "~17K", "~17,000", "17,300", "15,718", "~100", "5,405",
-         "6,137 stock pages with AI profiles", "2.89M", "Only Anvest", "zero-CAC", "Zero-CAC", "Product capability (live today)", "₹13 Cr"]
+         "6,137 stock pages with AI profiles", "2.89M", "Only Anvest", "zero-CAC", "Zero-CAC", "6.16M", "team workspaces planned", "Product capability (live today)", "₹13 Cr"]
 STALE.append("Anvest · Confidential · 20 Oct 2026")
 # Speaker notes travel with every .pptx: nothing internal may sit in them.
 NOTES_FORBIDDEN = re.compile(r"\.py\b|\.md\b|Internal_Strategy|Financial_Models|VERIFY|[Vv]erify before|TODO|"
@@ -65,6 +65,13 @@ def inr(cr):
     if cr < 1:
         return f"₹{round(cr * 100)} L"
     return "₹" + (f"{cr:.0f}" if cr >= 10 else f"{cr:.2f}".rstrip("0").rstrip(".")) + " Cr"
+
+
+def audit_style(docs):
+    """Fail on phrasing that reads as boilerplate. Lives here so a later edit cannot quietly reintroduce it."""
+    sys.path.insert(0, str(HERE / "Source"))
+    from style_audit import audit
+    return [f"{d}: {m}" for d, text in docs.items() for m in audit(text)]
 
 
 def check_outreach(k, failures):
@@ -132,7 +139,7 @@ def main():
         "$400K month-15 ARR": inr(f["arr_cr"]),
         "$700K month-15 ARR": inr(x["arr_cr"]),
         "$500K Desk teams": str(t["teams"]),
-        "$500K break-even": f"M{t['breakeven_month']}",
+        "$500K break-even": f"month {t['breakeven_month']}",
         "TAM": f"${mk['tam_usd_b']}B",
         "SAM": f"${mk['sam_usd_m']}M",
     }
@@ -168,22 +175,26 @@ def main():
             failures.append(f"{doc}: internal or unsupported text '{m}'")
     # Dated production evidence and source-audit scope must survive every export.
     for doc in ("seed deck .pptx", "seed deck .pdf", "one-pager"):
-        for claim in ("50 / 50", "418", "238", "31"):
+        for claim in ("50 of 50", "268", "418", "internal testing", "676" if doc != "one-pager" else "5.7 pages", "crawler"):
             if claim not in texts[doc]:
                 failures.append(f"{doc}: missing scoped traction evidence {claim!r}")
-        if not any(scope in texts[doc] for scope in ("founder/testing", "including internal testing")):
-            failures.append(f"{doc}: usage totals omit the internal-testing qualification")
     for doc in ("seed deck .pptx", "seed deck .pdf", "partner deck .pptx", "partner deck .pdf", "one-pager", "memo"):
         if re.search(r"\br[1-9]\d*\b", texts[doc]):
             failures.append(f"{doc}: internal draft label leaked")
     for doc in ("seed deck .pptx", "seed deck .pdf"):
-        for claim in ("₹13.4 Cr", "₹9.7 Cr", "₹23.11 Cr", "team workspaces planned", "19%", "CA/wealth", "67 bps", "total income"):
+        for claim in ("₹13.4 crore", "₹9.7 crore", "₹23", "Team workspace", "33 months", "Cash to month 29"):
             if claim not in texts[doc]: failures.append(f"{doc}: missing reconciliation {claim!r}")
-    for doc in ("seed deck .pptx", "seed deck .pdf", "partner deck .pptx", "partner deck .pdf", "one-pager", "memo"):
-        for claim in ("6,155,194", "633,688"):
+    for doc in ("seed deck .pptx", "seed deck .pdf", "memo"):
+        for claim in ("61,55,194", "6,33,688"):
             if claim not in texts[doc]: failures.append(f"{doc}: missing dated corpus count {claim!r}")
-        for unsupported in ("1.35M", "600M+ ARR", "$7.5B valuation", "1,734 visitors", "5,591 page views", "276 /login hits"):
-            if unsupported in texts[doc]: failures.append(f"{doc}: unsupported or stale claim {unsupported!r}")
+    for doc in ("seed deck .pptx", "seed deck .pdf", "partner deck .pptx", "partner deck .pdf", "one-pager", "memo", "outreach emails"):
+        unsupported = ["1.35M", "1,734", "5,591", "198%", "76% desktop", "34% login", "276 /login", "Ex-Senior", "sub-3s", "Sub-3s", "zero-PII", "Zero-PII",
+                       "top decile", "100% extraction", "100% citation"]
+        if doc != "memo" and doc != "outreach emails":
+            unsupported += ["25.47", "67 bps"]  # a pre-tax margin mislabelled as operating margin; the memo lists it as an open item
+        for claim in unsupported:
+            if claim in texts[doc] and not (doc == "outreach emails" and claim in ("198%", "76% desktop", "34% login", "25.47")):
+                failures.append(f"{doc}: unsupported or stale claim {claim!r}")
     uses = t["use_of_funds_usd_k"]
     target_k = k["round_terms"]["target_raise_usd"] / 1000
     for doc in ("seed deck .pptx", "seed deck .pdf", "one-pager"):
@@ -191,11 +202,22 @@ def main():
             pct = round(uses[key] / target_k * 100)
             if f"${uses[key]}K" not in texts[doc] or f"{pct}%" not in texts[doc]:
                 failures.append(f"{doc}: use-of-funds {key} amount/share does not reconcile with operating model")
-    for label, pdf, expected_pages in (("seed deck", SEED_PDF, 17), ("partner deck", PARTNER_PDF, 10),
+    for label, pdf, expected_pages in (("seed deck", SEED_PDF, 22), ("partner deck", PARTNER_PDF, 5),
                                        ("one-pager", ONEPAGER, 1)):
         pages = len(fitz.open(pdf))
         if pages != expected_pages:
             failures.append(f"{label}: expected {expected_pages} pages, found {pages}")
+    style_doc_set = {d: texts[d] for d in ("seed deck .pdf", "partner deck .pdf", "one-pager", "memo", "outreach emails")}
+    style_doc_set["seed deck notes"] = notes_text(SEED_PPTX)
+    style_doc_set["partner deck notes"] = notes_text(PARTNER_PPTX)
+    failures += audit_style(style_doc_set)
+    for label, pdf in (("seed deck", SEED_PDF), ("partner deck", PARTNER_PDF), ("one-pager", ONEPAGER), ("memo", MEMO)):
+        meta = fitz.open(pdf).metadata
+        if "Headless" in (meta.get("creator") or "") or not (meta.get("author") or "").startswith("Harsh") or meta.get("title") in ("", "seed", "partner"):
+            failures.append(f"{label}: PDF properties not set ({meta.get('title')!r}, {meta.get('author')!r}, {meta.get('creator')!r})")
+        fonts = {f[3].split("+")[-1] for page in fitz.open(pdf) for f in page.get_fonts()}
+        if not fonts <= {"Georgia-Bold", "Georgia", "HelveticaNeue", "HelveticaNeue-Bold", "HelveticaNeue-Italic"}:
+            failures.append(f"{label}: unexpected fallback fonts {sorted(fonts)}")
     audit=json.loads((HERE/"Source/filing_check.json").read_text())
     if audit.get("passed") != 50 or audit.get("total") != 50 or any(r.get("status") != "pass" for r in audit.get("results",[])):
         failures.append("The 50-filing audit is incomplete or failed")
@@ -225,6 +247,7 @@ def main():
     print("Model month-15 ARR: $400K " + expected["$400K month-15 ARR"] + ", $500K " + expected["$500K month-15 ARR"]
           + ", $700K " + expected["$700K month-15 ARR"] + f", $500K break-even {expected['$500K break-even']}"
           + f", year-5 scenario {inr(k['scenario_arr_cr']['Y5'])}, TAM {expected['TAM']}, SAM {expected['SAM']}")
+    print(f"Style audit covered {len(style_doc_set)} texts.")
     if failures:
         print(f"FAIL ({len(failures)})")
         for f in failures:

@@ -1,12 +1,12 @@
 # Anvest — Current Funding Plan
 
-**INTERNAL — not for sharing. Updated 14 October 2026; positioning revised and the operating model added 19 October 2026 (materials dated 20 October 2026; see [PITCH_REVIEW_2026-10-19.md](PITCH_REVIEW_2026-10-19.md)).**
+**INTERNAL, not for sharing. Positioning and evidence updated 1 November 2026; see [PITCH_REVIEW_2026-10-19.md](PITCH_REVIEW_2026-10-19.md).**
 
 ## Company and positioning
 
-Anvest is India's AI research co-pilot: cited filing answers, costed backtests and portfolio impact, for SEBI-registered professionals and serious investors. One question flows into a cited answer, an AI-built screen, a cost-realistic backtest and paper trading. Stock, IPO, mutual fund, bond and wealth tools sit in the same workspace. The verified warehouse and dedicated engines supply evidence, calculations and simulations.
+Anvest gives ordinary Indian investors the research tools institutions use, in plain language. A person asks a question in ordinary words; Anvest Intelligence answers from exchange filings, builds the screen, tests the idea with Indian trading costs and helps plan the money. That is the aim: the public at large, as well informed and as capable as a desk, including someone who has never invested.
 
-Two revenue engines carry this round: Desk seats for professionals (RAs, IAs, PMS desks and distributors, 1–5+ seats) and an Intelligence API/MCP licence for brokers, wealth apps and AI agents, priced per active user with volume tiers. Retail Plus/Pro subscriptions are self-serve upside from the free funnel. Research-backed, exchange-registered strategies through partner brokers follow SEBI RA registration and exchange empanelment, after the Series A.
+Professionals are how it gets paid for and proven first. Desk seats for RAs, IAs, PMS teams and distributors (1 to 5+ seats) carry early revenue and keep the public tools open. Plus and Pro serve individuals. A partner API is modelled from month 10 but nothing is signed, and rule-based baskets wait for RA registration and empanelment.
 
 ## Current round
 
@@ -29,7 +29,7 @@ Lead with $500K. The first close at $400K needs an institutional lead plus angel
 | Team | $155K | $185K | $195K | Growth lead, data engineer, full-stack/quant engineer; a second seller from month 9 at $500K (month 6 at $700K) |
 | Compliance and infrastructure | $60K | $65K | $65K | SEBI RA registration and counsel, exchange data licence, serving and inference |
 | Growth and founder | $100K | $100K | $125K | Desk pilots, launch, CAC tests and founder salary |
-| Reserve and runway | $85K | $150K | $315K | Cash held beyond the 18-month spend |
+| Runway after month 18 | $85K | $150K | $315K | Pays the burn from month 19 onward. At $500K it carries the company to break-even in month 42 if no new round comes. It is not idle cash |
 | Total | $400K | $500K | $700K | |
 
 The budget funds the first revenue engines. Strategy revenue begins only after RA registration, exchange empanelment and a partner broker, and no brokerage or HFT business is funded by it.
@@ -58,6 +58,23 @@ Unit economics at $500K: gross margin about 46% at month 15, because fixed servi
 The journey review figures (base ₹83 L ARR, 43 teams, a ₹29.9 Cr year 5) and every earlier case are superseded; the pitch review records why. The other month-15 milestones are SEBI RA registration and a published head-to-head benchmark.
 
 After any change to the model or the materials, run `/opt/homebrew/bin/python3 ../check_materials.py`. [PRICING_AND_UNIT_ECONOMICS.md](../Financial_Models/PRICING_AND_UNIT_ECONOMICS.md) remains the dated reference for tier design and unit costs; re-measure cost per answer after the October model migration.
+
+## If an assumption misses
+
+From `sensitivities()` in the operating model, with costs held as planned ($500K case):
+
+| Case | ARR, month 15 | Outcome with no new funding |
+|---|---:|---|
+| Plan as modelled | ₹87 L | Break-even month 42 |
+| No paying partner | ₹70 L | Cash to month 37 |
+| Sellers close 3 teams a month, not 4 | ₹73 L | Cash to month 39 |
+| Sellers close 2 teams a month, not 4 | ₹59 L | Cash to month 33 |
+| Teams average 2 seats, not 3 | ₹65 L | Cash to month 35 |
+| Monthly team churn 4%, not 2% | ₹81 L | Cash to month 40 |
+| First Desk sales slip three months | ₹67 L | Break-even month 43 |
+| No partner, 3 teams a month, 2 seats | ₹39 L | Cash to month 29 |
+
+So "break-even without new funding" holds only on plan. What holds in every single-miss case is at least 33 months of cash. Say it that way. Proposed stop rule, for the founder to confirm: if 200 firms produce fewer than 3 paid pilots, change the buyer or the price before hiring the second seller.
 
 ## Execution and evidence
 

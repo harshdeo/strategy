@@ -70,6 +70,18 @@ The 20 October production snapshot records 31 registered accounts, including fou
 **Q: Revenue?**
 Pre-revenue. Launch pricing is set (Free / Plus ₹199 / Pro ₹599 a month / Desk ₹2,999 per seat, 1–5+ seats). Paid professional pilots are the first thing I'm selling; checkout goes live in the first 90 days after close.
 
+**Q: How much of your traffic and usage is real?**
+Say it before they ask. India only: 676 visitors and 3,882 views from 2 Oct to 1 Nov, 5.7 pages each, 57% on phones, and weekly visitors up from about 48 to 249. All-country totals are 2,035 visitors, but the other 1,359 are mostly one-page Windows and Linux sessions from Singapore, the US and China that look automated, so we leave them out. By 20 Oct, 13 outside accounts had asked 268 of the 418 logged research questions; the other 150 were internal testing. Do not use "+198%", "76% desktop means analysts" or "34% login intent". The first is mostly the bot-like traffic, India is majority mobile, and /login is a redirect target for six signed-in paths.
+
+**Q: What happened on 24 October?**
+India visitors jumped to 170, 107 and 83 over 24 to 26 Oct, mostly Android, mostly from Google to the home page, then settled near 32 a day against about 7 before. *Find the cause before the first meeting: a post, a mention or a forward. "No paid marketing" is what the evidence supports; if you shared it yourself, say so.*
+
+**Q: If the mission is the public, why sell to advisers first?**
+They buy tools for their work, they can be listed from SEBI's directory, and they catch wrong numbers quickly. Their seats pay for the open tools. A product that survives them is ready for a beginner. Plan: 243 seats at month 15, about 1% of the 21,750-seat first-buyer list. That 1% funds the proof, and it is not the business: 1 to 2% of ₹78 Cr is about ₹1 Cr a year. Scale comes from the public and from distribution.
+
+**Q: Is planning a portfolio for a novice investment advice?**
+It can become advice. Today the tools do arithmetic on the user's own inputs and name no securities, and there are no buy, sell or hold calls. RA registration is funded. Recommending a portfolio to a person would need investment-adviser registration and a separate decision. Counsel reviews planning features before release.
+
 **Q: How big is the first segment?**
 SEBI's intermediary directory (checked 19 Oct 2026) lists 2,304 research analysts, 1,057 investment advisers and 539 portfolio managers: about 3,900 regulated firms, with about 3.5 lakh mutual fund distribution professionals (ARN and EUIN holders, Jun 2026) beyond them. The $500K plan's 77 paying teams at month 15 is about 2% of those firms. Market sizing at list prices: TAM about $1.3B a year, SAM about $250M a year, of which professionals are about ₹78 Cr (3 seats per firm) and active investors about ₹2,292 Cr (see `../Financial_Models/operating_model.py`). Professionals are the entry; active investors and partner distribution are the scale.
 
@@ -86,7 +98,7 @@ Daily: evening batch plus a morning catch-up, current to the previous trading da
 Not yet. A read-only broker link pattern is built. Execution is not part of this round.
 
 **Q: Is the data accurate?**
-Raw figures are cited to the filing. Derived ratios are in a verification program; a corrected formula version has passed internal gates and is moving through certification to production. Gaps (~4,500 company-years the exchange never filed) are flagged in the product, not estimated.
+Reported figures link to the filing (filing level, not page level). Revenue and profit extraction matched on 50 of 50 audited filings, which tests extraction and not AI answers. No end-to-end benchmark has been published. Do not demo the TCS operating-margin question until the label is fixed: 25.47% is a pre-tax margin, and TCS reports about 24.0%. Derived ratios are in a verification program; a corrected formula version has passed internal gates and is moving through certification to production. Gaps (~4,500 company-years the exchange never filed) are flagged in the product, not estimated.
 
 **Q: How accurate are the AI answers?**
 Spot-check on 19 Oct 2026: September-quarter answers for TCS, HCL Technologies and Wipro matched their NSE XBRL filings exactly, and Infosys was correctly declined because it had not yet reported. That is a four-question spot-check, not a benchmark: say so. The published head-to-head benchmark is a month-15 milestone. Never claim "100% accuracy" or "100% traceability".
@@ -118,7 +130,7 @@ It is the proposed $3.5M post-money cap used consistently in the materials, size
 
 ## 6. Product breadth and expansion: how to pitch it
 
-**Company positioning (revised 20 Oct 2026):** Anvest is India's AI research co-pilot: cited filing answers, costed backtests and portfolio impact, for SEBI-registered professionals and serious investors. It spans research, discovery, strategy simulation and financial planning. AI is the shared interaction layer across the tools: it interprets natural-language intent, explains results and links into relevant workflows. A home-screen request can produce a prepared stock screen. The warehouse and calculation engines supply the data and arithmetic. Filing research for professional teams is the first revenue test. It is the entry point into a broader platform.
+**Company positioning (revised 1 Nov 2026):** the research tools institutions use, in plain language, for every Indian investor. Anvest Intelligence lets even a market novice research, test and plan through conversation. Professionals pay first; the public is the market.
 
 **Live today:** filing-grounded research, AI screener, portfolio X-ray, strategy backtesting, paper trading, wealth planning, calculators and educational guides. Founder confirmed the live tool status on 14 Oct 2026. A signed-in site review observed strategy templates with cached backtest metrics, a paper-trading workspace, wealth and retirement pages, and guides. This was a feature inventory, not a numerical correctness audit or an end-to-end certification of every tool.
 
