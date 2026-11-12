@@ -39,7 +39,7 @@ DB = "anvest_import_20261013"
 
 def gcloud(command):
     return subprocess.check_output(
-        ["gcloud", "compute", "ssh", "anvest-gcp-stage", "--project=anvest-505415", "--zone=asia-south1-a",
+        ["gcloud", "compute", "ssh", "anvest-gcp-stage", "--project=anvest-prod-2611", "--zone=asia-south1-a",
          "--tunnel-through-iap", "--quiet", "--command=" + command],
         text=True,
     )
